@@ -1,12 +1,13 @@
 @extends('layout.master')
 
 @section('header')
-    @include('components.rev_slider_wrapper')
+    @include('components.video-wrapper')
 @stop
 
 @section('body')
   
-    @each('components.swiper_slide', $galleries, 'gallery')
+    @include('components.collage_wrapper')
+
 
     @include('components.contact')
     @include('components.about')

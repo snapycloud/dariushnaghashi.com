@@ -16,12 +16,26 @@ class Controller extends BaseController
     {
     	$galleries = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
 			            'category', function($q){ 
-			                $q->where('knowledge_base_category_id', '5c6705f0dc1ec1ccd');
+			                $q->where('knowledge_base_category_id', '5c6705f0dc1ec1ccd')->limit(10);
 			            }
-			        )->where('status', 'Published')->orderBy('publish_date', 'DESC')->get();
+			        )->where('status', 'Published')->orderBy('publish_date', 'ASC')->get();
 
     	return view('index', [
     		'galleries' => $galleries
     	]);
+    }
+
+    public function getGalleryBySlug($id)
+    {
+        $gallery = KnowledgeBaseArticle::where('deleted', 0)->where('slug', $slug)->first();
+        if(!$gallery->count()){
+            return abort(404);
+        }
+        $gallery->view++;
+        $gallery->save();
+
+        return view('gallery', [
+            'gallery' => $gallery
+        ]);
     }
 }
