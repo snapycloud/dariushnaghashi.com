@@ -8,7 +8,7 @@
   
     @each('components.swiper_slide', $galleries, 'gallery')
 
-  @include('components.contact')
-  @include('components.about')
-
+    @include('components.about')
+    @include('components.contact')
+  
 @stop

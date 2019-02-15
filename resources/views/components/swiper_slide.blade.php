@@ -1,4 +1,4 @@
-  <section id="nature">
+  <section id="{{ $gallery->slug }}">
     <div class="wrapper dark-wrapper inverse-text">
       <div class="inner">
         <h1 class="section-title mb-30 text-center">{{ $gallery->name }}</h1>

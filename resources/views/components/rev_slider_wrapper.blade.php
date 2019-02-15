@@ -3,7 +3,7 @@
       <div class="rev_slider_wrapper fullscreen-container">
         <div id="slider" class="rev_slider fullscreenbanner bg-dark" data-version="5.4.7">
           <ul>
-            <li data-transition="fade" data-thumb="style/images/art/slider-bg5.jpg"><img src="style/images/art/slider-bg5.jpg" alt="" />
+            <li data-transition="fade" data-thumb="{{ asset('style/images/art/slider-bg5.jpg') }}"><img src="{{ asset('style/images/art/slider-bg5.jpg') }}" alt="" />
               <div class="tp-caption font-weight-500 text-uppercase color-white text-center" 
             data-x="center"
             data-y="middle" 
@@ -33,7 +33,7 @@
             data-endslide="3"
             data-responsive="on" 
             data-responsive_offset="on" 
-            style="z-index: 9; letter-spacing: -0.5px;">Beautiful Gardens</div>
+            style="z-index: 9; letter-spacing: -0.5px;">International Photographer</div>
               <a class="tp-caption btn btn-full-rounded btn-l btn-white scroll" 
             data-x="center" 
             data-y="middle" 
@@ -46,7 +46,7 @@
             data-responsive="on" 
             data-responsive_offset="on" 
             style="z-index: 9;" href="#nature">View Images</a> </li>
-            <li data-transition="fade" data-thumb="style/images/art/slider-bg6.jpg"><img src="style/images/art/slider-bg6.jpg" alt="" />
+            <li data-transition="fade" data-thumb="{{ asset('style/images/art/slider-bg6.jpg') }}"><img src="{{ asset('style/images/art/slider-bg6.jpg') }}" alt="" />
               <div class="tp-caption font-weight-500 text-uppercase color-white text-center" 
             data-x="center"
             data-y="middle" 
@@ -76,7 +76,7 @@
             data-endslide="3"
             data-responsive="on" 
             data-responsive_offset="on" 
-            style="z-index: 9; letter-spacing: -0.5px;">Macro Shots</div>
+            style="z-index: 9; letter-spacing: -0.5px;">Fitness Photo/Videographer</div>
               <a class="tp-caption btn btn-full-rounded btn-l btn-white scroll" 
             data-x="center" 
             data-y="middle" 
