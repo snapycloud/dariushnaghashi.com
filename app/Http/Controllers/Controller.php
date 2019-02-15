@@ -25,7 +25,7 @@ class Controller extends BaseController
     	]);
     }
 
-    public function getGalleryBySlug($id)
+    public function getGalleryBySlug($slug)
     {
         $gallery = KnowledgeBaseArticle::where('deleted', 0)->where('slug', $slug)->first();
         if(!$gallery->count()){
