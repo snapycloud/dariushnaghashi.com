@@ -11,7 +11,7 @@
         @foreach($gallery->attachment as $item)
           <div class="collage-image-wrapper">
             <div class="overlay overlay2"><a href="{{ route('image', $item->id) }}" data-sub-html="">
-              <img src="{{ route('image', $item->id) }}" style="width:675px; height:450px;" alt="" /></a>
+              <img src="{{ route('image', $item->id) }}"  alt="" /></a>
             </div>
           </div>
         @endforeach
