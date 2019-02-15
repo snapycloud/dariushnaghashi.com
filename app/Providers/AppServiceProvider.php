@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-use App\Providers\KnowledgeBaseArticle;
+use App\KnowledgeBaseArticle;
 
 class AppServiceProvider extends ServiceProvider
 {
