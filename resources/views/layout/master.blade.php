@@ -37,7 +37,7 @@
           @isset($menu)
             @foreach($menu as $item)
               <li class="nav-item"><a class="nav-link scroll" href="{{ route('gallery.slug', $item->slug)  }}">{{ $item->name }}</a></li>
-            @endif
+            @endforeach
           @endisset
 
           <li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
