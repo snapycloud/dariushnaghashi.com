@@ -1,5 +1,7 @@
+<div class="wrapper dark-wrapper inverse-text">    
+
     <div class="container inner pb-0">
-      <h2 class="section-title text-center">$gallery->name</h2>
+      <h2 class="section-title text-center">{{ $gallery->name }}</h2>
     </div>
 
 
