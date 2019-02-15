@@ -15,15 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $menu = KnowledgeBaseArticle::select(['name', 'slug'])->where('deleted', 0)->whereHas(
-            'category', function($q){ 
-                $q->where('knowledge_base_category_id', '5c6705f0dc1ec1ccd');
-            }
-        )->where('status', 'Published')->orderBy('publish_date', 'DESC')->get();
 
-        
-
-        View::share('menu', $menu);
     }
 
     /**
@@ -33,6 +25,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $menu = KnowledgeBaseArticle::select(['name', 'slug'])->where('deleted', 0)->whereHas(
+            'category', function($q){ 
+                $q->where('knowledge_base_category_id', '5c6705f0dc1ec1ccd');
+            }
+        )->where('status', 'Published')->orderBy('publish_date', 'DESC')->get();
+
+        
+
+        View::share('menu', $menu);
     }
 }
