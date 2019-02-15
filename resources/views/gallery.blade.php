@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('header')
-    @include('components.video-wrapper')
+    @include('components.video_wrapper')
 @stop
 
 @section('body')
