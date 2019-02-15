@@ -36,10 +36,10 @@
         <ul class="nav navbar-nav ml-auto">
           @isset($menu)
             @foreach($menu as $item)
-              <li class="nav-item"><a class="nav-link scroll" href="{{. route('gallery.slug', $item->slug)  }}">{{ $item->name }}</a></li>
+              <li class="nav-item"><a class="nav-link scroll" href="{{ route('gallery.slug', $item->slug)  }}">{{ $item->name }}</a></li>
             @endif
           @endisset
-          
+
           <li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
         </ul>
