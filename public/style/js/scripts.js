@@ -1,7 +1,7 @@
 $(document).ready(function() {
     'use strict';
     /*-----------------------------------------------------------------------------------*/
-    /*	STICKY HEADER
+    /*  STICKY HEADER
     /*-----------------------------------------------------------------------------------*/
     if ($(".navbar").length) {
         var options = {
@@ -22,9 +22,9 @@ $(document).ready(function() {
         var banner = new Headhesive('.navbar', options);
     }
     /*-----------------------------------------------------------------------------------*/
-    /*	HAMBURGER MENU ICON
+    /*  HAMBURGER MENU ICON
     /*-----------------------------------------------------------------------------------*/
-	$(".hamburger.animate").on( "click", function() {
+    $(".hamburger.animate").on( "click", function() {
         $(".hamburger.animate").toggleClass("active");
     });
     $('.onepage .navbar .nav li a').on('click', function() {
@@ -32,7 +32,7 @@ $(document).ready(function() {
         $('.hamburger.animate').removeClass('active');
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	SWIPER
+    /*  SWIPER
     /*-----------------------------------------------------------------------------------*/
     $(".basic-slider").each(function(index, element) {
         var $this = $(this);
@@ -153,19 +153,19 @@ $(document).ready(function() {
         var swiper5 = new Swiper(".swiper-col6-" + index, {
             slidesPerView: 6,
             breakpoints: {
-	                520: {
-	                    slidesPerView: 2
-	                },
-	                768: {
-	                    slidesPerView: 3
-	                },
-	                1000: {
-	                    slidesPerView: 4 
-	                },
-	                1680: {
-	                    slidesPerView: 5 
-	                }
-	        },
+                    520: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 3
+                    },
+                    1000: {
+                        slidesPerView: 4 
+                    },
+                    1680: {
+                        slidesPerView: 5 
+                    }
+            },
             spaceBetween: 30,
             grabCursor: true,
             pagination: {
@@ -206,7 +206,7 @@ $(document).ready(function() {
             spaceBetween: 10,
             grabCursor: true,
             observer: true,
-			observeParents: true,
+            observeParents: true,
             loop: false,
             pagination: {
                 el: ".swiper-auto-tab-pagination-" + index,
@@ -236,9 +236,9 @@ $(document).ready(function() {
             },
             spaceBetween: 15,
             grabCursor: true,
-			mousewheel: {
-			    invert: false,
-			  },
+            mousewheel: {
+                invert: false,
+              },
             pagination: {
                 el: ".swiper-full-pagination-" + index,
                 clickable: true,
@@ -257,9 +257,9 @@ $(document).ready(function() {
         $this.find(".swiper-pagination").addClass("swiper-full-single-pagination-" + index);
         var swiper9 = new Swiper(".swiper-full-single-" + index, {
             grabCursor: true,
-			mousewheel: {
-			    invert: false,
-			},
+            mousewheel: {
+                invert: false,
+            },
             pagination: {
                 el: ".swiper-full-single-pagination-" + index,
                 clickable: true,
@@ -309,8 +309,8 @@ $(document).ready(function() {
             spaceBetween: 15,
             grabCursor: true,
             mousewheel: {
-			    invert: false,
-			  },
+                invert: false,
+              },
             loop: false,
             pagination: {
                 el: ".swiper-auto-full-pagination-" + index,
@@ -346,7 +346,7 @@ $(document).ready(function() {
         });
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	SLIDER REVOLUTION
+    /*  SLIDER REVOLUTION
     /*-----------------------------------------------------------------------------------*/
     $('#slider-carousel').revolution(
     {
@@ -356,10 +356,10 @@ $(document).ready(function() {
         delay: 1000,
         shadow: 0,
         responsiveLevels:[1240,1024,778,480],
-		visibilityLevels:[1240,1024,778,480],
-		gridwidth:[437,437,364,320],
-		gridheight:[600,600,500,439],
-		disableProgressBar:"on",
+        visibilityLevels:[1240,1024,778,480],
+        gridwidth:[437,437,364,320],
+        gridheight:[600,600,500,439],
+        disableProgressBar:"on",
         navigation: {
             arrows: {
                 enable: true,
@@ -369,28 +369,28 @@ $(document).ready(function() {
                 tmp: ''
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
         },
         carousel: {
-				horizontal_align: "center",
-				vertical_align: "center",
-				fadeout: "off",
-				maxVisibleItems: 7,
-				infinity: "on",
-				space: 0,
-				stretch: "off",
- 				showLayersAllTime: "off",
- 				easing: "Power3.easeInOut",
- 				speed: "800"
-		}   
+                horizontal_align: "center",
+                vertical_align: "center",
+                fadeout: "off",
+                maxVisibleItems: 7,
+                infinity: "on",
+                space: 0,
+                stretch: "off",
+                showLayersAllTime: "off",
+                easing: "Power3.easeInOut",
+                speed: "800"
+        }   
     });
     $('#slider').revolution({
         sliderType: "standard",
@@ -404,7 +404,7 @@ $(document).ready(function() {
             arrows: {
                 enable: true,
                 hide_onleave: true,
-				hide_under:1024,
+                hide_under:1024,
                 style: 'uranus',
                 tmp: ''
             },
@@ -480,18 +480,18 @@ $(document).ready(function() {
                 enable: false
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
         }    
     });
-	$('#slider4').revolution(
+    $('#slider4').revolution(
     {
         sliderType: "standard",
         sliderLayout: "auto",
@@ -499,7 +499,7 @@ $(document).ready(function() {
         delay: 9000,
         shadow: 0,
         gridwidth:[1140, 1024, 778, 480],
-		gridheight:[600, 525, 400, 400],
+        gridheight:[600, 525, 400, 400],
         responsiveLevels: [1240, 1024, 778, 480],
         navigation: {
             arrows: {
@@ -510,12 +510,12 @@ $(document).ready(function() {
                 tmp: ''
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: true,
                 style: 'zeus',
@@ -583,12 +583,12 @@ $(document).ready(function() {
                         v_offset: 0
                     },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
@@ -602,7 +602,7 @@ $(document).ready(function() {
         delay: 9000,
         shadow: 0,
         gridwidth:[1140, 1024, 778, 480],
-		gridheight:[600, 525, 400, 400],
+        gridheight:[600, 525, 400, 400],
         responsiveLevels: [1240, 1024, 778, 480],
         carousel: {
                     horizontal_align: 'center',
@@ -647,12 +647,12 @@ $(document).ready(function() {
                         v_offset: 0
                     },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
@@ -668,20 +668,20 @@ $(document).ready(function() {
         gridwidth: [1140, 1024, 778, 480],
         responsiveLevels: [1240, 1024, 778, 480],
         navigation: {
-				keyboardNavigation:"on",
-				keyboard_direction: "vertical",
-				mouseScrollNavigation:"on",
- 							mouseScrollReverse:"default",
-				onHoverStop:"off",
-				touch:{
-					touchenabled:"on",
-					touchOnDesktop:"off",
-					swipe_threshold: 75,
-					swipe_min_touches: 1,
-					swipe_direction: "vertical",
-					drag_block_vertical: false
-				}
-			}
+                keyboardNavigation:"on",
+                keyboard_direction: "vertical",
+                mouseScrollNavigation:"on",
+                            mouseScrollReverse:"default",
+                onHoverStop:"off",
+                touch:{
+                    touchenabled:"on",
+                    touchOnDesktop:"off",
+                    swipe_threshold: 75,
+                    swipe_min_touches: 1,
+                    swipe_direction: "vertical",
+                    drag_block_vertical: false
+                }
+            }
     });
     
     $('#slider8').revolution(
@@ -699,12 +699,12 @@ $(document).ready(function() {
                 enable: false
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
@@ -717,11 +717,11 @@ $(document).ready(function() {
         spinner: "spinner2",
         delay: 9000,
         stopLoop: "on",
-	    stopAfterLoops: 0,
-	    stopAtSlide: 1,
+        stopAfterLoops: 0,
+        stopAtSlide: 1,
         shadow: 0,
         gridwidth: 1140,
-		gridheight: 641,
+        gridheight: 641,
         carousel: {
                     horizontal_align: 'center',
                     vertical_align: 'center',
@@ -765,12 +765,12 @@ $(document).ready(function() {
                         v_offset: 0
                     },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
@@ -780,96 +780,96 @@ $(document).ready(function() {
     {
         sliderType: "standard",
         sliderLayout:"fullscreen",
-						dottedOverlay:"none",
-						delay:9000,
-						navigation: {
-							keyboardNavigation:"on",
-							keyboard_direction: "horizontal",
-							mouseScrollNavigation:"off",
- 							mouseScrollReverse:"default",
-							onHoverStop:"on",
-							touch:{
-								touchenabled:"on",
-								swipe_threshold: 75,
-								swipe_min_touches: 1,
-								swipe_direction: "horizontal",
-								drag_block_vertical: false
-							}
-							,
-							arrows: {
-								style:"gyges",
-								enable:true,
-								hide_onmobile:false,
-								hide_over:778,
-								hide_onleave:false,
-								tmp:'',
-								left: {
-									h_align:"right",
-									v_align:"bottom",
-									h_offset:40,
-									v_offset:0
-								},
-								right: {
-									h_align:"right",
-									v_align:"bottom",
-									h_offset:0,
-									v_offset:0
-								}
-							}
-							,
-							tabs: {
-								style:"erinyen",
-								enable:true,
-								width:250,
-								height:50,
-								min_width:250,
-								wrapper_padding:0,
-								wrapper_color:"transparent",
-								wrapper_opacity:"0",
-								tmp:'<div class="tp-tab-title">{{title}}</div>',
-								visibleAmount: 4,
-								hide_onmobile: true,
-								hide_under:778,
-								hide_onleave:false,
-								hide_delay:200,
-								direction:"vertical",
-								span:false,
-								position:"inner",
-								space:10,
-								h_align:"right",
-								v_align:"center",
-								h_offset:30,
-								v_offset:0
-							}
-						},
-						viewPort: {
-							enable:true,
-							outof:"pause",
-							visible_area:"80%",
-							presize:false
-						},
-						responsiveLevels:[1240,1024,778,480],
-						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1240,1024,778,480],
-						gridheight:[500,450,400,350],
-						lazyType:"none",
-						shadow:0,
-						spinner: "spinner2",
-						stopLoop:"off",
-						stopAfterLoops:-1,
-						stopAtSlide:-1,
-						shuffle:"off",
-						autoHeight:"off",
-						hideThumbsOnMobile:"off",
-						hideSliderAtLimit:0,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:0,
-						debugMode:false,
-						fallbacks: {
-							simplifyAll:"off",
-							nextSlideOnWindowFocus:"off",
-							disableFocusListener:false,
-						}    
+                        dottedOverlay:"none",
+                        delay:9000,
+                        navigation: {
+                            keyboardNavigation:"on",
+                            keyboard_direction: "horizontal",
+                            mouseScrollNavigation:"off",
+                            mouseScrollReverse:"default",
+                            onHoverStop:"on",
+                            touch:{
+                                touchenabled:"on",
+                                swipe_threshold: 75,
+                                swipe_min_touches: 1,
+                                swipe_direction: "horizontal",
+                                drag_block_vertical: false
+                            }
+                            ,
+                            arrows: {
+                                style:"gyges",
+                                enable:true,
+                                hide_onmobile:false,
+                                hide_over:778,
+                                hide_onleave:false,
+                                tmp:'',
+                                left: {
+                                    h_align:"right",
+                                    v_align:"bottom",
+                                    h_offset:40,
+                                    v_offset:0
+                                },
+                                right: {
+                                    h_align:"right",
+                                    v_align:"bottom",
+                                    h_offset:0,
+                                    v_offset:0
+                                }
+                            }
+                            ,
+                            tabs: {
+                                style:"erinyen",
+                                enable:true,
+                                width:250,
+                                height:50,
+                                min_width:250,
+                                wrapper_padding:0,
+                                wrapper_color:"transparent",
+                                wrapper_opacity:"0",
+                                tmp:'<div class="tp-tab-title">{{title}}</div>',
+                                visibleAmount: 4,
+                                hide_onmobile: true,
+                                hide_under:778,
+                                hide_onleave:false,
+                                hide_delay:200,
+                                direction:"vertical",
+                                span:false,
+                                position:"inner",
+                                space:10,
+                                h_align:"right",
+                                v_align:"center",
+                                h_offset:30,
+                                v_offset:0
+                            }
+                        },
+                        viewPort: {
+                            enable:true,
+                            outof:"pause",
+                            visible_area:"80%",
+                            presize:false
+                        },
+                        responsiveLevels:[1240,1024,778,480],
+                        visibilityLevels:[1240,1024,778,480],
+                        gridwidth:[1240,1024,778,480],
+                        gridheight:[500,450,400,350],
+                        lazyType:"none",
+                        shadow:0,
+                        spinner: "spinner2",
+                        stopLoop:"off",
+                        stopAfterLoops:-1,
+                        stopAtSlide:-1,
+                        shuffle:"off",
+                        autoHeight:"off",
+                        hideThumbsOnMobile:"off",
+                        hideSliderAtLimit:0,
+                        hideCaptionAtLimit:0,
+                        hideAllCaptionAtLilmit:0,
+                        debugMode:false,
+                        fallbacks: {
+                            simplifyAll:"off",
+                            nextSlideOnWindowFocus:"off",
+                            disableFocusListener:false,
+                        }    
     });
     $('#slider11').revolution({
         sliderType:"carousel",
@@ -908,29 +908,29 @@ $(document).ready(function() {
             }
         },
         carousel: {
-							border_radius: "0",
-							padding_top: "0",
-							padding_bottom: "0",
-							maxRotation: 10,
-							vary_rotation: "on",
-							minScale: 25,
-							vary_scale: "on",
-							horizontal_align: "center",
-							vertical_align: "center",
-							fadeout: "on",
-							vary_fade: "on",
-							maxVisibleItems: 3,
-							infinity: "on",
-							space: -150,
-							stretch: "off"
-						}
+                            border_radius: "0",
+                            padding_top: "0",
+                            padding_bottom: "0",
+                            maxRotation: 10,
+                            vary_rotation: "on",
+                            minScale: 25,
+                            vary_scale: "on",
+                            horizontal_align: "center",
+                            vertical_align: "center",
+                            fadeout: "on",
+                            vary_fade: "on",
+                            maxVisibleItems: 3,
+                            infinity: "on",
+                            space: -150,
+                            stretch: "off"
+                        }
     });
     
     if ($("#slider12").length) {
         var tpj = jQuery;
-		var slider12 = jQuery('#slider12').show().revolution({
-	 
-	    sliderType: "standard",
+        var slider12 = jQuery('#slider12').show().revolution({
+     
+        sliderType: "standard",
         sliderLayout: "fullwidth",
         spinner:"off",
         delay: 9000,
@@ -943,79 +943,79 @@ $(document).ready(function() {
                 enable: false
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
         } 
-	 
-	});
-	RsFilmstripAddOn(tpj, slider12, "style/revolution/revolution-addons/filmstrip", false);
+     
+    });
+    RsFilmstripAddOn(tpj, slider12, "style/revolution/revolution-addons/filmstrip", false);
     }
     $('#slider13').revolution(
     {
         sliderType: "standard",
         sliderLayout:"auto",
-			dottedOverlay:"none",
-			delay:9000,
-			navigation: {
-				keyboardNavigation:"off",
-				keyboard_direction: "horizontal",
-				mouseScrollNavigation:"off",
- 							mouseScrollReverse:"default",
-				onHoverStop:"off",
-				touch:{
-					touchenabled:"on",
-					touchOnDesktop:"off",
-					swipe_threshold: 75,
-					swipe_min_touches: 1,
-					swipe_direction: "horizontal",
-					drag_block_vertical: false
-				}
-				,
-				arrows: {
-					style:"metis",
-					enable:true,
-					hide_onmobile:true,
-					hide_onleave:false,
-					tmp:'',
-					left: {
-						h_align:"left",
-						v_align:"center",
-						h_offset:0,
-						v_offset:0
-					},
-					right: {
-						h_align:"right",
-						v_align:"center",
-						h_offset:0,
-						v_offset:0
-					}
-				}
-			},
-			responsiveLevels:[1240,1024,778,480],
-			visibilityLevels:[1240,1024,778,480],
-			gridwidth: [1140,1200,1000,480], 
-			gridheight: [700,900,700,700],
-			spinner: "spinner2",
-			autoHeight:"off",
-			disableProgressBar:"on",
-			hideThumbsOnMobile:"off",
-			hideSliderAtLimit:0,
-			hideCaptionAtLimit:0,
-			hideAllCaptionAtLilmit:0,
-			debugMode:false 
+            dottedOverlay:"none",
+            delay:9000,
+            navigation: {
+                keyboardNavigation:"off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation:"off",
+                            mouseScrollReverse:"default",
+                onHoverStop:"off",
+                touch:{
+                    touchenabled:"on",
+                    touchOnDesktop:"off",
+                    swipe_threshold: 75,
+                    swipe_min_touches: 1,
+                    swipe_direction: "horizontal",
+                    drag_block_vertical: false
+                }
+                ,
+                arrows: {
+                    style:"metis",
+                    enable:true,
+                    hide_onmobile:true,
+                    hide_onleave:false,
+                    tmp:'',
+                    left: {
+                        h_align:"left",
+                        v_align:"center",
+                        h_offset:0,
+                        v_offset:0
+                    },
+                    right: {
+                        h_align:"right",
+                        v_align:"center",
+                        h_offset:0,
+                        v_offset:0
+                    }
+                }
+            },
+            responsiveLevels:[1240,1024,778,480],
+            visibilityLevels:[1240,1024,778,480],
+            gridwidth: [1140,1200,1000,480], 
+            gridheight: [700,900,700,700],
+            spinner: "spinner2",
+            autoHeight:"off",
+            disableProgressBar:"on",
+            hideThumbsOnMobile:"off",
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            debugMode:false 
     });
     if ($("#slider14").length) {
         var tpj = jQuery;
-		var slider14 = jQuery('#slider14').show().revolution({
-	 
-	    sliderType: "standard",
+        var slider14 = jQuery('#slider14').show().revolution({
+     
+        sliderType: "standard",
         sliderLayout: "fullscreen",
         spinner: "spinner2",
         delay: 9000,
@@ -1049,10 +1049,10 @@ $(document).ready(function() {
                 v_offset: 20
             }
         }
-	 
-	});
-	RsTypewriterAddOn(tpj, slider14);
-	}	
+     
+    });
+    RsTypewriterAddOn(tpj, slider14);
+    }   
     $('#slider15').revolution(
     {
         sliderType: "standard",
@@ -1061,19 +1061,19 @@ $(document).ready(function() {
         delay: 9000,
         shadow: 0,
         gridwidth:[1140, 1024, 778, 480],
-		gridheight:[600, 525, 400, 400],
+        gridheight:[600, 525, 400, 400],
         responsiveLevels: [1240, 1024, 778, 480],
         navigation: {
             arrows: {
                 enable: false
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
@@ -1081,9 +1081,9 @@ $(document).ready(function() {
     });
     if ($("#slider16").length) {
         var tpj = jQuery;
-		var slider16 = jQuery('#slider16').show().revolution({
-	 
-	    sliderType: "standard",
+        var slider16 = jQuery('#slider16').show().revolution({
+     
+        sliderType: "standard",
         sliderLayout: "fullscreen",
         spinner:"off",
         delay: 9000,
@@ -1095,32 +1095,32 @@ $(document).ready(function() {
                 enable: false
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: false
             }
         } 
-	 
-	});
-	RsFilmstripAddOn(tpj, slider16, "style/revolution/revolution-addons/filmstrip", false);
+     
+    });
+    RsFilmstripAddOn(tpj, slider16, "style/revolution/revolution-addons/filmstrip", false);
     }
     if ($("#slider17").length) {
         var tpj = jQuery;
-		var slider17 = jQuery('#slider17').show().revolution({
-	 
-	    sliderType: "standard",
+        var slider17 = jQuery('#slider17').show().revolution({
+     
+        sliderType: "standard",
         sliderLayout: "fullscreen",
         fullScreenOffsetContainer: ".navbar:not(.fixed)",
         spinner: "spinner2",
         delay: 9000,
         shadow: 0,
         gridwidth:[1140, 1024, 778, 480],
-		gridheight:[600, 525, 400, 400],
+        gridheight:[600, 525, 400, 400],
         responsiveLevels: [1240, 1024, 778, 480],
         navigation: {
             arrows: {
@@ -1131,12 +1131,12 @@ $(document).ready(function() {
                 tmp: ''
             },
             touch: { 
-		        touchenabled: 'on',
-		        swipe_threshold: 75,
-		        swipe_min_touches: 1,
-		        swipe_direction: 'horizontal',
-		        drag_block_vertical: true		 
-		    },
+                touchenabled: 'on',
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: 'horizontal',
+                drag_block_vertical: true        
+            },
             bullets: {
                 enable: true,
                 style: 'zeus',
@@ -1150,19 +1150,19 @@ $(document).ready(function() {
                 v_offset: 20
             }
         }
-	 
-	});
-	RsTypewriterAddOn(tpj, slider17);
-	}
+     
+    });
+    RsTypewriterAddOn(tpj, slider17);
+    }
     /*-----------------------------------------------------------------------------------*/
-    /*	INSTAGRAM
+    /*  INSTAGRAM
     /*-----------------------------------------------------------------------------------*/
     var instagramFeed = new Instafeed({
         target: 'instafeed',
         get: 'user',
         limit: 10,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+        userId: 3119606101,
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="item col-1-5"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1176,8 +1176,8 @@ $(document).ready(function() {
         target: 'instafeed2',
         get: 'user',
         limit: 6,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+        userId: 3119606101,
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="item col-6 col-sm-4 col-md-2"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1191,8 +1191,8 @@ $(document).ready(function() {
         target: 'instafeed3',
         get: 'user',
         limit: 10,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+        userId: 3119606101,
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="swiper-slide"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1200,16 +1200,16 @@ $(document).ready(function() {
             var swiperinstagram1 = new Swiper('.swiper-instagram', {
                 slidesPerView: 5,
                 breakpoints: {
-	                520: {
-	                    slidesPerView: 2
-	                },
-	                768: {
-	                    slidesPerView: 3
-	                },
-	                1000: {
-	                    slidesPerView: 4 
-	                }
-	            },
+                    520: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 3
+                    },
+                    1000: {
+                        slidesPerView: 4 
+                    }
+                },
                 spaceBetween: 10,
                 grabCursor: true,
                 pagination: {
@@ -1226,8 +1226,8 @@ $(document).ready(function() {
         target: 'instafeed4',
         get: 'user',
         limit: 10,
-        userId: 8424741498,
-        accessToken: '8424741498.f335485.80c3d38f761f402db6465b16e8e02930',
+        userId: 3119606101,
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="swiper-slide"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1237,22 +1237,22 @@ $(document).ready(function() {
                 spaceBetween: 0,
                 grabCursor: true,
                 breakpoints: {
-	                520: {
-	                    slidesPerView: 2
-	                },
-	                768: {
-	                    slidesPerView: 3
-	                },
-	                1000: {
-	                    slidesPerView: 4 
-	                },
-	                1680: {
-	                    slidesPerView: 5 
-	                },
-	                1920: {
-	                    slidesPerView: 6 
-	                }
-	            },
+                    520: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 3
+                    },
+                    1000: {
+                        slidesPerView: 4 
+                    },
+                    1680: {
+                        slidesPerView: 5 
+                    },
+                    1920: {
+                        slidesPerView: 6 
+                    }
+                },
                 pagination: {
                     el: '.swiper-instagram-pagination2',
                     clickable: true,
@@ -1267,8 +1267,8 @@ $(document).ready(function() {
         target: 'instafeed-widget',
         get: 'user',
         limit: 6,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+        userId: 3119606101,
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="item col-6 col-sm-4"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1279,7 +1279,7 @@ $(document).ready(function() {
         instagramFeed5.run();
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	FLICKR
+    /*  FLICKR
     /*-----------------------------------------------------------------------------------*/
     $('#flickrfeed').jflickrfeed({
         limit: 10,
@@ -1314,9 +1314,9 @@ $(document).ready(function() {
                   1000: {
                       slidesPerView: 4 
                   },
-				  1130: {
+                  1130: {
                       slidesPerView: 5
-              		}
+                    }
              },
             spaceBetween: 10,
             grabCursor: true,
@@ -1334,22 +1334,22 @@ $(document).ready(function() {
         itemTemplate: '<div class="item col-6 col-sm-4"><figure class="overlay overlay3"><a href="{{image_b}}" target="_blank"><span class="bg"></span><img src="{{image_q}}" alt="{{title}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-flickr"></i></div></figcaption></figure></div>',
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	IMAGE ICON HOVER
+    /*  IMAGE ICON HOVER
     /*-----------------------------------------------------------------------------------*/
     $('.overlay > a, .overlay > span').prepend('<span class="bg"></span>');
     /*-----------------------------------------------------------------------------------*/
-    /*	COUNTDOWN
-	/*-----------------------------------------------------------------------------------*/
+    /*  COUNTDOWN
+    /*-----------------------------------------------------------------------------------*/
     $(".countdown").countdown();
     /*-----------------------------------------------------------------------------------*/
-    /*	COUNTER UP
+    /*  COUNTER UP
     /*-----------------------------------------------------------------------------------*/
     $('.counter .value').counterUp({
         delay: 50,
         time: 1000
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	AOS
+    /*  AOS
     /*-----------------------------------------------------------------------------------*/
     AOS.init({
         easing: 'ease-in-out-sine',
@@ -1357,16 +1357,16 @@ $(document).ready(function() {
         once: true
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	COCOEN
+    /*  COCOEN
     /*-----------------------------------------------------------------------------------*/
-	$('.cocoen').cocoen();
+    $('.cocoen').cocoen();
     /*-----------------------------------------------------------------------------------*/
-    /*	PLYR
+    /*  PLYR
     /*-----------------------------------------------------------------------------------*/
     plyr.setup('.js-player');
     /*-----------------------------------------------------------------------------------*/
-    /*	PROGRESSBAR
-	/*-----------------------------------------------------------------------------------*/
+    /*  PROGRESSBAR
+    /*-----------------------------------------------------------------------------------*/
     var $pcircle = $('.progressbar.full-circle');
     var $pline = $('.progressbar.line');
 
@@ -1418,7 +1418,7 @@ $(document).ready(function() {
         })
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	VIDEO WRAPPER
+    /*  VIDEO WRAPPER
     /*-----------------------------------------------------------------------------------*/
     $('.video-wrapper video').backgroundVideo({
         $outerWrap: $('.video-wrapper'),
@@ -1428,14 +1428,14 @@ $(document).ready(function() {
         }
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	TOOLTIP
+    /*  TOOLTIP
     /*-----------------------------------------------------------------------------------*/
     $('.has-tooltip').tooltip();
     $('.has-popover').popover({
         trigger: 'focus'
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	LIGHTGALLERY
+    /*  LIGHTGALLERY
     /*-----------------------------------------------------------------------------------*/
     var $lg = $('.light-gallery');
     $lg.lightGallery({
@@ -1454,7 +1454,7 @@ $(document).ready(function() {
         share: false
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	CUBE
+    /*  CUBE
     /*-----------------------------------------------------------------------------------*/
     var $cubegrid = $('#cube-grid');
     $cubegrid.cubeportfolio({
@@ -1484,20 +1484,20 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         
     });
     var $cubegridlarge = $('#cube-grid-large');
@@ -1527,20 +1527,20 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         $('.cbp-item-load-more .overlay > a, .cbp-item-load-more .overlay > span').prepend('<span class="bg"></span>');
     });
     var $cubegridfull = $('#cube-grid-full');
@@ -1571,20 +1571,20 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         
     });
     var $cubegridfulllarge = $('#cube-grid-full-large');
@@ -1615,20 +1615,20 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         
     });
     var $cubemosaic = $('#cube-grid-mosaic');
@@ -1659,20 +1659,20 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         
     });
     var $cubegrid2 = $('#cube-grid2');
@@ -1703,20 +1703,20 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         
     });
     var $cubegridlarge2 = $('#cube-grid-large2');
@@ -1746,26 +1746,26 @@ $(document).ready(function() {
         $lg.data('lightGallery').destroy(true);
         // reinit the gallery
         $lg.lightGallery({
-	        thumbnail: false,
-	        selector: 'a',
-	        mode: 'lg-fade',
-	        download: false,
-	        autoplayControls: false,
-	        zoom: false,
-	        fullScreen: false,
-	        videoMaxWidth: '1000px',
-	        loop: false,
-	        hash: true,
-	        mousewheel: true,
-	        videojs: true,
-	        share: false
-	    });
+            thumbnail: false,
+            selector: 'a',
+            mode: 'lg-fade',
+            download: false,
+            autoplayControls: false,
+            zoom: false,
+            fullScreen: false,
+            videoMaxWidth: '1000px',
+            loop: false,
+            hash: true,
+            mousewheel: true,
+            videojs: true,
+            share: false
+        });
         $('.cbp-item-load-more .overlay > a, .cbp-item-load-more .overlay > span').prepend('<span class="bg"></span>');
     });
 
     /*-----------------------------------------------------------------------------------*/
-    /*	ISOTOPE GRID
-	/*-----------------------------------------------------------------------------------*/
+    /*  ISOTOPE GRID
+    /*-----------------------------------------------------------------------------------*/
     var $bloggrid = $('.grid .isotope');
     $bloggrid.isotope({
         itemSelector: '.item',
@@ -1794,19 +1794,19 @@ $(document).ready(function() {
         $bloggrid.isotope('layout');
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	PRETTIFY
+    /*  PRETTIFY
     /*-----------------------------------------------------------------------------------*/
     window.prettyPrint && prettyPrint();
 
     /*-----------------------------------------------------------------------------------*/
-    /*	BACKGROUND IMAGE
+    /*  BACKGROUND IMAGE
     /*-----------------------------------------------------------------------------------*/
     $(".bg-image").css('background-image', function() {
         var bg = ('url(' + $(this).data("image-src") + ')');
         return bg;
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	GO TO TOP
+    /*  GO TO TOP
     /*-----------------------------------------------------------------------------------*/
     $.scrollUp({
         scrollName: 'scrollUp',
@@ -1836,13 +1836,13 @@ $(document).ready(function() {
         zIndex: 1001 // Z-Index for the overlay
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	PARALLAX MOBILE
+    /*  PARALLAX MOBILE
     /*-----------------------------------------------------------------------------------*/
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i)) {
         $('.image-wrapper').addClass('mobile');
     }
     /*-----------------------------------------------------------------------------------*/
-    /*	COLLAGEPLUS
+    /*  COLLAGEPLUS
     /*-----------------------------------------------------------------------------------*/
     collage();
 
@@ -1867,8 +1867,8 @@ $(document).ready(function() {
         resizeTimer = setTimeout(collage, 200);
     });
     /*-----------------------------------------------------------------------------------*/
-    /*	ONEPAGE HEADER OFFSET
-    /*-----------------------------------------------------------------------------------*/	
+    /*  ONEPAGE HEADER OFFSET
+    /*-----------------------------------------------------------------------------------*/ 
     var header_height = $('.navbar:not(.banner--clone)').outerHeight();
     var shrinked_header_height = 68;
     var firstStyle = {
@@ -1881,55 +1881,55 @@ $(document).ready(function() {
         'margin-top': '-' + header_height + 'px'
     };
     $('.onepage section:first-of-type').css(secondStyle);
-	/*-----------------------------------------------------------------------------------*/
-    /*	ONEPAGE NAV LINKS
-    /*-----------------------------------------------------------------------------------*/	
-	var empty_a = $('.onepage .navbar ul.navbar-nav a[href="#"]');	
-	empty_a.on('click', function(e) {
-	    e.preventDefault();
-	});
     /*-----------------------------------------------------------------------------------*/
-	/*	ONEPAGE SMOOTH SCROLL
-	/*-----------------------------------------------------------------------------------*/	
-	$(function() {
-	  setTimeout(function() {
-	    if (location.hash) {
-	      window.scrollTo(0, 0);
-	      var target = location.hash.split('#');
-	      smoothScrollTo($('#'+target[1]));
-	    }
-	  }, 1);  
-	  $('a.scroll[href*=#]:not([href=#])').on('click', function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      smoothScrollTo($(this.hash));
-	      return false;
-	    }
-	  });  
-	  function smoothScrollTo(target) {
-	    var target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	    
-	    if (target.length) {
-	      $('html,body').animate({
-	        scrollTop: target.offset().top
-	      }, 1500, 'easeInOutExpo');
-	    }
-	  }
-	});
-	/*-----------------------------------------------------------------------------------*/
-    /*	FOOTER REVEAL
+    /*  ONEPAGE NAV LINKS
+    /*-----------------------------------------------------------------------------------*/ 
+    var empty_a = $('.onepage .navbar ul.navbar-nav a[href="#"]');  
+    empty_a.on('click', function(e) {
+        e.preventDefault();
+    });
     /*-----------------------------------------------------------------------------------*/
-	if ( $('.footer-reveal').length ) {
-		$('.footer-reveal').footerReveal({
-			shadow: false
-		});
-	}
+    /*  ONEPAGE SMOOTH SCROLL
+    /*-----------------------------------------------------------------------------------*/ 
+    $(function() {
+      setTimeout(function() {
+        if (location.hash) {
+          window.scrollTo(0, 0);
+          var target = location.hash.split('#');
+          smoothScrollTo($('#'+target[1]));
+        }
+      }, 1);  
+      $('a.scroll[href*=#]:not([href=#])').on('click', function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          smoothScrollTo($(this.hash));
+          return false;
+        }
+      });  
+      function smoothScrollTo(target) {
+        var target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1500, 'easeInOutExpo');
+        }
+      }
+    });
     /*-----------------------------------------------------------------------------------*/
-    /*	PAGE LOADING
+    /*  FOOTER REVEAL
     /*-----------------------------------------------------------------------------------*/
-	$('.page-loading').delay(350).fadeOut('slow');
+    if ( $('.footer-reveal').length ) {
+        $('.footer-reveal').footerReveal({
+            shadow: false
+        });
+    }
+    /*-----------------------------------------------------------------------------------*/
+    /*  PAGE LOADING
+    /*-----------------------------------------------------------------------------------*/
+    $('.page-loading').delay(350).fadeOut('slow');
     $('.page-loading .status').fadeOut('slow');  
     /*-----------------------------------------------------------------------------------*/
-    /*	VANILLA
+    /*  VANILLA
     /*-----------------------------------------------------------------------------------*/
     var myForm;
     myForm = new VanillaForm($("form.vanilla-form")); 
