@@ -1162,7 +1162,7 @@ $(document).ready(function() {
         get: 'user',
         limit: 10,
         userId: 3119606101,
-        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d5a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="item col-1-5"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1177,7 +1177,7 @@ $(document).ready(function() {
         get: 'user',
         limit: 6,
         userId: 3119606101,
-        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d5a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="item col-6 col-sm-4 col-md-2"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1192,7 +1192,7 @@ $(document).ready(function() {
         get: 'user',
         limit: 10,
         userId: 3119606101,
-        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d5a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="swiper-slide"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1227,7 +1227,7 @@ $(document).ready(function() {
         get: 'user',
         limit: 10,
         userId: 3119606101,
-        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d5a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="swiper-slide"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
@@ -1268,7 +1268,7 @@ $(document).ready(function() {
         get: 'user',
         limit: 6,
         userId: 3119606101,
-        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d4a4c5c65fe2b8bacb',
+        accessToken: '3119606101.fd9e3cb.28ae7268e52a49d5a4c5c65fe2b8bacb',
         resolution: 'low_resolution',
         template: '<div class="item col-6 col-sm-4"><figure class="overlay overlay3"><a href="{{link}}" target="_blank"><img src="{{image}}" /><figcaption class="d-flex"><div class="align-self-center mx-auto"><i class="fa fa-instagram"></i></div></figcaption></figure></div>',
         after: function() {
