@@ -2,7 +2,7 @@
     <div class="sub-footer">
       <div class="container inner text-center"> 
         {{-- <img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /> --}}
-        <img src="#" srcset="style/images/logo-footer" alt="" />
+        <img src="{{ asset('style/images/logo-footer.png') }}" alt="" />
         {{-- <h2>Darush Naghash</h2> --}}
         <div class="space25"></div>
         <p>© 2019 DarushNaghash. All rights reserved.</p>
