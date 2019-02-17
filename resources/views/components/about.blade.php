@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <h2 class="section-title mb-30 text-center">Who is Behind?</h2>
-            <figure><img src="style/images/art/about4.jpg" alt=""></figure>
+            <figure><img src="{{ asset('style/images/art/about4.jpg') }}" alt=""></figure>
             <div class="space30"></div>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit, fusce dapibus, tellus ac.</p>
             <blockquote class="bordered">
