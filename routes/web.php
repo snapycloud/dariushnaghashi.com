@@ -3,6 +3,7 @@
 
 Route::get('/', 'Controller@getIndex')->name('index');
 Route::get('/gallery/{slug}', 'Controller@getGalleryBySlug')->name('gallery.slug');
+Route::get('video', 'Controller@getVideos')->name('videos');
 
 Route::get('image/{id}', function($id){
 	$cat = App\Attachment::find($id);

@@ -38,4 +38,16 @@ class Controller extends BaseController
             'gallery' => $gallery
         ]);
     }
+    public function getVideos()
+    {
+        $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
+                        'category', function($q){ 
+                            $q->where('knowledge_base_category_id', '5c6954bd6bf0604b2')->limit(10);
+                        }
+                    )->where('status', 'Published')->orderBy('publish_date', 'ASC')->get();
+
+        return view('video', [
+            'videos' => $videos
+        ]);
+    }
 }
