@@ -6,7 +6,7 @@
 
 @section('body')
 	
-	@include('components.video_wrapper')
+	@include('components.home_video_wrapper')
 
     @each('components.swiper_slide', $jobs, 'job')
 
