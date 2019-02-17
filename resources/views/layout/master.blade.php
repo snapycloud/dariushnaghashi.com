@@ -55,8 +55,8 @@
         <!-- /.navbar-nav -->
         <div class="navbar-divider"></div>
         <ul class="social social-mute social-s">
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCHaki3pWcEJNo2VUaTyoVaw"><i class="fa fa-youtube"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/dariush.naghashi/"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse --> 
