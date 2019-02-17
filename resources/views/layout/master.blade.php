@@ -25,21 +25,29 @@
     <div class="container">
       <div class="navbar-header">
         <div class="navbar-brand">
-          <a href="index.html">
-            <h2>Darush Naghash</h2>
-            {{-- <img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /> --}}
+          <a href="{{ route('index') }}">
+            {{-- <h2>Darush Naghash</h2> --}}
+            <img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" />
           </a></div>
         <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button></div> 
       </div>
       <!-- /.navbar-header -->
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav ml-auto">
-          @isset($menu)
-            @foreach($menu as $item)
-              <li class="nav-item"><a class="nav-link scroll" href="{{ route('gallery.slug', $item->slug)  }}">{{ $item->name }}</a></li>
-            @endforeach
-          @endisset
-
+        <li class="nav-item"><a class="nav-link scroll" href="{{ route('index') }}">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link has-submenu" href="#" id="sm-155044386792801-55" aria-haspopup="true" aria-controls="sm-155044386792801-56" aria-expanded="false">
+            Gallery<span class="sub-arrow"></span><span class="sub-arrow"></span>
+          </a>
+            <ul class="dropdown-menu dropdown-menu-left sm-nowrap" id="sm-155044386792801-56" role="group" aria-hidden="true" aria-labelledby="sm-155044386792801-55" aria-expanded="false" style="width: auto; display: none; top: auto; left: 0px; margin-left: 0px; margin-top: 0px; min-width: 10em; max-width: 30em;">
+              @isset($menu)
+                @foreach($menu as $item)
+                  <li class="nav-item"><a class="nav-link" href="{{ route('gallery.slug', $item->slug)  }}">{{ $item->name }}</a></li>
+                @endforeach
+              @endisset
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link scroll" href="#about">Booking</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
         </ul>

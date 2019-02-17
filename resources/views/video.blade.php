@@ -6,14 +6,16 @@
 
 @section('body')
   
-  <div class="wrapper light-wrapper">
+  <div class="wrapper dark-wrapper">
     <div class="container inner">
 
     	@foreach($videos as $video)
 
-      <p class="lead2 text-center">{{ $video->name }}</p>
+    	<div class="container inner pb-0">
+      <h2 class="section-title text-center">{{ $video->name }}</h2>
+    </div>
       <div class="space30"></div>
-      <div class="tabs-wrapper filtered">
+      <div class="tabs-wrapper">
         <!-- /.nav-tabs -->
         <div class="space10"></div>
         <div class="tab-content">
