@@ -55,8 +55,7 @@
         <!-- /.navbar-nav -->
         <div class="navbar-divider"></div>
         <ul class="social social-mute social-s">
-          <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>
