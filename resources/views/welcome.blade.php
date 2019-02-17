@@ -5,7 +5,9 @@
 @stop
 
 @section('body')
-  
+	
+	@include('components.video_wrapper')
+
     @each('components.swiper_slide', $jobs, 'job')
 
   @include('components.contact')

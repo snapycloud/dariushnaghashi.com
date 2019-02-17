@@ -47,6 +47,7 @@
               @endisset
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link scroll" href="{{ route('videos') }}">Video</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#about">Booking</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
