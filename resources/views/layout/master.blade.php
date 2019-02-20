@@ -26,8 +26,7 @@
       <div class="navbar-header">
         <div class="navbar-brand">
           <a href="{{ route('index') }}">
-            {{-- <h2>Darush Naghash</h2> --}}
-            <img src="#" srcset="{{ asset('style/images/logo-light.png') }} 1x, {{ asset('style/images/logo-light@2x.png') }} 2x" alt="" />
+            <h1>Darush Naghashi</h1>
           </a></div>
         <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button></div> 
       </div>
