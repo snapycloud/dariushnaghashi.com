@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-md-8">
           <div data-aos="fade">
-            <video class="js-player" poster="{{ asset('style/media/swimming.jpg') }}" controls preload="none">
-              <source src="{{ asset('style/media/swimming.mp4') }}" type="video/mp4">
+            <video class="js-player" poster="{{ asset('style/media/video.jpg') }}" controls preload="none">
+              <source src="{{ route('image', $video->attachment->first()->id) }}" type="video/mp4">
             </video>
           </div>
         </div>
