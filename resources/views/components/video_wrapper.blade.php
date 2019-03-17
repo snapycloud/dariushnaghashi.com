@@ -5,8 +5,8 @@
       </video>
       <div class="content-overlay">
         <div class="container text-center">
-          <h2 class="section-title">Video Wrapper</h2>
-          <p class="lead">For better visualization of your company</p>
+          <h2 class="section-title">Dariush Naghashi</h2>
+          <p class="lead">International Photographer</p>
         </div>
         <!-- /.container --> 
       </div>

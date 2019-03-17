@@ -6,7 +6,7 @@
 <meta name="text" content="">
 <meta name="author" content="">
 {{-- <link rel="shortcut icon" href="style/images/favicon.png"> --}}
-<title>Darush Naghash | داریوش نقاش</title>
+<title>Dariush Naghashi | داریوش نقاش</title>
 <link rel="stylesheet" type="text/css" href="{{ asset('style/css/bootstrap.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('style/css/plugins.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('style/revolution/css/settings.css') }}">
