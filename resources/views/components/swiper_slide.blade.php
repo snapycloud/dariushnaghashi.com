@@ -10,6 +10,7 @@
                 <img src="{{ route('image', $item->id) }}" alt="" />
                 <div class="link-wrapper">
                   <div class="link lightbox"><a href="{{ route('image', $item->id) }}"></a></div>
+                  <div class="link lightbox"><a href="#{{$item->id}}"></a></div>
                 </div>
               </div>
               @endforeach
