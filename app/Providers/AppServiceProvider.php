@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-use App\KnowledgeBaseArticle;
+use App\ProductsCategory;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,14 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $menu = KnowledgeBaseArticle::select(['name', 'slug'])->where('deleted', 0)->whereHas(
-            'category', function($q){ 
-                $q->where('knowledge_base_category_id', '5c6705f0dc1ec1ccd');
-            }
-        )->where('status', 'Published')->orderBy('publish_date', 'DESC')->get();
-
-        
-
+        $menu = ProductsCategory::select(['name', 'slug'])->where('deleted', 0)->get();
         View::share('menu', $menu);
     }
 }

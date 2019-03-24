@@ -14,17 +14,19 @@ class Controller extends BaseController
 
     public function getIndex()
     {
-    	$galleries = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
-			            'category', function($q){ 
-			                $q->where('knowledge_base_category_id', '5c6705f0dc1ec1ccd')->limit(10);
+    	$galleries = ProductsCategory::where('deleted', 0)->whereHas(
+			            'product', function($q){ 
+			                $q->limit(10);
 			            }
-			        )->where('status', 'Published')->orderBy('publish_date', 'ASC')->get();
+			        )->get();
 
-        $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
-                        'category', function($q){ 
-                            $q->where('knowledge_base_category_id', '5c6954bd6bf0604b2')->limit(10);
-                        }
-                    )->where('status', 'Published')->orderBy('publish_date', 'ASC')->first();
+        // $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
+        //                 'category', function($q){ 
+        //                     $q->where('knowledge_base_category_id', '5c6954bd6bf0604b2')->limit(10);
+        //                 }
+        //             )->where('status', 'Published')->orderBy('publish_date', 'ASC')->first();
+
+        $videos = false;
 
     	return view('index', [
     		'galleries' => $galleries, 'video' => $videos
