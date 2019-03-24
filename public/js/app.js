@@ -1804,7 +1804,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.shopcard {\n    position: absolute;\n    right: 50px\n}\n", ""]);
+exports.push([module.i, "\n.shopcard {\n    position: absolute;\n    right: 50px;\n    bottom: 15px;\n    opacity: 0.9;\n}\n", ""]);
 
 // exports
 

@@ -34,6 +34,8 @@
 <style>
     .shopcard {
         position: absolute;
-        right: 50px
+        right: 50px;
+        bottom: 15px;
+        opacity: 0.9;
     }
 </style>
