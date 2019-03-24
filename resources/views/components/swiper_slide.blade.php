@@ -5,9 +5,9 @@
         <div class="swiper-container-wrapper swiper-auto light-gallery">
           <div class="swiper-container text-center">
             <div class="swiper-wrapper">
-              @foreach($gallery->attachment as $item)
+              @foreach($gallery->product as $item)
               <div class="swiper-slide">
-                <img src="{{ route('image', $item->id) }}" alt="" />
+                <img src="{{ route('image', $item->cover_id) }}" alt="" />
                 <div class="link-wrapper">
                   <div class="link lightbox"><a href="{{ route('image', $item->id) }}"></a></div>
                   <div class="link lightbox"><a href="#{{$item->id}}"></a></div>
