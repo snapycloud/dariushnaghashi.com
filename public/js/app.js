@@ -1769,11 +1769,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('id is ' + this.id);
   },
-  props: ['id'],
+  data: function data() {
+    return {
+      message: 'Price: ',
+      id: ''
+    };
+  },
+  props: ['id', 'price'],
   methods: {
     addToCard: function addToCard() {
       console.log('clicked id: ' + this.id);
@@ -20055,20 +20063,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "shopcard" }, [
-    _c(
-      "a",
-      {
-        staticClass: "btn btn-full-rounded hover has-tooltip",
-        attrs: { href: "#" },
-        on: {
-          click: function($event) {
-            $event.preventDefault()
-            return _vm.addToCard($event)
-          }
-        }
-      },
-      [_vm._v("Add to Cart")]
-    )
+    _vm._v(' " + price"\n    >Add to Cart')
   ])
 }
 var staticRenderFns = []
