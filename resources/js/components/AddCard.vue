@@ -1,15 +1,17 @@
 <template>
     <div class="shopcard">
-        <a href="#" @click.prevent="addToCard" class="btn btn-full-rounded hover has-tooltip" 
-        data-placement="top" v-data-original-title="message + ': ' + price"
-        >Add to Cart</a>
+        <button @click.prevent="addToCard" 
+        class="btn btn-full-rounded hover has-tooltip" 
+        data-placement="top" 
+        v-data-original-title="message"
+        >Add to Cart</button>
     </div>
 </template>
 
 <script>
     export default {
         mounted() {
-            console.log('id is ' + this.id)
+            console.log('id is ' + this.id + " " + price)
         },
         data: function () {
             return {
