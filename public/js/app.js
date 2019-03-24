@@ -1775,7 +1775,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('id is ' + this.id + " " + price);
+    console.log('id is ' + this.id + " " + this.price);
   },
   data: function data() {
     return {
@@ -1785,7 +1785,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['id', 'price'],
   methods: {
     addToCard: function addToCard() {
-      console.log('clicked id: ' + this.id);
+      console.log('id is ' + this.id + " " + this.price);
     }
   }
 });

@@ -11,7 +11,7 @@
 <script>
     export default {
         mounted() {
-            console.log('id is ' + this.id + " " + price)
+            console.log('id is ' + this.id + " " + this.price)
         },
         data: function () {
             return {
@@ -25,7 +25,7 @@
 
         methods: {
             addToCard(){
-                console.log('clicked id: ' + this.id);
+                console.log('id is ' + this.id + " " + this.price)
             }
         }
     }
