@@ -7,6 +7,7 @@
 <meta name="author" content="">
 {{-- <link rel="shortcut icon" href="style/images/favicon.png"> --}}
 <title>Dariush Naghashi | داریوش نقاش</title>
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('style/css/bootstrap.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('style/css/plugins.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('style/revolution/css/settings.css') }}">
@@ -20,6 +21,7 @@
 <link href='https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i' rel='stylesheet' type='text/css'>
 </head>
 <body class="onepage" data-spy="scroll" data-target=".navbar">
+  <div id="app">
 <div class="content-wrapper">
   <nav class="navbar transparent absolute nav-wrapper-dark inverse-text navbar-expand-lg">
     <div class="container">
@@ -72,6 +74,8 @@
 
   @include('layout.footer')
 </div>
+
+</div>
 <!-- /.content-wrapper --> 
 <script src="{{ asset('style/js/jquery.min.js') }}"></script> 
 <script src="{{ asset('style/js/popper.min.js') }}"></script> 
@@ -92,5 +96,6 @@
 <script src="{{ asset('style/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>-->
 <script src="{{ asset('style/js/plugins.js') }}"></script> 
 <script src="{{ asset('style/js/scripts.js') }}"></script>
+<script src="{{ asset('/js/app.js') }}"></script>
 </body>
 </html>

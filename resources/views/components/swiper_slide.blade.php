@@ -9,8 +9,9 @@
               <div class="swiper-slide">
                 <img src="{{ route('image', $item->cover_id) }}" alt="" />
                 <div class="link-wrapper">
+                  <a href="#" title="" class="hover has-tooltip" data-placement="top" data-original-title="Donec ullamcorper nulla non metus auctor.">Tooltip on top</a>
+
                   <div class="link lightbox"><a href="{{ route('image', $item->id) }}"></a></div>
-                  <div class="link lightbox"><a href="#{{$item->id}}"></a></div>
                 </div>
               </div>
               @endforeach
