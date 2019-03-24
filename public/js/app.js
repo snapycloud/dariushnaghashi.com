@@ -1777,8 +1777,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      message: 'Price: ',
-      id: ''
+      message: 'Price: '
     };
   },
   props: ['id', 'price'],
@@ -20063,7 +20062,28 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "shopcard" }, [
-    _vm._v(' " + price"\n    >Add to Cart')
+    _c(
+      "a",
+      {
+        directives: [
+          {
+            name: "data-original-title",
+            rawName: "v-data-original-title",
+            value: _vm.message + ": " + _vm.price,
+            expression: "message + ': ' + price"
+          }
+        ],
+        staticClass: "btn btn-full-rounded hover has-tooltip",
+        attrs: { href: "#", "data-placement": "top" },
+        on: {
+          click: function($event) {
+            $event.preventDefault()
+            return _vm.addToCard($event)
+          }
+        }
+      },
+      [_vm._v("Add to Cart")]
+    )
   ])
 }
 var staticRenderFns = []

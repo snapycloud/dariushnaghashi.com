@@ -1,7 +1,7 @@
 <template>
     <div class="shopcard">
         <a href="#" @click.prevent="addToCard" class="btn btn-full-rounded hover has-tooltip" 
-        data-placement="top" v-data-original-title="message + " " + price"
+        data-placement="top" v-data-original-title="message + ': ' + price"
         >Add to Cart</a>
     </div>
 </template>
@@ -13,8 +13,7 @@
         },
         data: function () {
             return {
-              message: 'Price: ',
-              id: '',
+              message: 'Price: '
             }
          },
 
