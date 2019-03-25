@@ -12,7 +12,7 @@
 <script>
     export default {
         mounted() {
-            console.log('id is ' + this.id + " " + this.price)
+            this.message += this.price + " IIR"
         },
         data: function () {
             return {
@@ -27,7 +27,7 @@
 
         methods: {
             addToCard(){
-                console.log('id is ' + this.id + " " + this.price)
+                this.selected = true
             }
         }
     }
