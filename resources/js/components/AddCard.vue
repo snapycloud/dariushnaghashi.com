@@ -1,4 +1,9 @@
 <template>
+    <div>
+        <div v-if="selected" class="alert alert-success alert-dismissible fade show" role="alert"> This Item Added To Shopping List  <a @click.prevent="getShopCard" class="alert-link">Go Pay</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+          </div>
+
     <div class="shopcard">
         <button @click.prevent="addToCard" 
         class="btn btn-full-rounded hover has-tooltip" 
@@ -7,11 +12,7 @@
         v-if="!selected"
         >Add to Cart</button>
 
-        <button @click.prevent="confirmedItem" 
-        class="btn btn-red btn-full-rounded" 
-        :v-if="confirmed"
-        >Pay</button>
-
+    </div>
     </div>
 </template>
 
@@ -23,8 +24,7 @@
         data: function () {
             return {
               message: 'Price: ',
-              selected: false,
-              confirmed: false,
+              selected: false
             }
          },
 
@@ -34,8 +34,9 @@
 
         methods: {
             addToCard(){
-                this.selected = true
-                this.confirmed = true
+                if(this.selected == false){
+                    this.selected = true
+                }
             },
             getShopCard(){
                 return window.location = "https://dariushnaghashi.com/store/card/"

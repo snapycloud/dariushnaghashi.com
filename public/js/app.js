@@ -1780,6 +1780,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.message += this.price + " IIR";
@@ -1787,15 +1788,15 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       message: 'Price: ',
-      selected: false,
-      confirmed: false
+      selected: false
     };
   },
   props: ['id', 'price'],
   methods: {
     addToCard: function addToCard() {
-      this.selected = true;
-      this.confirmed = true;
+      if (this.selected == false) {
+        this.selected = true;
+      }
     },
     getShopCard: function getShopCard() {
       return window.location = "https://dariushnaghashi.com/store/card/";
@@ -20076,44 +20077,77 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "shopcard" }, [
-    !_vm.selected
+  return _c("div", [
+    _vm.selected
       ? _c(
-          "button",
+          "div",
           {
-            staticClass: "btn btn-full-rounded hover has-tooltip",
-            attrs: {
-              "data-placement": "top",
-              "data-original-title": _vm.message
-            },
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                return _vm.addToCard($event)
-              }
-            }
+            staticClass: "alert alert-success alert-dismissible fade show",
+            attrs: { role: "alert" }
           },
-          [_vm._v("Add to Cart")]
+          [
+            _vm._v(" This Item Added To Shopping List  "),
+            _c(
+              "a",
+              {
+                staticClass: "alert-link",
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.getShopCard($event)
+                  }
+                }
+              },
+              [_vm._v("Go Pay")]
+            ),
+            _vm._v(" "),
+            _vm._m(0)
+          ]
         )
       : _vm._e(),
     _vm._v(" "),
-    _c(
-      "button",
-      {
-        staticClass: "btn btn-red btn-full-rounded",
-        attrs: { "v-if": _vm.confirmed },
-        on: {
-          click: function($event) {
-            $event.preventDefault()
-            return _vm.confirmedItem($event)
-          }
-        }
-      },
-      [_vm._v("Pay")]
-    )
+    _c("div", { staticClass: "shopcard" }, [
+      !_vm.selected
+        ? _c(
+            "button",
+            {
+              staticClass: "btn btn-full-rounded hover has-tooltip",
+              attrs: {
+                "data-placement": "top",
+                "data-original-title": _vm.message
+              },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.addToCard($event)
+                }
+              }
+            },
+            [_vm._v("Add to Cart")]
+          )
+        : _vm._e()
+    ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "close",
+        attrs: {
+          type: "button",
+          "data-dismiss": "alert",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+    )
+  }
+]
 render._withStripped = true
 
 
