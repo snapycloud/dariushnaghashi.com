@@ -1781,6 +1781,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.message += this.price + " IIR";
@@ -1795,7 +1802,13 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     addToCard: function addToCard() {
       if (this.selected == false) {
-        this.selected = true;
+        $('.has-tooltip').tooltip("hide");
+        this.selected = true; // add to backend
+      }
+    },
+    removeOfCard: function removeOfCard() {
+      if (this.selected == true) {
+        this.selected = false; // remove form backend
       }
     },
     getShopCard: function getShopCard() {
@@ -20086,7 +20099,7 @@ var render = function() {
             attrs: { role: "alert" }
           },
           [
-            _vm._v(" This Item Added To Shopping List  "),
+            _vm._v("\n        Added To Shopping List  \n        "),
             _c(
               "a",
               {
@@ -20124,6 +20137,22 @@ var render = function() {
               }
             },
             [_vm._v("Add to Cart")]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.selected
+        ? _c(
+            "button",
+            {
+              staticClass: "btn btn-full-rounded btn-full-rounded",
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.removeOfCard($event)
+                }
+              }
+            },
+            [_vm._v("Remove Of Cart")]
           )
         : _vm._e()
     ])
