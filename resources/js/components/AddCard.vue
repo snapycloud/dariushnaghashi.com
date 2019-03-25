@@ -4,8 +4,14 @@
         class="btn btn-full-rounded hover has-tooltip" 
         data-placement="top" 
         :data-original-title="message"
-        :disabled="selected"
+        v-if="selected"
         >Add to Cart</button>
+
+        <button @click.prevent="confirmedItem" 
+        class="btn btn-red btn-full-rounded" 
+        :v-if="!selected"
+        >Pay</button>
+
     </div>
 </template>
 
@@ -17,7 +23,8 @@
         data: function () {
             return {
               message: 'Price: ',
-              selected: false
+              selected: false,
+              confirmed: false,
             }
          },
 
@@ -28,6 +35,9 @@
         methods: {
             addToCard(){
                 this.selected = true
+            },
+            getShopCard(){
+                return window.location = "https://dariushnaghashi.com/store/card/"
             }
         }
     }
