@@ -9,7 +9,7 @@
               <div class="swiper-slide">
                 <img src="{{ route('image', $item->cover_id) }}" alt="" />
                 <div class="link-wrapper">
-                  <add-card id="{{ $item->id }}" price="{{ $item->costPrice }}" ></add-card>
+                  <add-card v-bind:id="{{ $item->id }}" v-bind:price="{{ $item->costPrice }}" ></add-card>
 
                   <div class="link lightbox"><a href="{{ route('image', $item->cover_id) }}"></a></div>
                 </div>
