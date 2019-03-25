@@ -4,12 +4,12 @@
         class="btn btn-full-rounded hover has-tooltip" 
         data-placement="top" 
         :data-original-title="message"
-        v-if="selected"
+        v-if="!selected"
         >Add to Cart</button>
 
         <button @click.prevent="confirmedItem" 
         class="btn btn-red btn-full-rounded" 
-        :v-if="!selected"
+        :v-if="confirmed"
         >Pay</button>
 
     </div>
@@ -35,6 +35,7 @@
         methods: {
             addToCard(){
                 this.selected = true
+                this.confirmed = true
             },
             getShopCard(){
                 return window.location = "https://dariushnaghashi.com/store/card/"

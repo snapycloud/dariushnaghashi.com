@@ -1795,6 +1795,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     addToCard: function addToCard() {
       this.selected = true;
+      this.confirmed = true;
     },
     getShopCard: function getShopCard() {
       return window.location = "https://dariushnaghashi.com/store/card/";
@@ -20076,7 +20077,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "shopcard" }, [
-    _vm.selected
+    !_vm.selected
       ? _c(
           "button",
           {
@@ -20100,7 +20101,7 @@ var render = function() {
       "button",
       {
         staticClass: "btn btn-red btn-full-rounded",
-        attrs: { "v-if": !_vm.selected },
+        attrs: { "v-if": _vm.confirmed },
         on: {
           click: function($event) {
             $event.preventDefault()
