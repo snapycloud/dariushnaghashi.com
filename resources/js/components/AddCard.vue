@@ -3,7 +3,8 @@
         <button @click.prevent="addToCard" 
         class="btn btn-full-rounded hover has-tooltip" 
         data-placement="top" 
-        v-data-original-title="message"
+        v-bind-data-original-title="message"
+        v-bind:disabled="selected"
         >Add to Cart</button>
     </div>
 </template>
@@ -15,7 +16,8 @@
         },
         data: function () {
             return {
-              message: 'Price: '
+              message: 'Price: ',
+              selected: false
             }
          },
 

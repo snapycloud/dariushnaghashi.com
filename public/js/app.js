@@ -1773,13 +1773,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('id is ' + this.id + " " + this.price);
   },
   data: function data() {
     return {
-      message: 'Price: '
+      message: 'Price: ',
+      selected: false
     };
   },
   props: ['id', 'price'],
@@ -20069,14 +20071,14 @@ var render = function() {
       {
         directives: [
           {
-            name: "data-original-title",
-            rawName: "v-data-original-title",
+            name: "bind-data-original-title",
+            rawName: "v-bind-data-original-title",
             value: _vm.message,
             expression: "message"
           }
         ],
         staticClass: "btn btn-full-rounded hover has-tooltip",
-        attrs: { "data-placement": "top" },
+        attrs: { "data-placement": "top", disabled: _vm.selected },
         on: {
           click: function($event) {
             $event.preventDefault()
