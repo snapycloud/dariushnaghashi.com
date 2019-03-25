@@ -4,7 +4,7 @@
             <li>
                 <a href="#" class="">
                     <i class="fa fa-shopping-bag">
-                        <span class="badge badge-light">{{count}}</span>
+                        <span class="badge badge-cutsom">{{count}}</span>
                     </i>
                 </a>
             </li>
@@ -27,3 +27,8 @@
         }
     }
 </script>
+<style>
+    .badge-cutsom {
+        font-size: 20px
+    }
+</style>
