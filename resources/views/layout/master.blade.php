@@ -53,7 +53,6 @@
           <li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
         </ul>
-        <div class="navbar-divider"></div>
         <shop-card></shop-card>
         <!-- /.navbar-nav -->
         <div class="navbar-divider"></div>
