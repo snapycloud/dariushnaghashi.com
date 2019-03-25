@@ -20144,7 +20144,7 @@ var render = function() {
         ? _c(
             "button",
             {
-              staticClass: "btn btn-full-rounded btn-full-rounded",
+              staticClass: "btn btn-red btn-full-rounded btn-full-rounded",
               on: {
                 click: function($event) {
                   $event.preventDefault()

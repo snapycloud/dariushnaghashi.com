@@ -15,7 +15,7 @@
         >Add to Cart</button>
 
         <button @click.prevent="removeOfCard" 
-        class="btn btn-full-rounded btn-full-rounded" 
+        class="btn btn-red btn-full-rounded btn-full-rounded" 
         v-if="selected"
         >Remove Of Cart</button>
 
