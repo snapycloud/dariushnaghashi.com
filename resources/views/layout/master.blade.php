@@ -59,6 +59,7 @@
           <li><a target="_blank" href="https://www.youtube.com/channel/UCHaki3pWcEJNo2VUaTyoVaw"><i class="fa fa-youtube"></i></a></li>
           <li><a target="_blank" href="https://www.instagram.com/dariush.naghashi/"><i class="fa fa-instagram"></i></a></li>
         </ul>
+        <shop-card></shop-card>
       </div>
       <!-- /.navbar-collapse --> 
     </div>

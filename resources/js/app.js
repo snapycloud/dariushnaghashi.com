@@ -21,6 +21,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('add-card', require('./components/AddCard.vue').default);
+Vue.component('shop-card', require('./components/ShopCard.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
