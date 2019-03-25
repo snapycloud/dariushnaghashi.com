@@ -1,8 +1,7 @@
 <template>
-    <div v-if="status">
-        <div class="navbar-divider"></div>
+    <div v-if="!status">
         <ul class="social social-mute social-m">
-          <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+          <li><a href="#" class="btn btn-primary"><span class="badge badge-light">4</span> <i class="fa fa-shopping-bag"></i></a></li>
         </ul>
     </div>
 </template>
