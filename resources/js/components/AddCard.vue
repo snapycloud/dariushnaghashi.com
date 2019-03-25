@@ -3,8 +3,8 @@
         <button @click.prevent="addToCard" 
         class="btn btn-full-rounded hover has-tooltip" 
         data-placement="top" 
-        v-bind-data-original-title="message"
-        v-bind:disabled="selected"
+        :data-original-title="message"
+        :disabled="selected"
         >Add to Cart</button>
     </div>
 </template>

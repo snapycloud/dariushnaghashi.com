@@ -20069,16 +20069,12 @@ var render = function() {
     _c(
       "button",
       {
-        directives: [
-          {
-            name: "bind-data-original-title",
-            rawName: "v-bind-data-original-title",
-            value: _vm.message,
-            expression: "message"
-          }
-        ],
         staticClass: "btn btn-full-rounded hover has-tooltip",
-        attrs: { "data-placement": "top", disabled: _vm.selected },
+        attrs: {
+          "data-placement": "top",
+          "data-original-title": _vm.message,
+          disabled: _vm.selected
+        },
         on: {
           click: function($event) {
             $event.preventDefault()
