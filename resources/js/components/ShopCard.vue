@@ -1,7 +1,13 @@
 <template>
-    <div v-if="!status">
+    <div v-if="status">
         <ul class="social social-mute social-m">
-          <li><a href="#" class="btn btn-primary"><span class="badge badge-light">4</span> <i class="fa fa-shopping-bag"></i></a></li>
+            <li>
+                <a href="#" class="">
+                    <i class="fa fa-shopping-bag">
+                        <span class="badge badge-light">{{count}}</span>
+                    </i>
+                </a>
+            </li>
         </ul>
     </div>
 </template>
@@ -10,7 +16,8 @@
     export default {
         data: function () {
             return {
-              status: false
+              status: false,
+              count: 0
             }
          },
         methods: {
