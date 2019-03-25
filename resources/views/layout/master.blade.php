@@ -53,13 +53,15 @@
           <li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
         </ul>
+        <div class="navbar-divider"></div>
+        <shop-card></shop-card>
         <!-- /.navbar-nav -->
         <div class="navbar-divider"></div>
         <ul class="social social-mute social-s">
           <li><a target="_blank" href="https://www.youtube.com/channel/UCHaki3pWcEJNo2VUaTyoVaw"><i class="fa fa-youtube"></i></a></li>
           <li><a target="_blank" href="https://www.instagram.com/dariush.naghashi/"><i class="fa fa-instagram"></i></a></li>
         </ul>
-        <shop-card></shop-card>
+
       </div>
       <!-- /.navbar-collapse --> 
     </div>

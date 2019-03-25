@@ -1836,7 +1836,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -20229,13 +20228,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.status
-    ? _c("div", [
-        _c("div", { staticClass: "navbar-divider" }),
-        _vm._v(" "),
-        _vm._m(0)
-      ])
-    : _vm._e()
+  return _vm.status ? _c("div", [_vm._m(0)]) : _vm._e()
 }
 var staticRenderFns = [
   function() {
