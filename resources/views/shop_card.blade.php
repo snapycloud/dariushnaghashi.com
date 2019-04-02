@@ -1,11 +1,16 @@
 @extends('layout.master')
 
 @section('header')
-    @include('components.rev_slider_wrapper')
+    <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="style/images/art/bg2.jpg" style="background-image: url(&quot;style/images/art/bg2.jpg&quot;);">
+    <div class="container inner pt-120 pb-120 text-center">
+      <h1 class="heading mb-0">SHOP CARD TEST</h1>
+    </div>
+    <!-- /.container --> 
+  </div>
 @stop
 
 @section('body')
-  	
+  	<div class="container inner">
   <div class="table-cart">
         <table class="table table-responsive-lg mb-0">
           <thead>
@@ -130,7 +135,7 @@
         </div>
         <!-- /column --> 
       </div>
-    
+    </div>
 
     @include('components.contact')
     @include('components.about')
