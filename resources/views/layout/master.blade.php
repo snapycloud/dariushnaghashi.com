@@ -22,11 +22,9 @@
 </head>
 <body class="onepage" data-spy="scroll" data-target=".navbar">
   @if($errors->all())
-  <div class="alert alert-danger" role="alert" style="
-    top: 0px;
-    border-radius: 0px;
-"> اطلاعات وارد شده اشتباه است </div>
-
+<div class="alert alert-danger alert-dismissible fade show" role="alert" style="top: 0px;border-radius: 0px;"> form data is incorect, please check and try.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+          </div>
 @endif
 
 
