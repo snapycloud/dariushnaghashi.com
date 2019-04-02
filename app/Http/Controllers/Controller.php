@@ -28,7 +28,6 @@ class Controller extends BaseController
                         }
                     )->where('status', 'Published')->orderBy('publish_date', 'ASC')->first();
 
-        $videos = false;
 
     	return view('index', [
     		'galleries' => $galleries, 'video' => $videos
@@ -41,8 +40,6 @@ class Controller extends BaseController
         if(!$gallery->count()){
             return abort(404);
         }
-        $gallery->view++;
-        $gallery->save();
 
         return view('gallery', [
             'gallery' => $gallery
