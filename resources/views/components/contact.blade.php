@@ -24,6 +24,17 @@
             <!--/.row -->
             <div class="space30"></div>
             <div class="form-container">
+               @if($errors->any())
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                  {{--   <div class="box small rounded bkg-red color-white  rtl">
+                    <span class="order-number  opacity-07">اطلاعات وارد شده اشتباه است</span>
+                  </div> --}}
+                @endif
+
               <form action="{{ route('booking') }}" method="post">
                 {{ csrf_field() }}
                 <div class="row text-center">
