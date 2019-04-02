@@ -2,7 +2,7 @@
     <div v-if="status">
         <ul class="social social-mute social-m">
             <li>
-                <a href="#" class="">
+                <a href="/shop/card" class="">
                     <i class="fa fa-shopping-bag">
                         <span class="badge badge-cutsom">{{count}}</span>
                     </i>

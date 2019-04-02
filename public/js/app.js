@@ -20514,7 +20514,7 @@ var render = function() {
     ? _c("div", [
         _c("ul", { staticClass: "social social-mute social-m" }, [
           _c("li", [
-            _c("a", { attrs: { href: "#" } }, [
+            _c("a", { attrs: { href: "/shop/card" } }, [
               _c("i", { staticClass: "fa fa-shopping-bag" }, [
                 _c("span", { staticClass: "badge badge-cutsom" }, [
                   _vm._v(_vm._s(_vm.count))
