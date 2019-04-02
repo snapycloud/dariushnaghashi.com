@@ -1853,6 +1853,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.message += this.price + " IIR";
@@ -1952,7 +1954,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.shopcard {\n    position: absolute;\n    right: 0px;\n    bottom: 20px;\n    opacity: 0.9;\n    z-index: 9999;\n}\n.alert {\n    top: 11px;\n    position: absolute;\n    right: 0px;\n    width: 100%;\n    z-index: 9999;\n    color: black !important;\n}\n", ""]);
+exports.push([module.i, "\n.shopcard {\n    position: absolute;\n    right: 0px;\n    bottom: 20px;\n    opacity: 0.9;\n    z-index: 9999;\n}\n.alert {\n    top: 11px;\n    position: absolute;\n    right: 0px;\n    width: 100%;\n    z-index: 9999;\n    color: black !important;\n}\n.alert p {\n    color: black !important;\n}\n", ""]);
 
 // exports
 
@@ -20407,20 +20409,22 @@ var render = function() {
             attrs: { role: "alert" }
           },
           [
-            _vm._v("\n        Added To Shopping List  \n        "),
-            _c(
-              "a",
-              {
-                staticClass: "alert-link",
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.getShopCard($event)
+            _c("p", [
+              _vm._v("Added To Shopping List  \n"),
+              _c(
+                "a",
+                {
+                  staticClass: "alert-link",
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.getShopCard($event)
+                    }
                   }
-                }
-              },
-              [_vm._v("Go Pay")]
-            ),
+                },
+                [_vm._v("Go Pay")]
+              )
+            ]),
             _vm._v(" "),
             _vm._m(0)
           ]

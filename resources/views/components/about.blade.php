@@ -3,29 +3,25 @@
       <div class="container inner">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <h2 class="section-title mb-30 text-center">Who is Behind?</h2>
+            <h2 class="section-title mb-30 text-center">Who is Dariush Naghashi?</h2>
             <figure><img src="{{ asset('style/images/art/about4.jpg') }}" alt=""></figure>
             <div class="space30"></div>
-            <p>Beyond The Lens "Building a Brand You Can Be Proud Of"
-The quickest and easiest way to increase your Brand perceived value is to create professional content (photo or video) that speaks to the character & power of your brand.</p>
+            <p>Have started at 2006 in the field of amateur photography and filming and then moved to professional fitness photography and international sportive film making.</p>
             
-              <p>I know that capturing imagery that best represent your brand is a very important moment in your career... so I take the proper steps to ensure I understand your goals so we can powerfully communicate that through the content we create.</p>
+              <p>Dariush Naghashi has started his professional career with working with the Gorrilla Wear clothing brand and then cooperated with brands such as EvoGen - Optimum - BSN - Cellucor - Tesla - Kevin Levrone and etc. from all around the world.</p>
               
-            <p>It comes with a lot of big decisions but the results are amazing... Instead of new random snap shots or video's with NO meaning, we CREATE meaningful content that instantly improve your ability to attract the right type of clients.</p>
+            <p>Some of Dariush Naghashi's most notable works are his cooperation with EvoGen, cooperation with Hani Rambod the best body building coach in the world, with Jeremy Buendia the 4 times Mr. Olympia champion, with world's professional chamption Hadi Chopan and with Babak Akbarnian, Mohamamd Kashani and etc.</p>
             <p>
-              My personal success as a talent, being featured on .... 
+              My personal success as a talent, being featured on Fitness Photography, International Sportive Film Making
             </p>
 
             <h3>I look forward to the journey!!!</h3>
             <ul class="social social-mute social-s mb-15 text-center">
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/dariush.naghashi/?hl=en"><i class="fa fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/channel/UCHaki3pWcEJNo2VUaTyoVaw"><i class="fa fa-youtube"></i></a></li>
             </ul>
           </div>
-          <!-- /column --> 
+          <!-- /column --> ß
         </div>
         <!-- /.row --> 
       </div>

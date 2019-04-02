@@ -1,8 +1,10 @@
 <template>
     <div>
         <div v-if="selected" class="alert alert-success alert-dismissible fade show" role="alert">
-            Added To Shopping List  
-            <a @click.prevent="getShopCard" class="alert-link">Go Pay</a>
+            <p>Added To Shopping List  
+<a @click.prevent="getShopCard" class="alert-link">Go Pay</a>
+            </p>
+            
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
           </div>
 
@@ -76,6 +78,9 @@
         right: 0px;
         width: 100%;
         z-index: 9999;
+        color: black !important;
+    }
+    .alert p {
         color: black !important;
     }
 </style>
