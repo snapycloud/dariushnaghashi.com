@@ -98,4 +98,9 @@ class Controller extends BaseController
 
         return redirect()->back();
     }
+
+    public function getShopCard()
+    {
+        return view('shop_card');
+    }
 }

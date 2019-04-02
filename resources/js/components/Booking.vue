@@ -1,3 +1,4 @@
+<template>
   <section id="contact">
     <div class="wrapper dark-wrapper inverse-text">
       <div class="container inner">
@@ -24,22 +25,7 @@
             <!--/.row -->
             <div class="space30"></div>
             <div class="form-container">
-               @if($errors->any())
-               <div class="alert alert-danger" role="alert"> 
-                  <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-               </div>
-                    
-                  {{--   <div class="box small rounded bkg-red color-white  rtl">
-                    <span class="order-number  opacity-07">اطلاعات وارد شده اشتباه است</span>
-                  </div> --}}
-                @endif
-
-              <form action="{{ route('booking') }}" method="post">
-                {{ csrf_field() }}
+              <form action="contact/vanilla-form.php.html" method="post" class="vanilla vanilla-form" novalidate>
                 <div class="row text-center">
                   <div class="col-md-6 pr-10">
                     <div class="form-group">
@@ -72,7 +58,7 @@
                   <div class="col-12">
                     <textarea name="message" class="form-control" rows="3" placeholder="Type your message here..." required></textarea>
                     <div class="space20"></div>
-                    <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Booking Now</button>
+                    <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Submit</button>
                     <footer class="notification-box"></footer>
                   </div>
                   <!--/column --> 
@@ -91,3 +77,43 @@
     </div>
     <!-- /.wrapper --> 
   </section>
+</template>
+
+<script>
+    export default {
+        mounted() {
+            this.message += this.price + " IIR"
+        },
+        data: function () {
+            return {
+              message: 'Price: ',
+              selected: false
+            }
+         },
+
+        props: [
+            'id', 'price'
+        ],
+
+        methods: {
+            addToCard(){
+                if(this.selected == false){
+                    $('.has-tooltip').tooltip("hide")
+                    this.selected = true
+
+                    // add to backend
+                }
+            },
+            removeOfCard(){
+                if(this.selected == true){
+                    this.selected = false
+
+                    // remove form backend
+                }
+            },
+            getShopCard(){
+                return window.location = "https://dariushnaghashi.com/store/card/"
+            }
+        }
+    }
+</script>
