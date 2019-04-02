@@ -16,7 +16,7 @@
     export default {
         data: function () {
             return {
-              status: false,
+              status: true,
               count: 0
             }
          },
