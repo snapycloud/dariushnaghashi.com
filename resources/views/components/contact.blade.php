@@ -24,7 +24,7 @@
             <!--/.row -->
             <div class="space30"></div>
             <div class="form-container">
-              <form action="{{ route('booking') }}" method="post" class="vanilla vanilla-form" novalidate>
+              <form action="{{ route('booking') }}" method="post">
                 {{ csrf_field() }}
                 <div class="row text-center">
                   <div class="col-md-6 pr-10">
