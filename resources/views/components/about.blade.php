@@ -21,7 +21,7 @@
               <li><a target="_blank" href="https://www.youtube.com/channel/UCHaki3pWcEJNo2VUaTyoVaw"><i class="fa fa-youtube"></i></a></li>
             </ul>
           </div>
-          <!-- /column --> ß
+          <!-- /column --> 
         </div>
         <!-- /.row --> 
       </div>

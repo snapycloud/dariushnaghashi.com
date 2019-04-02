@@ -6,6 +6,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use SnapyCloud\PhpApi\Client\SnapyClient;
 use App\{
     ProductsCategory, KnowledgeBaseArticle
 };
@@ -13,6 +14,20 @@ use App\{
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function __construct()
+    {
+        $url = 'https://5c96a5002b4e543eb.onpremise.snapycloud.com';
+        $this->client = new SnapyClient($url);
+        $this->client->setApiKey('e9555b8f7086454e6a30886922c85957');
+        $this->client->setSecretKey('22476211336265784ceae8f561e3fabd');
+    }
+
+    public function client()
+    {
+        return $this->client;
+    }
+
 
     public function getIndex()
     {
@@ -52,5 +67,26 @@ class Controller extends BaseController
         return view('video', [
             'videos' => $videos
         ]);
+    }
+
+    public function postBooking(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:250',
+            'email' => 'required|email',
+            'tel' => 'required|regex:/(09)[0-9]{8}/',
+            'subject' => 'required|max:255',
+            'message' => 'required|max:1255'
+        ]);
+
+        $this->client()->requet('POST', 'lead', [
+            'name' => $request->get('name'),
+            'emailAddress' => $request->get('email'),
+            'phoneNumber' => $request->get('tel'),
+            'Description' => $request->get('message'),
+            'title' => $request->get('subject')
+        ]);
+
+        return redirect()->back();
     }
 }
