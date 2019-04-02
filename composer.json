@@ -14,7 +14,8 @@
         "laravel/tinker": "^1.0",
         "morilog/jalali": "^2.3",
         "guzzlehttp/guzzle": "^6.3",
-        "artesaos/seotools": "^0.12.0"
+        "artesaos/seotools": "^0.12.0",
+        "snapycloud/php-api": "dev-master"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -52,8 +53,7 @@
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""

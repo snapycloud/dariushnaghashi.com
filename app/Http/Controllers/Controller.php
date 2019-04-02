@@ -6,7 +6,9 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use App\ProductsCategory;
+use App\{
+    ProductsCategory, KnowledgeBaseArticle
+};
 
 class Controller extends BaseController
 {
@@ -20,11 +22,11 @@ class Controller extends BaseController
 			            }
 			        )->get();
 
-        // $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
-        //                 'category', function($q){ 
-        //                     $q->where('knowledge_base_category_id', '5c6954bd6bf0604b2')->limit(10);
-        //                 }
-        //             )->where('status', 'Published')->orderBy('publish_date', 'ASC')->first();
+        $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
+                        'category', function($q){ 
+                            $q->where('knowledge_base_category_id', '5c6954bd6bf0604b2')->limit(10);
+                        }
+                    )->where('status', 'Published')->orderBy('publish_date', 'ASC')->first();
 
         $videos = false;
 
@@ -35,7 +37,7 @@ class Controller extends BaseController
 
     public function getGalleryBySlug($slug)
     {
-        $gallery = KnowledgeBaseArticle::where('deleted', 0)->where('slug', $slug)->first();
+        $gallery = ProductsCategory::where('deleted', 0)->where('slug', $slug)->first();
         if(!$gallery->count()){
             return abort(404);
         }
