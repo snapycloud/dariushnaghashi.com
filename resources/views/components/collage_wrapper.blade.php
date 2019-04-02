@@ -10,8 +10,11 @@
 
         @foreach($gallery->product as $item)
           <div class="collage-image-wrapper">
-            <div class="overlay overlay2"><a href="{{ route('image', $item->cover_id) }}" data-sub-html="">
-              <img src="{{ route('image', $item->cover_id) }}"  alt="" /></a>
+            <div class="overlay overlay2">
+              <a href="{{ route('image', $item->cover_id) }}" data-sub-html="">
+                <img src="{{ route('image', $item->cover_id) }}"  alt="" />
+              </a>
+              <add-card-gallery id="{{ $item->id }}" price="{{ $item->cost_price }}" ></add-card-gallery>
             </div>
           </div>
         @endforeach
