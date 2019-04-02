@@ -80,7 +80,7 @@ class Controller extends BaseController
             'message' => 'required|max:1255'
         ]);
 
-        $this->client()->requet('POST', 'lead', [
+        $this->client()->request('POST', 'lead', [
             'name' => $request->get('name'),
             'emailAddress' => $request->get('email'),
             'phoneNumber' => $request->get('tel'),
