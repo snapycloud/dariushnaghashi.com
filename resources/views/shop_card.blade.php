@@ -24,7 +24,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="cart-thumbnail"><a href="#"> <img src="https://dariushnaghashi.com/image/5ca117118c464c618" alt=""> </a></td>
+              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img src="https://dariushnaghashi.com/image/5ca117118c464c618" alt=""> </a></td>
               <td class="cart-description">
               	<h5 class="mb-0">Hadi chopan</h5>
                 <p class="mb-0">Ref/5ca117118c464c618</p>
