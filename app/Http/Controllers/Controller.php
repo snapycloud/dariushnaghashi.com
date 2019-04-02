@@ -16,11 +16,7 @@ class Controller extends BaseController
 
     public function getIndex()
     {
-    	$galleries = ProductsCategory::where('deleted', 0)->whereHas(
-			            'product', function($q){ 
-			                $q->limit(10);
-			            }
-			        )->get();
+    	$galleries = ProductsCategory::where('deleted', 0)->get();
 
         $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
                         'category', function($q){ 
