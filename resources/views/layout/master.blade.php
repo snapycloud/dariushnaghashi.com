@@ -21,6 +21,15 @@
 <link href='https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i' rel='stylesheet' type='text/css'>
 </head>
 <body class="onepage" data-spy="scroll" data-target=".navbar">
+  @if($errors->all())
+  <div class="alert alert-danger" role="alert" style="
+    top: 0px;
+    border-radius: 0px;
+"> اطلاعات وارد شده اشتباه است </div>
+
+@endif
+
+
   <div id="app">
 <div class="content-wrapper">
   <nav class="navbar transparent absolute nav-wrapper-dark inverse-text navbar-expand-lg">

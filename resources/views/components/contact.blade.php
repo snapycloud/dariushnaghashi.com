@@ -25,11 +25,14 @@
             <div class="space30"></div>
             <div class="form-container">
                @if($errors->any())
-                    <ul>
+               <div class="alert alert-danger" role="alert"> 
+                  <ul>
                         @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
                     </ul>
+               </div>
+                    
                   {{--   <div class="box small rounded bkg-red color-white  rtl">
                     <span class="order-number  opacity-07">اطلاعات وارد شده اشتباه است</span>
                   </div> --}}

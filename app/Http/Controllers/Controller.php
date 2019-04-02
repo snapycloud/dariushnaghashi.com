@@ -79,12 +79,20 @@ class Controller extends BaseController
             'subject' => 'required|max:255',
             'message' => 'required|max:1255'
         ]);
-
+        $fullname = explode(' ', $request->get('name'));
+        if(count($fullname) >= 2) {
+            $firstName = $fullname[0];
+            $lastName = $fullname[1];
+        } else {
+            $firstName = $fullname;
+            $lastName = $fullname;
+        }
         $this->client()->request('POST', 'lead', [
-            'name' => $request->get('name'),
+            'firstName' => $firstName,
+            'lastName' => $lastName,
             'emailAddress' => $request->get('email'),
             'phoneNumber' => $request->get('tel'),
-            'Description' => $request->get('message'),
+            'description' => $request->get('message'),
             'title' => $request->get('subject')
         ]);
 
