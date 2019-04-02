@@ -8,10 +8,10 @@
     <div class="collage-wrapper">
       <div id="collage-large" class="collage effect-parent light-gallery">
 
-        @foreach($gallery->attachment as $item)
+        @foreach($gallery->product as $item)
           <div class="collage-image-wrapper">
-            <div class="overlay overlay2"><a href="{{ route('image', $item->id) }}" data-sub-html="">
-              <img src="{{ route('image', $item->id) }}"  alt="" /></a>
+            <div class="overlay overlay2"><a href="{{ route('image', $item->cover_id) }}" data-sub-html="">
+              <img src="{{ route('image', $item->cover_id) }}"  alt="" /></a>
             </div>
           </div>
         @endforeach
