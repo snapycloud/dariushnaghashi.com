@@ -10,8 +10,7 @@
 
     @each('components.swiper_slide', $jobs, 'job')
 
-	@include('components.about')
   @include('components.contact')
-  
+  @include('components.about')
 
 @stop
