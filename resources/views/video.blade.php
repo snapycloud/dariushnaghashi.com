@@ -25,7 +25,7 @@
                 <div class="items row">
 				@foreach($video->attachment as $attachment)
                   <div class="item col-lg-offset-2 col-lg-8">
-                    <video class="js-player" poster="{{ route('image', $video->cover_id) }}" controls preload="none">
+                    <video style="height: 400px" class="js-player" poster="{{ route('image', $video->cover_id) }}" controls preload="none">
                       <source src="{{ route('image', $attachment->id) }}" type="video/mp4">
                     </video>
                   </div>
