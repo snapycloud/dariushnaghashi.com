@@ -34,15 +34,11 @@ class Controller extends BaseController
     {
     	$galleries = ProductsCategory::where('deleted', 0)->get();
 
-        $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
-                        'category', function($q){ 
-                            $q->where('knowledge_base_category_id', '5c6954bd6bf0604b2')->limit(10);
-                        }
-                    )->where('status', 'Published')->orderBy('publish_date', 'ASC')->first();
+        $video = KnowledgeBaseArticle::where('id', '5ca3f55d2117e6ba1')->first();
 
 
     	return view('index', [
-    		'galleries' => $galleries, 'video' => $videos
+    		'galleries' => $galleries, 'video' => $video
     	]);
     }
 
