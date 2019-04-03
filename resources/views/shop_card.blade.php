@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    @include('components.contact')
-    @include('components.about')
+      @include('components.about')
+      @include('components.contact')
   
 @stop

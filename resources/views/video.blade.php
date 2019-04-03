@@ -46,5 +46,8 @@
     </div>
     <!-- /.container --> 
   </div>
+
+    @include('components.about')
+  @include('components.contact')
   
 @stop
