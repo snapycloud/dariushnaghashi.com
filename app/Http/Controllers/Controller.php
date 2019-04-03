@@ -32,7 +32,7 @@ class Controller extends BaseController
 
     public function getIndex()
     {
-    	$galleries = ProductsCategory::where('deleted', 0)->whereHas(
+    	$galleries = ProductsCategory::where('deleted', 0)->orderBy('Order', 'DESC')->whereHas(
                         'product', function($q){ 
                             $q->where('deleted', 0);
                         }
