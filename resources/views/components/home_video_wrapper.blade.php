@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-8">
           <div data-aos="fade">
-            <video class="js-player" poster="{{ asset('style/media/video.jpg') }}" controls preload="none">
+            <video class="js-player" poster="{{ route('image', $video->cover_id) }}" controls preload="none">
               <source src="{{ route('image', $video->attachment->first()->id) }}" type="video/mp4">
             </video>
           </div>
