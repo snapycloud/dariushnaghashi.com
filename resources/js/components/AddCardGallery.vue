@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="selected" class="alert alert-success alert-dismissible fade show" role="alert">
+        <div v-if="selected" class="alert alertgallery alert-success alert-dismissible fade show" role="alert">
             <p>Added To Shopping List  
 <a @click.prevent="getShopCard" class="alert-link">Go Pay</a>
             </p>
@@ -8,7 +8,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
           </div>
 
-    <div class="shopcard">
+    <div class="shopcardgallery">
         <button @click.prevent="addToCard" 
         class="btn btn-full-rounded hover has-tooltip" 
         data-placement="top" 
@@ -65,14 +65,14 @@
 </script>
 
 <style>
-    .shopcard {
+    .shopcardgallery {
         position: absolute;
         right: 0px;
         bottom: 20px;
         opacity: 0.9;
         z-index: 9999;
     }
-    .alert {
+    .alertgallery {
         top: 11px;
         position: absolute;
         right: 0px;
@@ -80,7 +80,7 @@
         z-index: 9999;
         color: black !important;
     }
-    .alert p {
+    .alertgallery p {
         color: black !important;
     }
 </style>

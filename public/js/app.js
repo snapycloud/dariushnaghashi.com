@@ -1954,7 +1954,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.shopcard {\n    position: absolute;\n    right: 0px;\n    bottom: 20px;\n    opacity: 0.9;\n    z-index: 9999;\n}\n.alert {\n    top: 11px;\n    position: absolute;\n    right: 0px;\n    width: 100%;\n    z-index: 9999;\n    color: black !important;\n}\n.alert p {\n    color: black !important;\n}\n", ""]);
+exports.push([module.i, "\n.shopcardgallery {\n    position: absolute;\n    right: 0px;\n    bottom: 20px;\n    opacity: 0.9;\n    z-index: 9999;\n}\n.alertgallery {\n    top: 11px;\n    position: absolute;\n    right: 0px;\n    width: 100%;\n    z-index: 9999;\n    color: black !important;\n}\n.alertgallery p {\n    color: black !important;\n}\n", ""]);
 
 // exports
 
@@ -20405,7 +20405,8 @@ var render = function() {
       ? _c(
           "div",
           {
-            staticClass: "alert alert-success alert-dismissible fade show",
+            staticClass:
+              "alert alertgallery alert-success alert-dismissible fade show",
             attrs: { role: "alert" }
           },
           [
@@ -20431,7 +20432,7 @@ var render = function() {
         )
       : _vm._e(),
     _vm._v(" "),
-    _c("div", { staticClass: "shopcard" }, [
+    _c("div", { staticClass: "shopcardgallery" }, [
       !_vm.selected
         ? _c(
             "button",
