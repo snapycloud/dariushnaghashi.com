@@ -32,7 +32,11 @@ class Controller extends BaseController
 
     public function getIndex()
     {
-    	$galleries = ProductsCategory::where('deleted', 0)->get();
+    	$galleries = ProductsCategory::where('deleted', 0)->whereHas(
+                        'product', function($q){ 
+                            $q->where('deleted', 0);
+                        }
+                    )->get();
 
         $video = KnowledgeBaseArticle::where('id', '5ca3f55d2117e6ba1')->first();
 

@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $menu = ProductsCategory::select(['name', 'slug'])->where('deleted', 0)->get();
+        $menu = ProductsCategory::select(['name', 'slug'])->orderBy('Order', 'DESC')->where('deleted', 0)->get();
         View::share('menu', $menu);
     }
 }
