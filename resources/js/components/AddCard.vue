@@ -54,8 +54,7 @@
                         console.log(shop);
                         this.$session.set(this.key, shop.push(this.id))
                     } else {
-                        var card = [this.id]
-                        this.$session.set(this.key, { card })
+                        this.$session.set(this.key, { [this.id] })
                     }
                 
 
