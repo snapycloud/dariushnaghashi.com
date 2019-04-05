@@ -1806,7 +1806,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     addToCard: function addToCard() {
       if (this.selected == false) {
-        axi;
         $('.has-tooltip').tooltip("hide");
         this.selected = true;
         var shop = this.$session.get(this.key);

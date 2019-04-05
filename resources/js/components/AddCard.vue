@@ -46,7 +46,6 @@
         methods: {
             addToCard(){
                 if(this.selected == false){
-                    axi
                     $('.has-tooltip').tooltip("hide")
                     this.selected = true
 
