@@ -1,6 +1,7 @@
 require('./bootstrap');
 window.Vue = require('vue');
 const requestIp = require('request-ip');
+window.requestIp = requestIp
 import VueSession from 'vue-session'
 Vue.use(VueSession)
 

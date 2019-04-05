@@ -33917,6 +33917,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 var requestIp = __webpack_require__(/*! request-ip */ "./node_modules/request-ip/dist/index.js");
 
+window.requestIp = requestIp;
 
 Vue.use(vue_session__WEBPACK_IMPORTED_MODULE_0___default.a);
 Vue.component('add-card', __webpack_require__(/*! ./components/AddCard.vue */ "./resources/js/components/AddCard.vue").default);
