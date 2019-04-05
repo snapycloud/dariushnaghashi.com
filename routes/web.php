@@ -6,7 +6,9 @@ Route::get('/gallery/{slug}', 'Controller@getGalleryBySlug')->name('gallery.slug
 Route::get('video', 'Controller@getVideos')->name('videos');
 
 Route::post('booking', 'Controller@postBooking')->name('booking');
+
 Route::get('/shop/card', 'Controller@getShopCard')->name('shop.card');
+Route::post('/shop/card/add', 'Controller@postAddToCard')->name('shop.card.add');
 
 
 

@@ -103,4 +103,9 @@ class Controller extends BaseController
     {
         return view('shop_card');
     }
+
+    public function postAddToCard(Request $request)
+    {
+        # code...
+    }
 }
