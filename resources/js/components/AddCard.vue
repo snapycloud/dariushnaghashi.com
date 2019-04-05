@@ -51,10 +51,11 @@
 
                     var shop = this.$session.get(this.key)
                     if(shop) {
-                        console.log(shop, shop.card);
-                        this.$session.set(this.key, shop.card + this.id )
+                        console.log(shop);
+                        this.$session.set(this.key, shop.push(this.id))
                     } else {
-                        this.$session.set(this.key, { card: this.id})
+                        var card = [this.id]
+                        this.$session.set(this.key, { card })
                     }
                 
 
@@ -64,6 +65,12 @@
             removeOfCard(){
                 if(this.selected == true){
                     this.selected = false
+                    var shop = this.$session.get(this.key)
+                    console.log(shop);
+                    delete shop[this.id]
+                    console.log(shop);
+                    this.$session.set(this.key, shop.push(this.id))
+
                     // remove form backend
                 }
             },

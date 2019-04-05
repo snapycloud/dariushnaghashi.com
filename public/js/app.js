@@ -1811,11 +1811,12 @@ __webpack_require__.r(__webpack_exports__);
         var shop = this.$session.get(this.key);
 
         if (shop) {
-          console.log(shop, shop.card);
-          this.$session.set(this.key, shop.card + this.id);
+          console.log(shop);
+          this.$session.set(this.key, shop.push(this.id));
         } else {
+          var card = [this.id];
           this.$session.set(this.key, {
-            card: this.id
+            card: card
           });
         } // add to backend
 
@@ -1823,7 +1824,12 @@ __webpack_require__.r(__webpack_exports__);
     },
     removeOfCard: function removeOfCard() {
       if (this.selected == true) {
-        this.selected = false; // remove form backend
+        this.selected = false;
+        var shop = this.$session.get(this.key);
+        console.log(shop);
+        delete shop[this.id];
+        console.log(shop);
+        this.$session.set(this.key, shop.push(this.id)); // remove form backend
       }
     },
     getShopCard: function getShopCard() {
