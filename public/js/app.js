@@ -1759,9 +1759,84 @@ module.exports = {
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AddCard.vue?vue&type=script&lang=js& ***!
   \******************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/abraham/code/production/dariushnaghashi/gallery/resources/js/components/AddCard.vue: Unexpected token (57:60)\n\n\u001b[0m \u001b[90m 55 | \u001b[39m                    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m$session\u001b[33m.\u001b[39mset(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mkey\u001b[33m,\u001b[39m shop\u001b[33m.\u001b[39mpush(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mid))\u001b[0m\n\u001b[0m \u001b[90m 56 | \u001b[39m                } \u001b[36melse\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 | \u001b[39m                    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m$session\u001b[33m.\u001b[39mset(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mkey\u001b[33m,\u001b[39m { [\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mid] })\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 58 | \u001b[39m                }\u001b[0m\n\u001b[0m \u001b[90m 59 | \u001b[39m            \u001b[0m\n\u001b[0m \u001b[90m 60 | \u001b[39m\u001b[0m\n    at Parser.raise (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:3851:17)\n    at Parser.unexpected (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5165:16)\n    at Parser.parseObjPropValue (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6796:21)\n    at Parser.parseObjectMember (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6719:10)\n    at Parser.parseObj (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6643:25)\n    at Parser.parseExprAtom (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6276:21)\n    at Parser.parseExprSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5916:23)\n    at Parser.parseMaybeUnary (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseExprListItem (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6979:18)\n    at Parser.parseCallExpressionArguments (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6123:22)\n    at Parser.parseSubscript (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6018:29)\n    at Parser.parseSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5937:19)\n    at Parser.parseExprSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5926:17)\n    at Parser.parseMaybeUnary (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseExpression (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5651:23)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7422:23)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7879:25)\n    at Parser.parseBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7866:10)\n    at Parser.parseBlock (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7850:10)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7369:21)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)\n    at Parser.parseIfStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7657:51)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7338:21)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7879:25)\n    at Parser.parseBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7866:10)\n    at Parser.parseBlock (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7850:10)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7369:21)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.$session.start();
+    this.message += this.price + " IIR";
+    this.key = 'client' + this.clientIp;
+  },
+  data: function data() {
+    return {
+      message: 'Price: ',
+      selected: false,
+      key: false,
+      clientIp: '127.0.0.1'
+    };
+  },
+  props: ['id', 'price'],
+  methods: {
+    addToCard: function addToCard() {
+      if (this.selected == false) {
+        $('.has-tooltip').tooltip("hide");
+        this.selected = true;
+        var shop = this.$session.get(this.key);
+
+        if (shop) {
+          console.log(shop);
+          this.$session.set(this.key, shop.card.push(this.id));
+        } else {
+          var card = [this.id];
+          this.$session.set(this.key, {
+            card: card
+          });
+        } // add to backend
+
+      }
+    },
+    removeOfCard: function removeOfCard() {
+      if (this.selected == true) {
+        this.selected = false;
+        var shop = this.$session.get(this.key);
+        console.log(shop);
+        delete shop.card[this.id];
+        console.log(shop);
+        this.$session.set(this.key, shop); // remove form backend
+      }
+    },
+    getShopCard: function getShopCard() {
+      return window.location = "https://dariushnaghashi.com/store/card/";
+    }
+  }
+});
 
 /***/ }),
 
@@ -33919,14 +33994,15 @@ if (token) {
 /*!*********************************************!*\
   !*** ./resources/js/components/AddCard.vue ***!
   \*********************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AddCard_vue_vue_type_template_id_c6256f94___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AddCard.vue?vue&type=template&id=c6256f94& */ "./resources/js/components/AddCard.vue?vue&type=template&id=c6256f94&");
 /* harmony import */ var _AddCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AddCard.vue?vue&type=script&lang=js& */ "./resources/js/components/AddCard.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _AddCard_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AddCard.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/AddCard.vue?vue&type=style&index=0&lang=css&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _AddCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _AddCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _AddCard_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AddCard.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/AddCard.vue?vue&type=style&index=0&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -33958,7 +34034,7 @@ component.options.__file = "resources/js/components/AddCard.vue"
 /*!**********************************************************************!*\
   !*** ./resources/js/components/AddCard.vue?vue&type=script&lang=js& ***!
   \**********************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
