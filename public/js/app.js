@@ -1826,6 +1826,8 @@ __webpack_require__.r(__webpack_exports__);
         this.selected = false;
         var shop = this.$session.get(this.key);
         console.log(shop);
+        console.log(shop[this.id]);
+        console.log(shop + this.id);
         delete shop[this.id];
         console.log(shop);
         this.$session.set(this.key, shop); // remove form backend
