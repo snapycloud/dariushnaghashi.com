@@ -26,12 +26,17 @@
 <script>
     export default {
         mounted() {
+            this.$session.start()
             this.message += this.price + " IIR"
+            this.clientIp = requestIp.getClientIp(req); 
+            this.key = 'client' + this.clientIp;
         },
         data: function () {
             return {
               message: 'Price: ',
-              selected: false
+              selected: false,
+              key: false,
+              clientIp: false
             }
          },
 
@@ -42,8 +47,17 @@
         methods: {
             addToCard(){
                 if(this.selected == false){
+                    axi
                     $('.has-tooltip').tooltip("hide")
                     this.selected = true
+
+                    var shop = this.$session.get(this.key)
+                    if(shop) {
+                        this.$session.set(this.key, shop.card.push(this.id))
+                    } else {
+                        this.$session.set(this.key, { card: this.id})
+                    }
+                
 
                     // add to backend
                 }
@@ -51,7 +65,6 @@
             removeOfCard(){
                 if(this.selected == true){
                     this.selected = false
-
                     // remove form backend
                 }
             },
