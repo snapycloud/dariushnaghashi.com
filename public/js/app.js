@@ -1811,7 +1811,8 @@ __webpack_require__.r(__webpack_exports__);
         var shop = this.$session.get(this.key);
 
         if (shop) {
-          this.$session.set(this.key, shop.card.push(this.id));
+          console.log(shop, shop.card);
+          this.$session.set(this.key, shop.card + this.id);
         } else {
           this.$session.set(this.key, {
             card: this.id
