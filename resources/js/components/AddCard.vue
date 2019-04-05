@@ -28,7 +28,7 @@
         mounted() {
             this.$session.start()
             this.message += this.price + " IIR"
-            this.key = 'client' + this.clientIp;
+            this.key = 'client-' + this.clientIp;
         },
         data: function () {
             return {
@@ -52,10 +52,11 @@
                     var shop = this.$session.get(this.key)
                     if(shop) {
                         console.log(shop);
-                        this.$session.set(this.key, shop.card.push(this.id))
+                        shop.push(this.id)
+                        this.$session.set(this.key, shop)
                     } else {
                         var card = [this.id]
-                        this.$session.set(this.key, { card })
+                        this.$session.set(this.key, card )
                     }
                 
 
@@ -67,7 +68,7 @@
                     this.selected = false
                     var shop = this.$session.get(this.key)
                     console.log(shop);
-                    delete shop.card[this.id]
+                    delete shop[this.id]
                     console.log(shop);
                     this.$session.set(this.key, shop)
 
