@@ -28,7 +28,6 @@
         mounted() {
             this.$session.start()
             this.message += this.price + " IIR"
-            this.clientIp = requestIp.getClientIp(req); 
             this.key = 'client' + this.clientIp;
         },
         data: function () {
@@ -36,7 +35,7 @@
               message: 'Price: ',
               selected: false,
               key: false,
-              clientIp: false
+              clientIp: '127.0.0.1'
             }
          },
 
