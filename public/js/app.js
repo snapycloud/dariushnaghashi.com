@@ -1985,7 +1985,9 @@ __webpack_require__.r(__webpack_exports__);
     getShopCount: function getShopCount() {
       this.$session.start();
       this.key = 'client-' + this.clientIp;
-      var shop = this.$session.get(this.key);
+      var shop = this.$session.get(this.key); // var value = $('.badge').eq(1).text()
+
+      $('.badge').eq(0).text(shop.length);
       this.count = shop.length;
     }
   }

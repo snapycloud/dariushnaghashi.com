@@ -14,13 +14,9 @@ $(document).ready(function() {
             },
             onStick: function() {
                 $($.SmartMenus.Bootstrap.init);
-                var value = $('.badge').eq(1).text()
-                $('.badge').eq(0).text(value)
             },
             onUnstick: function() {
                 $('.navbar .btn-group').removeClass('open');
-                var value = $('.badge').eq(1).text()
-                $('.badge').eq(0).text(value)
             }
         };
         var banner = new Headhesive('.navbar', options);
