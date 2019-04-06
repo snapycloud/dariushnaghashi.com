@@ -1792,9 +1792,9 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var shop = this.$session.get(this.key);
     console.log(shop);
-    slef.$session.start();
-    slef.message += slef.price + " IIR";
-    slef.key = 'client-' + slef.clientIp;
+    this.$session.start();
+    this.message += this.price + " IIR";
+    this.key = 'client-' + this.clientIp;
     var shop = this.$session.get(this.key);
     var selected = shop.filter(function (e) {
       return e === this.id;
@@ -1892,9 +1892,9 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var shop = this.$session.get(this.key);
     console.log(shop);
-    slef.$session.start();
-    slef.message += slef.price + " IIR";
-    slef.key = 'client-' + slef.clientIp;
+    this.$session.start();
+    this.message += this.price + " IIR";
+    this.key = 'client-' + this.clientIp;
     var shop = this.$session.get(this.key);
     var selected = shop.filter(function (e) {
       return e === this.id;
