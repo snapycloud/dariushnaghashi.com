@@ -14,6 +14,11 @@
 
 <script>
     export default {
+        mounted() {
+            this.$session.start()
+            var shop = this.$session.get(this.key)
+            this.count = selected.length
+        },
         data: function () {
             return {
               status: true,

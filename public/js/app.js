@@ -1802,7 +1802,7 @@ __webpack_require__.r(__webpack_exports__);
     });
     console.log(selected);
 
-    if (selected) {
+    if (selected.length) {
       this.selected = true;
     }
   },
@@ -1971,6 +1971,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.$session.start();
+    var shop = this.$session.get(this.key);
+    this.count = selected.length;
+  },
   data: function data() {
     return {
       status: true,

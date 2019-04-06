@@ -37,7 +37,7 @@
                 return e === self.id
             })
             console.log(selected);
-            if (selected) {
+            if (selected.length) {
                 this.selected = true;
             }
         },
