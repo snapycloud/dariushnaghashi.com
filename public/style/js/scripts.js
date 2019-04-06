@@ -14,8 +14,8 @@ $(document).ready(function() {
             },
             onStick: function() {
                 $($.SmartMenus.Bootstrap.init);
-                var value = $('.navbar-collapse div .social').eq(1).text()
-                $('.navbar-collapse div .social').eq(0).text(value)
+                var value = $('.badge').eq(1).text()
+                $('.badge').eq(1).text(value)
             },
             onUnstick: function() {
                 $('.navbar .btn-group').removeClass('open');
