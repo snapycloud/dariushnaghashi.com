@@ -78,7 +78,7 @@
                 }
             },
             getShopCard(){
-                return window.location = "https://dariushnaghashi.com/store/card/"
+                return window.location = "https://dariushnaghashi.com/shop/card/"
             }
         }
     }

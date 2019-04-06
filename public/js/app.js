@@ -1835,7 +1835,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     getShopCard: function getShopCard() {
-      return window.location = "https://dariushnaghashi.com/store/card/";
+      return window.location = "https://dariushnaghashi.com/shop/card/";
     }
   }
 });
@@ -1878,14 +1878,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
+    this.$session.start();
     this.message += this.price + " IIR";
+    this.key = 'client-' + this.clientIp;
   },
   data: function data() {
     return {
       message: 'Price: ',
-      selected: false
+      selected: false,
+      key: false,
+      clientIp: '127.0.0.1'
     };
   },
   props: ['id', 'price'],
@@ -1893,12 +1898,31 @@ __webpack_require__.r(__webpack_exports__);
     addToCard: function addToCard() {
       if (this.selected == false) {
         $('.has-tooltip').tooltip("hide");
-        this.selected = true; // add to backend
+        this.selected = true;
+        var shop = this.$session.get(this.key);
+
+        if (shop) {
+          shop.push(this.id);
+          this.$session.set(this.key, shop);
+        } else {
+          var card = [this.id];
+          this.$session.set(this.key, card);
+        } // add to backend
+
       }
     },
     removeOfCard: function removeOfCard() {
-      if (this.selected == true) {
-        this.selected = false; // remove form backend
+      var self = this;
+
+      if (self.selected == true) {
+        self.selected = false;
+        var shop = self.$session.get(self.key);
+        shop = shop.filter(function (e) {
+          console.log(e, self.id, e !== self.id, e != self.id);
+          return e !== self.id;
+        });
+        console.log(shop);
+        self.$session.set(self.key, shop); // remove form backend
       }
     },
     getShopCard: function getShopCard() {

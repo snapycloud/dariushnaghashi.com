@@ -25,15 +25,20 @@
     </div>
 </template>
 
+
 <script>
     export default {
         mounted() {
+            this.$session.start()
             this.message += this.price + " IIR"
+            this.key = 'client-' + this.clientIp;
         },
         data: function () {
             return {
               message: 'Price: ',
-              selected: false
+              selected: false,
+              key: false,
+              clientIp: '127.0.0.1'
             }
          },
 
@@ -47,12 +52,30 @@
                     $('.has-tooltip').tooltip("hide")
                     this.selected = true
 
+                    var shop = this.$session.get(this.key)
+                    if(shop) {
+                        shop.push(this.id)
+                        this.$session.set(this.key, shop)
+                    } else {
+                        var card = [this.id]
+                        this.$session.set(this.key, card )
+                    }
+                
+
                     // add to backend
                 }
             },
             removeOfCard(){
-                if(this.selected == true){
-                    this.selected = false
+                let self = this
+                if(self.selected == true){
+                    self.selected = false
+                    var shop = self.$session.get(self.key)
+                    shop = shop.filter(function(e) { 
+                        console.log(e, self.id, e !== self.id, e != self.id);
+                        return e !== self.id
+                    })
+                    console.log(shop);
+                    self.$session.set(self.key, shop)
 
                     // remove form backend
                 }
