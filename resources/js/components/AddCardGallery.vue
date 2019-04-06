@@ -35,8 +35,10 @@
             this.message += this.price + " IIR"
             this.key = 'client-' + this.clientIp;
             var shop = this.$session.get(this.key)
+            console.log(shop);
+            let self = this
             var selected = shop.filter(function(e) { 
-                return e === this.id
+                return e === self.id
             })
             if (selected) {
                 this.selected = true;
