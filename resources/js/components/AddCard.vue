@@ -33,8 +33,10 @@
             console.log(shop);
             let self = this
             var selected = shop.filter(function(e) { 
+                console.log(e, self.id, e === self.id, e == self.id );
                 return e === self.id
             })
+            console.log(selected);
             if (selected) {
                 this.selected = true;
             }
