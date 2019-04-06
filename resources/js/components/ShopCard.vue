@@ -16,13 +16,16 @@
     export default {
         mounted() {
             this.$session.start()
+            this.key = 'client-' + this.clientIp;
             var shop = this.$session.get(this.key)
             this.count = selected.length
         },
         data: function () {
             return {
               status: true,
-              count: 0
+              count: 0,
+              key: false,
+              clientIp: '127.0.0.1'
             }
          },
         methods: {

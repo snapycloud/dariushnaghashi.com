@@ -1973,13 +1973,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.$session.start();
+    this.key = 'client-' + this.clientIp;
     var shop = this.$session.get(this.key);
     this.count = selected.length;
   },
   data: function data() {
     return {
       status: true,
-      count: 0
+      count: 0,
+      key: false,
+      clientIp: '127.0.0.1'
     };
   },
   methods: {
