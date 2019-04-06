@@ -51,7 +51,6 @@
 
                     var shop = this.$session.get(this.key)
                     if(shop) {
-                        console.log(shop);
                         shop.push(this.id)
                         this.$session.set(this.key, shop)
                     } else {
@@ -68,11 +67,10 @@
                 if(self.selected == true){
                     self.selected = false
                     var shop = self.$session.get(self.key)
-                    shop.filter(function(e) { 
+                    shop = shop.filter(function(e) { 
                         console.log(e, self.id, e !== self.id, e != self.id);
                         return e !== self.id
                     })
-                    delete shop[self.id]
                     console.log(shop);
                     self.$session.set(self.key, shop)
 
