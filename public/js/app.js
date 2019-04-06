@@ -1971,12 +1971,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    this.$session.start();
-    this.key = 'client-' + this.clientIp;
-    var shop = this.$session.get(this.key);
-    this.count = shop.length;
+  created: function created() {
+    this.fetchEventsList();
+    this.count = setInterval(this.getShopCount, 500);
   },
+  mounted: function mounted() {},
   data: function data() {
     return {
       status: true,
@@ -1986,7 +1985,14 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    getList: function getList() {}
+    getList: function getList() {},
+    getShopCount: function getShopCount() {
+      this.$session.start();
+      this.key = 'client-' + this.clientIp;
+      var shop = this.$session.get(this.key);
+      this.count = shop.length;
+      setInterval(this.fetchEventsList, 300000);
+    }
   }
 });
 

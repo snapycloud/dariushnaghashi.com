@@ -14,11 +14,12 @@
 
 <script>
     export default {
+        created: function() {
+            this.fetchEventsList();
+            this.count = setInterval(this.getShopCount, 500)
+        },
         mounted() {
-            this.$session.start()
-            this.key = 'client-' + this.clientIp;
-            var shop = this.$session.get(this.key)
-            this.count = shop.length
+
         },
         data: function () {
             return {
@@ -31,6 +32,13 @@
         methods: {
             getList(){
                 
+            },
+            getShopCount(){
+                this.$session.start()
+                this.key = 'client-' + this.clientIp;
+                var shop = this.$session.get(this.key)
+                this.count = shop.length
+                setInterval(this.fetchEventsList, 300000)
             }
         }
     }
