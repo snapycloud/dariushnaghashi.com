@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div v-if="selected" class="alert alertgallery alert-success alert-dismissible fade show" role="alert">
-            <p>Added To Shopping List  
+        <div v-if="selected" style="color: black !important;" class="alert alertgallery alert-success alert-dismissible fade show" role="alert">
+            <p>Added   
 <a @click.prevent="getShopCard" class="alert-link">Go Pay</a>
             </p>
             
@@ -29,8 +29,6 @@
 <script>
     export default {
         mounted() {
-            var shop = this.$session.get(this.key)
-            console.log(shop);
             this.$session.start()
             this.message += this.price + " IIR"
             this.key = 'client-' + this.clientIp;

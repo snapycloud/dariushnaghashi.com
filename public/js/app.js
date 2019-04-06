@@ -1790,14 +1790,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    var shop = this.$session.get(this.key);
-    console.log(shop);
     this.$session.start();
     this.message += this.price + " IIR";
     this.key = 'client-' + this.clientIp;
     var shop = this.$session.get(this.key);
+    console.log(shop);
+    var self = this;
     var selected = shop.filter(function (e) {
-      return e === this.id;
+      return e === self.id;
     });
 
     if (selected) {
@@ -1890,8 +1890,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    var shop = this.$session.get(this.key);
-    console.log(shop);
     this.$session.start();
     this.message += this.price + " IIR";
     this.key = 'client-' + this.clientIp;
@@ -21571,11 +21569,12 @@ var render = function() {
           {
             staticClass:
               "alert alertgallery alert-success alert-dismissible fade show",
+            staticStyle: { color: "black !important" },
             attrs: { role: "alert" }
           },
           [
             _c("p", [
-              _vm._v("Added To Shopping List  \n"),
+              _vm._v("Added   \n"),
               _c(
                 "a",
                 {
