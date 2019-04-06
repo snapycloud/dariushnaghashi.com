@@ -1881,13 +1881,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.$session.start();
@@ -21563,38 +21556,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm.selected
-      ? _c(
-          "div",
-          {
-            staticClass:
-              "alert alertgallery alert-success alert-dismissible fade show",
-            staticStyle: { color: "black !important" },
-            attrs: { role: "alert" }
-          },
-          [
-            _c("p", [
-              _vm._v("Added   \n"),
-              _c(
-                "a",
-                {
-                  staticClass: "alert-link",
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.getShopCard($event)
-                    }
-                  }
-                },
-                [_vm._v("Go Pay")]
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(0)
-          ]
-        )
-      : _vm._e(),
-    _vm._v(" "),
     _c("div", { staticClass: "shopcardgallery" }, [
       !_vm.selected
         ? _c(
@@ -21634,25 +21595,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass: "close",
-        attrs: {
-          type: "button",
-          "data-dismiss": "alert",
-          "aria-label": "Close"
-        }
-      },
-      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

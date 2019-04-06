@@ -1,12 +1,5 @@
 <template>
     <div>
-        <div v-if="selected" style="color: black !important;" class="alert alertgallery alert-success alert-dismissible fade show" role="alert">
-            <p>Added   
-<a @click.prevent="getShopCard" class="alert-link">Go Pay</a>
-            </p>
-            
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-          </div>
 
     <div class="shopcardgallery">
         <button @click.prevent="addToCard" 
