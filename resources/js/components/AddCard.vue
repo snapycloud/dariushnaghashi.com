@@ -69,6 +69,7 @@
                     self.selected = false
                     var shop = self.$session.get(self.key)
                     shop.filter(function(e) { 
+                        console.log(e);
                         return e !== self.id
                     })
                     delete shop[self.id]
