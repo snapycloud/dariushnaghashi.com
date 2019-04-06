@@ -1790,15 +1790,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    this.$session.start();
-    this.message += this.price + " IIR";
-    this.key = 'client-' + this.clientIp;
-    selected = shop.filter(function (e) {
+    var slef = this;
+    slef.$session.start();
+    slef.message += slef.price + " IIR";
+    slef.key = 'client-' + slef.clientIp;
+    var shop = self.$session.get(self.key);
+    var selected = shop.filter(function (e) {
       return e === self.id;
     });
 
     if (selected) {
-      this.selected = true;
+      slef.selected = true;
     }
   },
   data: function data() {
@@ -1887,15 +1889,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    this.$session.start();
-    this.message += this.price + " IIR";
-    this.key = 'client-' + this.clientIp;
+    var slef = this;
+    slef.$session.start();
+    slef.message += slef.price + " IIR";
+    slef.key = 'client-' + slef.clientIp;
+    var shop = self.$session.get(self.key);
     var selected = shop.filter(function (e) {
       return e === self.id;
     });
 
     if (selected) {
-      this.selected = true;
+      slef.selected = true;
     }
   },
   data: function data() {

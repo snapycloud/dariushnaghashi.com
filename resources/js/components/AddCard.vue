@@ -26,14 +26,16 @@
 <script>
     export default {
         mounted() {
-            this.$session.start()
-            this.message += this.price + " IIR"
-            this.key = 'client-' + this.clientIp;
-            selected = shop.filter(function(e) { 
+            let slef = this;
+            slef.$session.start()
+            slef.message += slef.price + " IIR"
+            slef.key = 'client-' + slef.clientIp;
+            var shop = self.$session.get(self.key)
+            var selected = shop.filter(function(e) { 
                 return e === self.id
             })
             if (selected) {
-                this.selected = true;
+                slef.selected = true;
             }
         },
         data: function () {
