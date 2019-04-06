@@ -1822,15 +1822,17 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     removeOfCard: function removeOfCard() {
-      if (this.selected == true) {
-        this.selected = false;
-        var shop = this.$session.get(this.key);
+      var self = this;
+
+      if (self.selected == true) {
+        self.selected = false;
+        var shop = self.$session.get(self.key);
+        shop.filter(function (e) {
+          return e !== self.id;
+        });
+        delete shop[self.id];
         console.log(shop);
-        console.log(shop[this.id]);
-        console.log(shop + this.id);
-        delete shop[this.id];
-        console.log(shop);
-        this.$session.set(this.key, shop); // remove form backend
+        self.$session.set(self.key, shop); // remove form backend
       }
     },
     getShopCard: function getShopCard() {
