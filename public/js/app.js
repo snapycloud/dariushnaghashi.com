@@ -1790,19 +1790,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    var slef = this;
-    var shop = self.$session.get(self.key);
+    var shop = this.$session.get(this.key);
     console.log(shop);
     slef.$session.start();
     slef.message += slef.price + " IIR";
     slef.key = 'client-' + slef.clientIp;
-    var shop = self.$session.get(self.key);
+    var shop = this.$session.get(this.key);
     var selected = shop.filter(function (e) {
-      return e === self.id;
+      return e === this.id;
     });
 
     if (selected) {
-      slef.selected = true;
+      this.selected = true;
     }
   },
   data: function data() {
@@ -1891,19 +1890,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    var slef = this;
-    var shop = self.$session.get(self.key);
+    var shop = this.$session.get(this.key);
     console.log(shop);
     slef.$session.start();
     slef.message += slef.price + " IIR";
     slef.key = 'client-' + slef.clientIp;
-    var shop = self.$session.get(self.key);
+    var shop = this.$session.get(this.key);
     var selected = shop.filter(function (e) {
-      return e === self.id;
+      return e === this.id;
     });
 
     if (selected) {
-      slef.selected = true;
+      this.selected = true;
     }
   },
   data: function data() {
