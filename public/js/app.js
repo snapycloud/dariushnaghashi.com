@@ -1793,6 +1793,13 @@ __webpack_require__.r(__webpack_exports__);
     this.$session.start();
     this.message += this.price + " IIR";
     this.key = 'client-' + this.clientIp;
+    selected = shop.filter(function (e) {
+      return e === self.id;
+    });
+
+    if (selected) {
+      this.selected = true;
+    }
   },
   data: function data() {
     return {
@@ -1827,7 +1834,6 @@ __webpack_require__.r(__webpack_exports__);
         self.selected = false;
         var shop = self.$session.get(self.key);
         shop = shop.filter(function (e) {
-          console.log(e, self.id, e !== self.id, e != self.id);
           return e !== self.id;
         });
         console.log(shop);
@@ -1884,6 +1890,13 @@ __webpack_require__.r(__webpack_exports__);
     this.$session.start();
     this.message += this.price + " IIR";
     this.key = 'client-' + this.clientIp;
+    var selected = shop.filter(function (e) {
+      return e === self.id;
+    });
+
+    if (selected) {
+      this.selected = true;
+    }
   },
   data: function data() {
     return {
@@ -1926,7 +1939,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     getShopCard: function getShopCard() {
-      return window.location = "https://dariushnaghashi.com/store/card/";
+      return window.location = "https://dariushnaghashi.com/shop/card/";
     }
   }
 });

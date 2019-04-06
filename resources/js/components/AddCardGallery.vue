@@ -32,6 +32,12 @@
             this.$session.start()
             this.message += this.price + " IIR"
             this.key = 'client-' + this.clientIp;
+            var selected = shop.filter(function(e) { 
+                return e === self.id
+            })
+            if (selected) {
+                this.selected = true;
+            }
         },
         data: function () {
             return {
@@ -81,7 +87,7 @@
                 }
             },
             getShopCard(){
-                return window.location = "https://dariushnaghashi.com/store/card/"
+                return window.location = "https://dariushnaghashi.com/shop/card/"
             }
         }
     }

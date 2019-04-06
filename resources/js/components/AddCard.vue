@@ -29,6 +29,12 @@
             this.$session.start()
             this.message += this.price + " IIR"
             this.key = 'client-' + this.clientIp;
+            selected = shop.filter(function(e) { 
+                return e === self.id
+            })
+            if (selected) {
+                this.selected = true;
+            }
         },
         data: function () {
             return {
@@ -68,7 +74,6 @@
                     self.selected = false
                     var shop = self.$session.get(self.key)
                     shop = shop.filter(function(e) { 
-                        console.log(e, self.id, e !== self.id, e != self.id);
                         return e !== self.id
                     })
                     console.log(shop);
