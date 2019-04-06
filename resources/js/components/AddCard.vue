@@ -27,6 +27,8 @@
     export default {
         mounted() {
             let slef = this;
+                        var shop = self.$session.get(self.key)
+            console.log(shop);
             slef.$session.start()
             slef.message += slef.price + " IIR"
             slef.key = 'client-' + slef.clientIp;

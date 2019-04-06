@@ -1791,6 +1791,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     var slef = this;
+    var shop = self.$session.get(self.key);
+    console.log(shop);
     slef.$session.start();
     slef.message += slef.price + " IIR";
     slef.key = 'client-' + slef.clientIp;
@@ -1890,6 +1892,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     var slef = this;
+    var shop = self.$session.get(self.key);
+    console.log(shop);
     slef.$session.start();
     slef.message += slef.price + " IIR";
     slef.key = 'client-' + slef.clientIp;
