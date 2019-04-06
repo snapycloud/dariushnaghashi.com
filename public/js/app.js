@@ -1975,7 +1975,7 @@ __webpack_require__.r(__webpack_exports__);
     this.$session.start();
     this.key = 'client-' + this.clientIp;
     var shop = this.$session.get(this.key);
-    this.count = selected.length;
+    this.count = shop.length;
   },
   data: function data() {
     return {
