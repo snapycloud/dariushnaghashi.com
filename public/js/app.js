@@ -2019,8 +2019,10 @@ __webpack_require__.r(__webpack_exports__);
       this.key = 'client-' + this.clientIp;
       var shop = this.$session.get(this.key); // var value = $('.badge').eq(1).text()
 
-      $('.badge').eq(0).text(shop.length);
-      this.count = shop.length;
+      if (shop) {
+        $('.badge').eq(0).text(shop.length);
+        this.count = shop.length;
+      }
     }
   }
 });
@@ -2197,7 +2199,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Smartphones (portrait) ----------- */\n@media only screen and (max-width : 320px) {\n.booking-btn {\n        position: fixed;\n        z-index: 999999999;\n        bottom: 20px;\n        left: 20px;\n        width: 90%;\n        color: white;\n        display: block !important;\n}\n}\n@media only screen and (min-device-width : 768px) {\n.booking-btn {\n        position: fixed;\n        z-index: 999999999;\n        bottom: 20px;\n        left: 20px;\n        width: 90%;\n        color: white;\n        display: block !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Smartphones (portrait) ----------- */\n@media (min-width:320px)  {\n.booking-btn {\n        position: fixed;\n        z-index: 999999999;\n        bottom: 20px;\n        left: 20px;\n        width: 90%;\n        color: white;\n        display: block !important;\n}\n}\n@media (min-width:480px)  {\n.booking-btn {\n        position: fixed;\n        z-index: 999999999;\n        bottom: 20px;\n        left: 20px;\n        width: 90%;\n        color: white;\n        display: block !important;\n}\n}\n", ""]);
 
 // exports
 

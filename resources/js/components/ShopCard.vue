@@ -38,8 +38,10 @@
                 this.key = 'client-' + this.clientIp;
                 var shop = this.$session.get(this.key)
                 // var value = $('.badge').eq(1).text()
-                $('.badge').eq(0).text(shop.length)
-                this.count = shop.length
+                if(shop) {
+                    $('.badge').eq(0).text(shop.length)
+                    this.count = shop.length
+                }
             }
         }
     }

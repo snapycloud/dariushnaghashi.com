@@ -25,7 +25,7 @@
 <style>
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media (min-width:320px)  { 
     .booking-btn {
         position: fixed;
         z-index: 999999999;
@@ -38,7 +38,7 @@
 }
 
 
-@media only screen and (min-device-width : 768px) {
+@media (min-width:480px)  { 
   .booking-btn {
         position: fixed;
         z-index: 999999999;

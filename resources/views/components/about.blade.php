@@ -13,7 +13,7 @@
                 -  Cooperation with Hani Rambod, the best body building Coach in the world <br>
                 -  Having Jeremy Buendia the 4 times Mr. Olympia champion as my client <br>
                 -  Working together with world's professional champion, Hadi Chopan <br>
-                -  Fulfilling duties with other prominent figures as Babak Akbarnian and Mohamamd Kashan <br>
+                -  Fulfilling duties with other prominent figures as Babak Akbarnian and Mohamamd Kashanaki <br>
               </p>
             <p>
               Fitness Photographer, International Sportive Film Maker Tehran, Iran
