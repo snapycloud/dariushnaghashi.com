@@ -2063,10 +2063,8 @@ __webpack_require__.r(__webpack_exports__);
         _this.error = false;
       }).catch(function (error) {
         _this.error = true;
-        console.log(error);
         error = JSON.stringify(error);
         error = JSON.parse(error);
-        console.log(error.response.data.errors);
         _this.errors = error.response.data.errors;
       }).finally(function () {
         return _this.loading = false;
@@ -22146,7 +22144,7 @@ var render = function() {
                   _c(
                     "ul",
                     _vm._l(_vm.errors, function(err) {
-                      return _c("li", [_vm._v(_vm._s(err))])
+                      return _c("li", [_vm._v(_vm._s(err[0]))])
                     }),
                     0
                   )

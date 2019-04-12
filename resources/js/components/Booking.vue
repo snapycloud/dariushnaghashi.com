@@ -36,7 +36,7 @@
                     <footer class="notification-box"></footer>
                     <div v-if="error" class="alert alert-danger" role="alert">
                       <ul>
-                        <li v-for="err in errors">{{ err }}</li>
+                        <li v-for="err in errors">{{ err[0] }}</li>
                       </ul>
                     </div>
                     <div v-if="success" class="alert alert-success" role="alert">Your Request Sended</div>
@@ -76,10 +76,8 @@
                 })
                 .catch(error => {
                     this.error = true
-                    console.log(error);
                     error = JSON.stringify(error)
                     error = JSON.parse(error);
-                    console.log(error.response.data.errors);
                     this.errors = error.response.data.errors
                 })
                 .finally(() => this.loading = false)
