@@ -54,6 +54,7 @@
         },
         data: function () {
             return {
+              errors: '',
               error: false,
               success: false,
               data: {

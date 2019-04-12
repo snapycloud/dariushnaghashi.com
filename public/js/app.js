@@ -2040,6 +2040,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {},
   data: function data() {
     return {
+      errors: '',
       error: false,
       success: false,
       data: {
