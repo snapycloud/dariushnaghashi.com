@@ -22,7 +22,6 @@
 </head>
 <body class="onepage" data-spy="scroll" data-target=".navbar">
 
-  <booking-buttom></booking-buttom>
 
   @if($errors->all())
 <div class="alert alert-danger alert-dismissible fade show" role="alert" style="top: 0px;border-radius: 0px;"> form data is incorect, please check and try.
@@ -32,6 +31,7 @@
 
 
   <div id="app">
+    <booking-buttom></booking-buttom>
 <div class="content-wrapper">
   <nav class="navbar transparent absolute nav-wrapper-dark inverse-text navbar-expand-lg">
     <div class="container">

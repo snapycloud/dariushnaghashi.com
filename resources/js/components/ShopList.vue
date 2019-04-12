@@ -104,7 +104,7 @@
             getList(){
                 this.$session.start()
                 this.key = 'client-' + this.clientIp;
-                var shop = this.$session.get()
+                var shop = this.$session.get(this.key)
                 console.log(shop)
                 // var value = $('.badge').eq(1).text()
                                 
