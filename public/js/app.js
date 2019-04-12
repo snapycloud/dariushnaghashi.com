@@ -2135,9 +2135,138 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ShopList.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/abraham/code/production/dariushnaghashi/gallery/resources/js/components/ShopList.vue: Unexpected token, expected \";\" (118:17)\n\n\u001b[0m \u001b[90m 116 | \u001b[39m        }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 117 | \u001b[39m        getImage(id) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 | \u001b[39m          returm \u001b[32m\"https://dariushnaghashi.com/image/\"\u001b[39m \u001b[33m+\u001b[39m id\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     | \u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 119 | \u001b[39m        }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 120 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 121 | \u001b[39m        getTotal() {\u001b[0m\n    at Parser.raise (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:3851:17)\n    at Parser.unexpected (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5165:16)\n    at Parser.semicolon (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5147:40)\n    at Parser.parseExpressionStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7838:10)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7427:19)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7879:25)\n    at Parser.parseBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7866:10)\n    at Parser.parseBlock (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7850:10)\n    at Parser.parseFunctionBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6911:24)\n    at Parser.parseFunctionBodyAndFinish (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6881:10)\n    at Parser.parseMethod (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6837:10)\n    at Parser.parseObjectMethod (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6753:19)\n    at Parser.parseObjPropValue (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6795:23)\n    at Parser.parseObjectMember (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6719:10)\n    at Parser.parseObj (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6643:25)\n    at Parser.parseExprAtom (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6276:21)\n    at Parser.parseExprSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5916:23)\n    at Parser.parseMaybeUnary (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseObjectProperty (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6770:101)\n    at Parser.parseObjPropValue (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6795:101)\n    at Parser.parseObjectMember (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6719:10)\n    at Parser.parseObj (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6643:25)\n    at Parser.parseExprAtom (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6276:21)\n    at Parser.parseExprSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5916:23)\n    at Parser.parseMaybeUnary (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseExportDefaultExpression (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:8478:24)\n    at Parser.parseExport (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:8373:31)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7397:27)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  created: function created() {
+    this.getList();
+  },
+  mounted: function mounted() {},
+  data: function data() {
+    return {
+      products: false,
+      status: true,
+      count: 0,
+      key: false,
+      clientIp: '127.0.0.1'
+    };
+  },
+  methods: {
+    getList: function getList() {
+      var _this = this;
+
+      this.$session.start();
+      this.key = 'client-' + this.clientIp;
+      var shop = this.$session.get(this.key);
+      axios.post('/shop/card/product', shop).then(function (res) {
+        _this.products = res.data;
+      }).catch(function (err) {
+        console.log(err);
+      }); // var value = $('.badge').eq(1).text()
+    },
+    getImage: function getImage(id) {
+      return "https://dariushnaghashi.com/image/" + id;
+    },
+    getTotal: function getTotal() {
+      var sum = 0;
+
+      for (product in this.products.list) {
+        sum += list.unitPrice;
+      }
+
+      return sum;
+    }
+  }
+});
 
 /***/ }),
 

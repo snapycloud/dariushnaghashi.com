@@ -115,12 +115,11 @@
                 // var value = $('.badge').eq(1).text()
             },
             getImage(id) {
-              returm "https://dariushnaghashi.com/image/" + id;
+              return "https://dariushnaghashi.com/image/" + id;
             },
-
             getTotal() {
               var sum = 0;
-              for product in this.products.list {
+              for (product in this.products.list) {
                  sum += list.unitPrice;
               }
               return sum;
