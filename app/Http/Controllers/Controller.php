@@ -104,6 +104,24 @@ class Controller extends BaseController
         return view('shop_card');
     }
 
+    public function getProduct(Request $request)
+    {
+        dump($request->all());
+
+        $product = $this->client()->request('GET', 'product', [
+            'where[0][type]' => 'in',
+            'where[0][attribute]' => 'id',
+            'where[0][value]' => [
+                "5ca3ffc6d577a1b0e",
+                "5ca3ffecc360c60bc",
+                "5c96b5c3a4fd61150"
+            ]
+        ]);
+        
+        dump($product);
+        return $request->all();
+    }
+
     public function postAddToCard(Request $request)
     {
         # code...

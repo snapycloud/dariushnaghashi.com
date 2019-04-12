@@ -2225,6 +2225,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.getList();
@@ -2243,7 +2244,11 @@ __webpack_require__.r(__webpack_exports__);
       this.$session.start();
       this.key = 'client-' + this.clientIp;
       var shop = this.$session.get(this.key);
-      console.log(shop); // var value = $('.badge').eq(1).text()
+      axios.post('/shop/card/product', shop).then(function (res) {
+        console.log(res);
+      }).catch(function (err) {
+        console.log(err);
+      }); // var value = $('.badge').eq(1).text()
     }
   }
 });

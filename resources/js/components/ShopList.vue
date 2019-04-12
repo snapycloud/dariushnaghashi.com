@@ -81,6 +81,7 @@
         </div>
         <!-- /column --> 
       </div>
+
     </div>
 </template>
 
@@ -105,7 +106,11 @@
                 this.$session.start()
                 this.key = 'client-' + this.clientIp;
                 var shop = this.$session.get(this.key)
-                console.log(shop)
+                axios.post('/shop/card/product', shop).then(res => {
+                  console.log(res);
+                }).catch(err => {
+                  console.log(err);
+                })
                 // var value = $('.badge').eq(1).text()
                                 
             }
