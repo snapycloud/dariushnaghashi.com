@@ -107,6 +107,7 @@ class Controller extends BaseController
     public function getProduct(Request $request)
     {
         $product = $this->client()->request('GET', 'product', [
+            'select' => 'name,coverId,categoryId,categoryName,status,unitPriceCurrency,unitPrice',
             'where[0][type]' => 'in',
             'where[0][attribute]' => 'id',
             'where[0][value]' => [

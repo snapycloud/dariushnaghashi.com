@@ -12,14 +12,14 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img src="https://dariushnaghashi.com/image/5ca117118c464c618" alt=""> </a></td>
+            <tr v-for="product in products.list">
+              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img src="https://dariushnaghashi.com/image/{{product.coverId}}" alt=""> </a></td>
               <td class="cart-description">
-                <h5 class="mb-0">Hadi chopan</h5>
-                <p class="mb-0">Ref/5ca117118c464c618</p>
+                <h5 class="mb-0">{{ product.name }}</h5>
+                <p class="mb-0">Ref/ {{ product.coverId }}</p>
             </td>
-              <td class="cart-price"><span class="amount">12000 IIR</span></td>             
-              <td class="cart-subtotal"><span class="amount">12000 IIR</span></td>
+              <td class="cart-price"><span class="amount">{{ product.listPrice }}</span></td>             
+              <td class="cart-subtotal"><span class="amount">{{ product.listPrice }}</span></td>
               <td class="cart-remove"><a href="#" class="btn-close"></a></td>
             </tr>
           </tbody>
@@ -108,7 +108,7 @@
                 this.key = 'client-' + this.clientIp;
                 var shop = this.$session.get(this.key)
                 axios.post('/shop/card/product', shop).then(res => {
-                  this.products = res;
+                  this.products = res.data;
                 }).catch(err => {
                   console.log(err);
                 })
