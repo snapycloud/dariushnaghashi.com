@@ -2051,7 +2051,7 @@ __webpack_require__.r(__webpack_exports__);
     bookingNow: function bookingNow(e) {
       e.preventDefault();
       console.log(this.data);
-      slef = this;
+      var self = this;
       axios.post('/booking', self.data).then(function (res) {
         console.log(res, 'done');
 
