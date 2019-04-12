@@ -22269,15 +22269,7 @@ var render = function() {
                 [
                   _c("a", { attrs: { href: "#" } }, [
                     _c("img", {
-                      directives: [
-                        {
-                          name: "src",
-                          rawName: "v-src",
-                          value: _vm.getImage(product.id),
-                          expression: "getImage(product.id)"
-                        }
-                      ],
-                      attrs: { alt: "" }
+                      attrs: { src: _vm.getImage(product.id), alt: "" }
                     })
                   ])
                 ]
