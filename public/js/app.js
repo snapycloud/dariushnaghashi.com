@@ -2032,6 +2032,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {},
   data: function data() {
@@ -2058,6 +2062,7 @@ __webpack_require__.r(__webpack_exports__);
         _this.error = false;
       }).catch(function (error) {
         _this.error = true;
+        _this.errors = _this.error;
       }).finally(function () {
         return _this.loading = false;
       });
@@ -22132,7 +22137,15 @@ var render = function() {
             ? _c(
                 "div",
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-                [_vm._v("Form Data Incorect!")]
+                [
+                  _c(
+                    "ul",
+                    _vm._l(_vm.errors, function(err) {
+                      return _c("li", [_vm._v(_vm._s(err))])
+                    }),
+                    0
+                  )
+                ]
               )
             : _vm._e(),
           _vm._v(" "),

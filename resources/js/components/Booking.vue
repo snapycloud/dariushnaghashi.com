@@ -34,7 +34,11 @@
                     <div class="space20"></div>
                     <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Booking Now</button>
                     <footer class="notification-box"></footer>
-                    <div v-if="error" class="alert alert-danger" role="alert">Form Data Incorect!</div>
+                    <div v-if="error" class="alert alert-danger" role="alert">
+                      <ul>
+                        <li v-for="err in errors">{{ err }}</li>
+                      </ul>
+                    </div>
                     <div v-if="success" class="alert alert-success" role="alert">Your Request Sended</div>
                   </div>
                   <!--/column --> 
@@ -71,6 +75,7 @@
                 })
                 .catch(error => {
                     this.error = true
+                    this.errors = this.error
                 })
                 .finally(() => this.loading = false)
                 
