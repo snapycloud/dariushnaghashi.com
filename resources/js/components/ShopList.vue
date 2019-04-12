@@ -120,7 +120,7 @@
             getTotal() {
               var sum = 0;
               for (product in this.products.list) {
-                 sum += list.unitPrice;
+                 sum += product.unitPrice;
               }
               return sum;
             }
