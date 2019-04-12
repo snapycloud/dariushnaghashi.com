@@ -2135,126 +2135,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ShopList.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  created: function created() {
-    this.getList();
-  },
-  mounted: function mounted() {},
-  data: function data() {
-    return {
-      products: false,
-      status: true,
-      count: 0,
-      key: false,
-      clientIp: '127.0.0.1'
-    };
-  },
-  methods: {
-    getList: function getList() {
-      var _this = this;
-
-      this.$session.start();
-      this.key = 'client-' + this.clientIp;
-      var shop = this.$session.get(this.key);
-      axios.post('/shop/card/product', shop).then(function (res) {
-        _this.products = res.data;
-      }).catch(function (err) {
-        console.log(err);
-      }); // var value = $('.badge').eq(1).text()
-    }
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/abraham/code/production/dariushnaghashi/gallery/resources/js/components/ShopList.vue: Unexpected token, expected \";\" (118:17)\n\n\u001b[0m \u001b[90m 116 | \u001b[39m        }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 117 | \u001b[39m        getImage(id) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 | \u001b[39m          returm \u001b[32m\"https://dariushnaghashi.com/image/\"\u001b[39m \u001b[33m+\u001b[39m id\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     | \u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 119 | \u001b[39m        }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 120 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 121 | \u001b[39m        getTotal() {\u001b[0m\n    at Parser.raise (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:3851:17)\n    at Parser.unexpected (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5165:16)\n    at Parser.semicolon (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5147:40)\n    at Parser.parseExpressionStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7838:10)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7427:19)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7879:25)\n    at Parser.parseBlockBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7866:10)\n    at Parser.parseBlock (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7850:10)\n    at Parser.parseFunctionBody (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6911:24)\n    at Parser.parseFunctionBodyAndFinish (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6881:10)\n    at Parser.parseMethod (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6837:10)\n    at Parser.parseObjectMethod (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6753:19)\n    at Parser.parseObjPropValue (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6795:23)\n    at Parser.parseObjectMember (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6719:10)\n    at Parser.parseObj (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6643:25)\n    at Parser.parseExprAtom (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6276:21)\n    at Parser.parseExprSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5916:23)\n    at Parser.parseMaybeUnary (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseObjectProperty (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6770:101)\n    at Parser.parseObjPropValue (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6795:101)\n    at Parser.parseObjectMember (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6719:10)\n    at Parser.parseObj (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6643:25)\n    at Parser.parseExprAtom (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:6276:21)\n    at Parser.parseExprSubscripts (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5916:23)\n    at Parser.parseMaybeUnary (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseExportDefaultExpression (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:8478:24)\n    at Parser.parseExport (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:8373:31)\n    at Parser.parseStatementContent (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7397:27)\n    at Parser.parseStatement (/Users/abraham/code/production/dariushnaghashi/gallery/node_modules/@babel/parser/lib/index.js:7293:17)");
 
 /***/ }),
 
@@ -22250,7 +22133,28 @@ var render = function() {
           "tbody",
           _vm._l(_vm.products.list, function(product) {
             return _c("tr", [
-              _vm._m(1, true),
+              _c(
+                "td",
+                {
+                  staticClass: "cart-thumbnail",
+                  staticStyle: { width: "100px", "padding-right": "20px" }
+                },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      directives: [
+                        {
+                          name: "src",
+                          rawName: "v-src",
+                          value: _vm.getImage(product.id),
+                          expression: "getImage(product.id)"
+                        }
+                      ],
+                      attrs: { alt: "" }
+                    })
+                  ])
+                ]
+              ),
               _vm._v(" "),
               _c("td", { staticClass: "cart-description" }, [
                 _c("h5", { staticClass: "mb-0" }, [
@@ -22264,17 +22168,17 @@ var render = function() {
               _vm._v(" "),
               _c("td", { staticClass: "cart-price" }, [
                 _c("span", { staticClass: "amount" }, [
-                  _vm._v(_vm._s(product.listPrice))
+                  _vm._v(_vm._s(product.unitPrice))
                 ])
               ]),
               _vm._v(" "),
               _c("td", { staticClass: "cart-subtotal" }, [
                 _c("span", { staticClass: "amount" }, [
-                  _vm._v(_vm._s(product.listPrice))
+                  _vm._v(_vm._s(product.unitPrice))
                 ])
               ]),
               _vm._v(" "),
-              _vm._m(2, true)
+              _vm._m(1, true)
             ])
           }),
           0
@@ -22284,7 +22188,37 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "space30" }),
     _vm._v(" "),
-    _vm._m(3)
+    _c("div", { staticClass: "row" }, [
+      _vm._m(2),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("h3", [_vm._v("Order Total")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "table-responsive" }, [
+          _c("table", { staticClass: "table table-order" }, [
+            _c("tbody", [
+              _c("tr", [
+                _vm._m(3),
+                _vm._v(" "),
+                _c("td", { staticClass: "text-right" }, [
+                  _vm._v(_vm._s(_vm.getTotal()) + " IIR")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _vm._m(4),
+                _vm._v(" "),
+                _c("td", { staticClass: "text-right" }, [
+                  _vm._v(_vm._s(_vm.getTotal()) + " IIR")
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(5)
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -22318,28 +22252,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "td",
-      {
-        staticClass: "cart-thumbnail",
-        staticStyle: { width: "100px", "padding-right": "20px" }
-      },
-      [
-        _c("a", { attrs: { href: "#" } }, [
-          _c("img", {
-            attrs: {
-              src: "https://dariushnaghashi.com/image/product.coverId",
-              alt: ""
-            }
-          })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("td", { staticClass: "cart-remove" }, [
       _c("a", { staticClass: "btn-close", attrs: { href: "#" } })
     ])
@@ -22348,95 +22260,83 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("h3", [_vm._v("Personal Information")]),
-        _vm._v(" "),
-        _c("form", [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    placeholder: "firstName",
-                    name: "firstName"
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    placeholder: "lastName",
-                    name: "lastName"
-                  }
-                })
-              ])
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c("h3", [_vm._v("Personal Information")]),
+      _vm._v(" "),
+      _c("form", [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "firstName",
+                  name: "firstName"
+                }
+              })
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Email", name: "email" }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-sm-6" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Phone", name: "tel" }
-                })
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("h3", [_vm._v("Order Total")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "table-responsive" }, [
-          _c("table", { staticClass: "table table-order" }, [
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [
-                  _c("strong", { staticClass: "color-dark" }, [
-                    _vm._v("Subtotal")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "text-right" }, [_vm._v("12000 IIR")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _c("strong", { staticClass: "color-dark" }, [_vm._v("Total")])
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "text-right" }, [_vm._v("12000 IIR")])
-              ])
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "lastName",
+                  name: "lastName"
+                }
+              })
             ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "text-md-right" }, [
-          _c(
-            "a",
-            { staticClass: "btn btn-full-rounded", attrs: { href: "#" } },
-            [_vm._v("Proceed to Checkout")]
-          )
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "Email", name: "email" }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "Phone", name: "tel" }
+              })
+            ])
+          ])
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("strong", { staticClass: "color-dark" }, [_vm._v("Subtotal")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("strong", { staticClass: "color-dark" }, [_vm._v("Total")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-md-right" }, [
+      _c("a", { staticClass: "btn btn-full-rounded", attrs: { href: "#" } }, [
+        _vm._v("Proceed to Checkout")
       ])
     ])
   }

@@ -13,13 +13,13 @@
           </thead>
           <tbody>
             <tr v-for="product in products.list">
-              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img src="https://dariushnaghashi.com/image/product.coverId" alt=""> </a></td>
+              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img v-src="getImage(product.id)" alt=""> </a></td>
               <td class="cart-description">
                 <h5 class="mb-0">{{ product.name }}</h5>
                 <p class="mb-0">Ref/ {{ product.coverId }}</p>
             </td>
-              <td class="cart-price"><span class="amount">{{ product.listPrice }}</span></td>             
-              <td class="cart-subtotal"><span class="amount">{{ product.listPrice }}</span></td>
+              <td class="cart-price"><span class="amount">{{ product.unitPrice }}</span></td>             
+              <td class="cart-subtotal"><span class="amount">{{ product.unitPrice }}</span></td>
               <td class="cart-remove"><a href="#" class="btn-close"></a></td>
             </tr>
           </tbody>
@@ -67,11 +67,11 @@
               <tbody>
                 <tr>
                   <td><strong class="color-dark">Subtotal</strong></td>
-                  <td class="text-right">12000 IIR</td>
+                  <td class="text-right">{{ getTotal() }} IIR</td>
                 </tr>
                 <tr>
                   <td><strong class="color-dark">Total</strong></td>
-                  <td class="text-right">12000 IIR</td>
+                  <td class="text-right">{{ getTotal() }} IIR</td>
                 </tr>
               </tbody>
             </table>
@@ -113,7 +113,17 @@
                   console.log(err);
                 })
                 // var value = $('.badge').eq(1).text()
-                                
+            },
+            getImage(id) {
+              returm "https://dariushnaghashi.com/image/" + id;
+            },
+
+            getTotal() {
+              var sum = 0;
+              for product in this.products.list {
+                 sum += list.unitPrice;
+              }
+              return sum;
             }
         }
     }
