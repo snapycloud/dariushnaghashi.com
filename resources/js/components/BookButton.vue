@@ -23,7 +23,7 @@
 </script>
 
 <style>
-@media (min-width:320px)  { 
+@media (max-width:320px)  { 
     .booking-btn {
         position: fixed;
         z-index: 999999999;
