@@ -2202,7 +2202,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n@media (max-width:320px)  {\n.booking-btn {\n        position: fixed;\n        z-index: 999999999;\n        bottom: 20px;\n        left: 20px;\n        width: 90%;\n        color: white;\n        display: block !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n@media only screen \n  and (min-device-width: 320px) \n  and (max-device-width: 480px)\n  and (-webkit-min-device-pixel-ratio: 2) {\n.booking-btn {\n        position: fixed;\n        z-index: 999999999;\n        bottom: 20px;\n        left: 20px;\n        width: 90%;\n        color: white;\n        display: block !important;\n}\n}\n", ""]);
 
 // exports
 
