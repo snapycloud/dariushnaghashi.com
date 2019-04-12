@@ -22270,7 +22270,9 @@ var render = function() {
                   _c("a", { attrs: { href: "#" } }, [
                     _c("img", {
                       attrs: {
-                        src: "https://dariushnaghashi.com/image/" + product.id,
+                        src:
+                          "https://dariushnaghashi.com/image/" +
+                          product.coverId,
                         alt: ""
                       }
                     })
