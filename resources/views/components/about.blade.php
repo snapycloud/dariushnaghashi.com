@@ -3,16 +3,20 @@
       <div class="container inner">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <h2 class="section-title mb-30 text-center">Who is Dariush Naghashi?</h2>
+            <h2 class="section-title mb-30 text-center">Darioush Naghashi</h2>
             <figure><img src="{{ asset('style/images/art/about4.jpg') }}" alt=""></figure>
             <div class="space30"></div>
-            <p>Have started at 2006 in the field of amateur photography and filming and then moved to professional fitness photography and international sportive film making.</p>
-            
-              <p>Dariush Naghashi has started his professional career with working with the Gorrilla Wear clothing brand and then cooperated with brands such as EvoGen - Optimum - BSN - Cellucor - Tesla - Kevin Levrone and etc. from all around the world.</p>
-              
-            <p>Some of Dariush Naghashi's most notable works are his cooperation with EvoGen, cooperation with Hani Rambod the best body building coach in the world, with Jeremy Buendia the 4 times Mr. Olympia champion, with world's professional chamption Hadi Chopan and with Babak Akbarnian, Mohamamd Kashani and etc.</p>
+            <p>Started amateur Photography and film making in 2006. After gaining experience, I resumed my career in professional fitness photography and international sportive film making.</p>
+              <p>I started my professional career, working with Gorrilla Wear, a clothing brand, and then worked with brands such as EvoGen, Optimum, BSN, Cellucor, Tesla, Kevin Levrone and some other well-known brands around the world.</p>
+              <p>These are few of my successful projects:
+                - Working with EvoGen <br>
+                -  Cooperation with Hani Rambod, the best body building Coach in the world <br>
+                -  Having Jeremy Buendia the 4 times Mr. Olympia champion as my client <br>
+                -  Working together with world's professional champion, Hadi Chopan <br>
+                -  Fulfilling duties with other prominent figures as Babak Akbarnian and Mohamamd Kashan <br>
+              </p>
             <p>
-              My personal success as a talent, being featured on Fitness Photography, International Sportive Film Making
+              Fitness Photographer, International Sportive Film Maker Tehran, Iran
             </p>
 
             <h3>I look forward to the journey!!!</h3>
