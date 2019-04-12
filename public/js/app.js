@@ -2036,6 +2036,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {},
   data: function data() {
@@ -22118,23 +22119,7 @@ var render = function() {
             }
           }),
           _vm._v(" "),
-          _c("div", { staticClass: "space20" }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-full-rounded btn-white",
-              attrs: {
-                type: "submit",
-                "data-error": "Fix errors",
-                "data-processing": "Sending...",
-                "data-success": "Thank you!"
-              }
-            },
-            [_vm._v("Booking Now")]
-          ),
-          _vm._v(" "),
-          _c("footer", { staticClass: "notification-box" }),
+          _vm.error ? _c("div", { staticClass: "space20" }) : _vm._e(),
           _vm._v(" "),
           _vm.error
             ? _c(
@@ -22164,7 +22149,25 @@ var render = function() {
                 },
                 [_vm._v("Your Request Sended")]
               )
-            : _vm._e()
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { staticClass: "space20" }),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-full-rounded btn-white",
+              attrs: {
+                type: "submit",
+                "data-error": "Fix errors",
+                "data-processing": "Sending...",
+                "data-success": "Thank you!"
+              }
+            },
+            [_vm._v("Booking Now")]
+          ),
+          _vm._v(" "),
+          _c("footer", { staticClass: "notification-box" })
         ])
       ])
     ]
