@@ -2066,8 +2066,8 @@ __webpack_require__.r(__webpack_exports__);
         console.log(error);
         error = JSON.stringify(error);
         error = JSON.parse(error);
-        console.log(error);
-        _this.errors = error;
+        console.log(error.response.data.errors);
+        _this.errors = error.response.data.errors;
       }).finally(function () {
         return _this.loading = false;
       });

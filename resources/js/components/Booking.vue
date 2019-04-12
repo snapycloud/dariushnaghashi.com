@@ -79,8 +79,8 @@
                     console.log(error);
                     error = JSON.stringify(error)
                     error = JSON.parse(error);
-                    console.log(error);
-                    this.errors = error
+                    console.log(error.response.data.errors);
+                    this.errors = error.response.data.errors
                 })
                 .finally(() => this.loading = false)
                 
