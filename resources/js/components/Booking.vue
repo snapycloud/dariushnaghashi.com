@@ -76,7 +76,7 @@
                 })
                 .catch(error => {
                     this.error = true
-                    this.errors = this.error
+                    this.errors = error
                 })
                 .finally(() => this.loading = false)
                 

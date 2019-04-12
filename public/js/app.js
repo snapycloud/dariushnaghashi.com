@@ -2063,7 +2063,7 @@ __webpack_require__.r(__webpack_exports__);
         _this.error = false;
       }).catch(function (error) {
         _this.error = true;
-        _this.errors = _this.error;
+        _this.errors = error;
       }).finally(function () {
         return _this.loading = false;
       });
