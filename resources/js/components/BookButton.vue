@@ -15,7 +15,7 @@
          },
         methods: {
             goBooking(){
-                document.getElementById("contact").scrollIntoView()
+                document.getElementById("booking-now").scrollIntoView()
                 this.status = false    
             }
         }

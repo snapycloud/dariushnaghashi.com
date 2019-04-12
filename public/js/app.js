@@ -1970,7 +1970,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     goBooking: function goBooking() {
-      document.getElementById("contact").scrollIntoView();
+      document.getElementById("booking-now").scrollIntoView();
       this.status = false;
     }
   }
@@ -2034,11 +2034,24 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {},
   data: function data() {
     return {
-      message: ''
+      data: {
+        name: '',
+        email: '',
+        tel: '',
+        subject: '',
+        message: ''
+      }
     };
   },
   methods: {
-    bookingNow: function bookingNow() {}
+    bookingNow: function bookingNow() {
+      console.log(this.data);
+      this.$axios.post('/booking', this.data).the(function (res) {
+        console.log(res);
+      }).catch(function (err) {
+        console.log(err);
+      });
+    }
   }
 });
 
@@ -21943,24 +21956,39 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("form", { attrs: { method: "post" } }, [
+  return _c(
+    "form",
+    {
+      attrs: { method: "post", id: "booking-now" },
+      on: { submit: _vm.bookingNow }
+    },
+    [
       _c("div", { staticClass: "row text-center" }, [
         _c("div", { staticClass: "col-md-6 pr-10" }, [
           _c("div", { staticClass: "form-group" }, [
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.data.name,
+                  expression: "data.name"
+                }
+              ],
               staticClass: "form-control",
               attrs: {
                 type: "text",
-                name: "name",
                 placeholder: "Your name",
                 required: "required"
+              },
+              domProps: { value: _vm.data.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.data, "name", $event.target.value)
+                }
               }
             })
           ])
@@ -21969,12 +21997,28 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-6 pl-10" }, [
           _c("div", { staticClass: "form-group" }, [
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.data.email,
+                  expression: "data.email"
+                }
+              ],
               staticClass: "form-control",
               attrs: {
                 type: "email",
-                name: "email",
                 placeholder: "Your e-mail",
                 required: "required"
+              },
+              domProps: { value: _vm.data.email },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.data, "email", $event.target.value)
+                }
               }
             })
           ])
@@ -21983,8 +22027,25 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-6 pr-10" }, [
           _c("div", { staticClass: "form-group" }, [
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.data.tel,
+                  expression: "data.tel"
+                }
+              ],
               staticClass: "form-control",
-              attrs: { type: "tel", name: "tel", placeholder: "Phone" }
+              attrs: { type: "tel", placeholder: "Phone" },
+              domProps: { value: _vm.data.tel },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.data, "tel", $event.target.value)
+                }
+              }
             })
           ])
         ]),
@@ -21992,20 +22053,53 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-6 pl-10" }, [
           _c("div", { staticClass: "form-group" }, [
             _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.data.subject,
+                  expression: "data.subject"
+                }
+              ],
               staticClass: "form-control",
-              attrs: { type: "text", name: "subject", placeholder: "Subject" }
+              attrs: { type: "text", placeholder: "Subject" },
+              domProps: { value: _vm.data.subject },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.data, "subject", $event.target.value)
+                }
+              }
             })
           ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-12" }, [
           _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.data.message,
+                expression: "data.message"
+              }
+            ],
             staticClass: "form-control",
             attrs: {
-              name: "message",
               rows: "3",
               placeholder: "Type your message here...",
               required: ""
+            },
+            domProps: { value: _vm.data.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.data, "message", $event.target.value)
+              }
             }
           }),
           _vm._v(" "),
@@ -22028,9 +22122,10 @@ var staticRenderFns = [
           _c("footer", { staticClass: "notification-box" })
         ])
       ])
-    ])
-  }
-]
+    ]
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
