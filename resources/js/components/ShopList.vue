@@ -119,10 +119,10 @@
             },
             getTotal() {
               var sum = 0;
-              for (product in this.products.list) {
-                 sum += product.unitPrice;
-              }
-              return sum;
+              // for (product in this.products.list) {
+              //    sum += product.unitPrice;
+              // }
+              return 12000;
             }
         }
     }

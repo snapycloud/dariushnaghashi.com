@@ -2257,13 +2257,11 @@ __webpack_require__.r(__webpack_exports__);
       return "https://dariushnaghashi.com/image/" + id;
     },
     getTotal: function getTotal() {
-      var sum = 0;
+      var sum = 0; // for (product in this.products.list) {
+      //    sum += product.unitPrice;
+      // }
 
-      for (product in this.products.list) {
-        sum += product.unitPrice;
-      }
-
-      return sum;
+      return 12000;
     }
   }
 });
