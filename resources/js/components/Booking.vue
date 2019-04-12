@@ -34,6 +34,8 @@
                     <div class="space20"></div>
                     <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Booking Now</button>
                     <footer class="notification-box"></footer>
+                    <div v-if="error" class="alert alert-danger" role="alert">Form Data Incorect!</div>
+                    <div v-if="success" class="alert alert-success" role="alert">Your Request Sended</div>
                   </div>
                   <!--/column --> 
                 </div>
@@ -48,6 +50,8 @@
         },
         data: function () {
             return {
+              error: false,
+              success: false,
               data: {
                 name: '',
                 email: '',
@@ -61,11 +65,18 @@
             bookingNow(e){
                e.preventDefault();
                 console.log(this.data);
+                slef = this;
 
-                axios.post('/booking', this.data).then(function (res){
-                  console.log(res)
+                axios.post('/booking', self.data).then(function (res){
+
+                  console.log(res, 'done')
+                  if(data.errors) {
+                    self.error = true
+                  } else {
+                    self.success = true
+                  }
                 }).catch(function(err){
-                  console.log(err)
+                  console.log(err, 'err')
                 })
                 
             }

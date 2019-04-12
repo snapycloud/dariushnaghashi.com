@@ -2030,10 +2030,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {},
   data: function data() {
     return {
+      error: false,
+      success: false,
       data: {
         name: '',
         email: '',
@@ -2047,10 +2051,17 @@ __webpack_require__.r(__webpack_exports__);
     bookingNow: function bookingNow(e) {
       e.preventDefault();
       console.log(this.data);
-      axios.post('/booking', this.data).then(function (res) {
-        console.log(res);
+      slef = this;
+      axios.post('/booking', self.data).then(function (res) {
+        console.log(res, 'done');
+
+        if (data.errors) {
+          self.error = true;
+        } else {
+          self.success = true;
+        }
       }).catch(function (err) {
-        console.log(err);
+        console.log(err, 'err');
       });
     }
   }
@@ -22117,7 +22128,26 @@ var render = function() {
             [_vm._v("Booking Now")]
           ),
           _vm._v(" "),
-          _c("footer", { staticClass: "notification-box" })
+          _c("footer", { staticClass: "notification-box" }),
+          _vm._v(" "),
+          _vm.error
+            ? _c(
+                "div",
+                { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+                [_vm._v("Form Data Incorect!")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.success
+            ? _c(
+                "div",
+                {
+                  staticClass: "alert alert-success",
+                  attrs: { role: "alert" }
+                },
+                [_vm._v("Your Request Sended")]
+              )
+            : _vm._e()
         ])
       ])
     ]
