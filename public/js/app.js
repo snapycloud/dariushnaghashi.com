@@ -22138,17 +22138,20 @@ var render = function() {
           _vm._v(" "),
           _vm.error
             ? _c(
-                "div",
-                { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-                [
-                  _c(
-                    "ul",
-                    _vm._l(_vm.errors, function(err) {
-                      return _c("li", [_vm._v(_vm._s(err[0]))])
-                    }),
-                    0
-                  )
-                ]
+                "ul",
+                _vm._l(_vm.errors, function(err) {
+                  return _c("li", [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "alert alert-danger",
+                        attrs: { role: "alert" }
+                      },
+                      [_vm._v(_vm._s(err[0]))]
+                    )
+                  ])
+                }),
+                0
               )
             : _vm._e(),
           _vm._v(" "),

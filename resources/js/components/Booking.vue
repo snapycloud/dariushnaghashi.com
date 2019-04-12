@@ -34,11 +34,11 @@
                     <div class="space20"></div>
                     <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Booking Now</button>
                     <footer class="notification-box"></footer>
-                    <div v-if="error" class="alert alert-danger" role="alert">
-                      <ul>
-                        <li v-for="err in errors">{{ err[0] }}</li>
+                    
+                      <ul v-if="error">
+                        <li v-for="err in errors"><div  class="alert alert-danger" role="alert">{{ err[0] }}</div></li>
                       </ul>
-                    </div>
+                    
                     <div v-if="success" class="alert alert-success" role="alert">Your Request Sended</div>
                   </div>
                   <!--/column --> 
