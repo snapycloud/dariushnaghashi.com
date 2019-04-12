@@ -23,8 +23,6 @@
 </script>
 
 <style>
-
-/* Smartphones (portrait) ----------- */
 @media (min-width:320px)  { 
     .booking-btn {
         position: fixed;
@@ -35,18 +33,5 @@
         color: white;
         display: block !important;
     }
-}
-
-
-@media (min-width:480px)  { 
-  .booking-btn {
-        position: fixed;
-        z-index: 999999999;
-        bottom: 20px;
-        left: 20px;
-        width: 90%;
-        color: white;
-        display: block !important;
-  }
 }
 </style>
