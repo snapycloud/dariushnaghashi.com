@@ -2044,7 +2044,8 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    bookingNow: function bookingNow() {
+    bookingNow: function bookingNow(e) {
+      e.preventDefault();
       console.log(this.data);
       this.$axios.post('/booking', this.data).the(function (res) {
         console.log(res);
@@ -21958,10 +21959,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "form",
-    {
-      attrs: { method: "post", id: "booking-now" },
-      on: { submit: _vm.bookingNow }
-    },
+    { attrs: { id: "booking-now" }, on: { submit: _vm.bookingNow } },
     [
       _c("div", { staticClass: "row text-center" }, [
         _c("div", { staticClass: "col-md-6 pr-10" }, [

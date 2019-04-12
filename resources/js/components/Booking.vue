@@ -1,5 +1,5 @@
 <template>
-  <form  method="post" id="booking-now" @submit="bookingNow">
+  <form  id="booking-now" @submit="bookingNow">
                 <div class="row text-center">
                   <div class="col-md-6 pr-10">
                     <div class="form-group">
@@ -58,7 +58,8 @@
             }
          },
         methods: {
-            bookingNow(){
+            bookingNow(e){
+               e.preventDefault();
                 console.log(this.data);
 
                 this.$axios.post('/booking', this.data).the(function (res){
