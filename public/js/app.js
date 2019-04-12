@@ -22269,7 +22269,10 @@ var render = function() {
                 [
                   _c("a", { attrs: { href: "#" } }, [
                     _c("img", {
-                      attrs: { src: _vm.getImage(product.id), alt: "" }
+                      attrs: {
+                        src: "https://dariushnaghashi.com/image/" + product.id,
+                        alt: ""
+                      }
                     })
                   ])
                 ]

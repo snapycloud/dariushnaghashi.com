@@ -13,7 +13,7 @@
           </thead>
           <tbody>
             <tr v-for="product in products.list">
-              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img :src="getImage(product.id)" alt=""> </a></td>
+              <td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img v-bind:src="'https://dariushnaghashi.com/image/' + product.id" alt=""> </a></td>
               <td class="cart-description">
                 <h5 class="mb-0">{{ product.name }}</h5>
                 <p class="mb-0">Ref/ {{ product.coverId }}</p>
