@@ -22237,8 +22237,211 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
-var staticRenderFns = []
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container inner" }, [
+    _c("div", { staticClass: "table-cart" }, [
+      _c("table", { staticClass: "table table-responsive-lg mb-0" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.products.list, function(product) {
+            return _c("tr", [
+              _vm._m(1, true),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-description" }, [
+                _c("h5", { staticClass: "mb-0" }, [
+                  _vm._v(_vm._s(product.name))
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-0" }, [
+                  _vm._v("Ref/ " + _vm._s(product.coverId))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-price" }, [
+                _c("span", { staticClass: "amount" }, [
+                  _vm._v(_vm._s(product.listPrice))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-subtotal" }, [
+                _c("span", { staticClass: "amount" }, [
+                  _vm._v(_vm._s(product.listPrice))
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(2, true)
+            ])
+          }),
+          0
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "space30" }),
+    _vm._v(" "),
+    _vm._m(3)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { staticClass: "cart-thumbnail color-dark" }, [
+          _vm._v("Product")
+        ]),
+        _vm._v(" "),
+        _c("th", { staticClass: "cart-description color-dark" }, [
+          _vm._v("Description")
+        ]),
+        _vm._v(" "),
+        _c("th", { staticClass: "cart-price color-dark" }, [
+          _vm._v("Unit Price")
+        ]),
+        _vm._v(" "),
+        _c("th", { staticClass: "cart-subtotal color-dark" }, [
+          _vm._v("Total")
+        ]),
+        _vm._v(" "),
+        _c("th", { staticClass: "cart-remove color-dark" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "td",
+      {
+        staticClass: "cart-thumbnail",
+        staticStyle: { width: "100px", "padding-right": "20px" }
+      },
+      [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: {
+              src: "https://dariushnaghashi.com/image/product.coverId",
+              alt: ""
+            }
+          })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { staticClass: "cart-remove" }, [
+      _c("a", { staticClass: "btn-close", attrs: { href: "#" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("h3", [_vm._v("Personal Information")]),
+        _vm._v(" "),
+        _c("form", [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    placeholder: "firstName",
+                    name: "firstName"
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    placeholder: "lastName",
+                    name: "lastName"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "Email", name: "email" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "Phone", name: "tel" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("h3", [_vm._v("Order Total")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "table-responsive" }, [
+          _c("table", { staticClass: "table table-order" }, [
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [
+                  _c("strong", { staticClass: "color-dark" }, [
+                    _vm._v("Subtotal")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "text-right" }, [_vm._v("12000 IIR")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [
+                  _c("strong", { staticClass: "color-dark" }, [_vm._v("Total")])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "text-right" }, [_vm._v("12000 IIR")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-md-right" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-full-rounded", attrs: { href: "#" } },
+            [_vm._v("Proceed to Checkout")]
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
 
 
 
