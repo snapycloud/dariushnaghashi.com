@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button v-if="status" class="btn booking-btn btn-full-rounded hover" @click="" style="display: none">book me</button>
+        <button v-if="status" class="btn booking-btn btn-full-rounded hover" @click.prevent="goBooking" style="display: none">book me</button>
     </div>
 </template>
 

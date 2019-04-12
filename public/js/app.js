@@ -21843,7 +21843,12 @@ var render = function() {
           {
             staticClass: "btn booking-btn btn-full-rounded hover",
             staticStyle: { display: "none" },
-            on: { click: function($event) {} }
+            on: {
+              click: function($event) {
+                $event.preventDefault()
+                return _vm.goBooking($event)
+              }
+            }
           },
           [_vm._v("book me")]
         )
