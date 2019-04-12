@@ -64,20 +64,13 @@
         methods: {
             bookingNow(e){
                e.preventDefault();
-                console.log(this.data);
-                var self = this;
-
-                axios.post('/booking', self.data).then(function (res){
-
-                  console.log(res, 'done')
-                  if(data.errors) {
-                    self.error = true
-                  } else {
-                    self.success = true
-                  }
-                }).catch(function(err){
-                  console.log(err, 'err')
+                axios.post('/booking', this.data).then(response => {
+                    console.log(response);
                 })
+                .catch(error => {
+                    console.log(error)
+                })
+                .finally(() => this.loading = false)
                 
             }
         }

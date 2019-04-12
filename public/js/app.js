@@ -2049,19 +2049,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     bookingNow: function bookingNow(e) {
-      e.preventDefault();
-      console.log(this.data);
-      var self = this;
-      axios.post('/booking', self.data).then(function (res) {
-        console.log(res, 'done');
+      var _this = this;
 
-        if (data.errors) {
-          self.error = true;
-        } else {
-          self.success = true;
-        }
-      }).catch(function (err) {
-        console.log(err, 'err');
+      e.preventDefault();
+      axios.post('/booking', this.data).then(function (response) {
+        console.log(response);
+      }).catch(function (error) {
+        console.log(error);
+      }).finally(function () {
+        return _this.loading = false;
       });
     }
   }
