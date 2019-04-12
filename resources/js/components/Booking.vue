@@ -66,9 +66,11 @@
                e.preventDefault();
                 axios.post('/booking', this.data).then(response => {
                     console.log(response);
+                    this.success = true
+                    this.error = false
                 })
                 .catch(error => {
-                    console.log(error)
+                    this.error = true
                 })
                 .finally(() => this.loading = false)
                 

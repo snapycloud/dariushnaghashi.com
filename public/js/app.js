@@ -2054,8 +2054,10 @@ __webpack_require__.r(__webpack_exports__);
       e.preventDefault();
       axios.post('/booking', this.data).then(function (response) {
         console.log(response);
+        _this.success = true;
+        _this.error = false;
       }).catch(function (error) {
-        console.log(error);
+        _this.error = true;
       }).finally(function () {
         return _this.loading = false;
       });
