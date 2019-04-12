@@ -80,7 +80,7 @@ class Controller extends BaseController
             'message' => 'required|max:1255'
         ]);
         $fullname = explode(' ', $request->get('name'));
-        if(count($fullname) >= 2) {
+        if(count($fullname) > 2) {
             $firstName = $fullname[0];
             $lastName = $fullname[1];
         } else {
