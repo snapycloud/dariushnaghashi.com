@@ -2063,6 +2063,10 @@ __webpack_require__.r(__webpack_exports__);
         _this.error = false;
       }).catch(function (error) {
         _this.error = true;
+        console.log(error);
+        error = JSON.stringify(error);
+        error = JSON.parse(error);
+        console.log(error);
         _this.errors = error;
       }).finally(function () {
         return _this.loading = false;

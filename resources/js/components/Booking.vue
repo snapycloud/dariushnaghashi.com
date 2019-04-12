@@ -76,6 +76,10 @@
                 })
                 .catch(error => {
                     this.error = true
+                    console.log(error);
+                    error = JSON.stringify(error)
+                    error = JSON.parse(error);
+                    console.log(error);
                     this.errors = error
                 })
                 .finally(() => this.loading = false)
