@@ -2233,6 +2233,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {},
   data: function data() {
     return {
+      products: false,
       status: true,
       count: 0,
       key: false,
@@ -2241,11 +2242,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     getList: function getList() {
+      var _this = this;
+
       this.$session.start();
       this.key = 'client-' + this.clientIp;
       var shop = this.$session.get(this.key);
       axios.post('/shop/card/product', shop).then(function (res) {
-        console.log(res);
+        _this.products = res;
       }).catch(function (err) {
         console.log(err);
       }); // var value = $('.badge').eq(1).text()

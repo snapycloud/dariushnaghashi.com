@@ -95,6 +95,7 @@
         },
         data: function () {
             return {
+              products: false,
               status: true,
               count: 0,
               key: false,
@@ -107,7 +108,7 @@
                 this.key = 'client-' + this.clientIp;
                 var shop = this.$session.get(this.key)
                 axios.post('/shop/card/product', shop).then(res => {
-                  console.log(res);
+                  this.products = res;
                 }).catch(err => {
                   console.log(err);
                 })

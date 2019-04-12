@@ -106,8 +106,6 @@ class Controller extends BaseController
 
     public function getProduct(Request $request)
     {
-        dump($request->all());
-
         $product = $this->client()->request('GET', 'product', [
             'where[0][type]' => 'in',
             'where[0][attribute]' => 'id',
@@ -117,9 +115,8 @@ class Controller extends BaseController
                 "5c96b5c3a4fd61150"
             ]
         ]);
-        
-        dump($product);
-        return $request->all();
+    
+        return $product;
     }
 
     public function postAddToCard(Request $request)
