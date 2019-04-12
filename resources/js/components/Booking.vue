@@ -62,7 +62,7 @@
                e.preventDefault();
                 console.log(this.data);
 
-                this.$axios.post('/booking', this.data).the(function (res){
+                axios.post('/booking', this.data).the(function (res){
                   console.log(res)
                 }).catch(function(err){
                   console.log(err)
