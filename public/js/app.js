@@ -1794,13 +1794,16 @@ __webpack_require__.r(__webpack_exports__);
     this.message += this.price + " IIR";
     this.key = 'client-' + this.clientIp;
     var shop = this.$session.get(this.key);
-    var self = this;
-    var selected = shop.filter(function (e) {
-      return e === self.id;
-    });
 
-    if (selected.length) {
-      this.selected = true;
+    if (shop) {
+      var self = this;
+      var selected = shop.filter(function (e) {
+        return e === self.id;
+      });
+
+      if (selected.length) {
+        this.selected = true;
+      }
     }
   },
   data: function data() {

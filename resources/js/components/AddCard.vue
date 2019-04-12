@@ -30,12 +30,14 @@
             this.message += this.price + " IIR"
             this.key = 'client-' + this.clientIp;
             var shop = this.$session.get(this.key)
-            let self = this
-            var selected = shop.filter(function(e) { 
-                return e === self.id
-            })
-            if (selected.length) {
-                this.selected = true;
+            if(shop) {
+                let self = this
+                var selected = shop.filter(function(e) { 
+                    return e === self.id
+                })
+                if (selected.length) {
+                    this.selected = true;
+                }
             }
         },
         data: function () {
