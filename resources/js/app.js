@@ -10,6 +10,7 @@ Vue.component('add-card-gallery', require('./components/AddCardGallery.vue').def
 Vue.component('shop-card', require('./components/ShopCard.vue').default);
 Vue.component('shop-list', require('./components/ShopList.vue').default);
 Vue.component('booking-buttom', require('./components/BookButton.vue').default);
+Vue.component('booking', require('./components/Booking.vue').default);
 
 
 const app = new Vue({

@@ -1,31 +1,5 @@
 <template>
-  <section id="contact">
-    <div class="wrapper dark-wrapper inverse-text">
-      <div class="container inner">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <h2 class="section-title text-center">Get in Touch</h2>
-            <p class="text-center">Contact me to get your photo session scheduled and to discuss your ambitions. Send questions about rates, packages and image licensing. I look forward to creating your amazing photographs that will elevate your presence! –Remember, these photos are about you. Choose your adventure!.</p>
-            <div class="space20"></div>
-            <div class="row text-center">
-              <div class="col-md-4"> <span class="icon icon-color color-white fs-48 mb-10"><i class="si-camping_map"></i></span>
-                <p>Tehran, Iran<br>Shahrake Gharb</p>
-              </div>
-              <!--/column -->
-              <div class="col-md-4"> <span class="icon icon-color color-white fs-48 mb-10"><i class="si-phone_phone-ringing"></i></span>
-                <p>(98) 912 000 00 00<br>
-                  (98) 912 000 00 00 </p>
-              </div>
-              <!--/column -->
-              <div class="col-md-4"> <span class="icon icon-color color-white fs-48 mb-10"><i class="si-mail_mail-2"></i></span>
-                <p><a class="nocolor" href="mailto:dariush.naghashi@gmail.com ">dariush.naghashi@gmail.com </a></p>
-              </div>
-              <!--/column --> 
-            </div>
-            <!--/.row -->
-            <div class="space30"></div>
-            <div class="form-container">
-              <form action="contact/vanilla-form.php.html" method="post" class="vanilla vanilla-form" novalidate>
+  <form  method="post">
                 <div class="row text-center">
                   <div class="col-md-6 pr-10">
                     <div class="form-group">
@@ -58,61 +32,28 @@
                   <div class="col-12">
                     <textarea name="message" class="form-control" rows="3" placeholder="Type your message here..." required></textarea>
                     <div class="space20"></div>
-                    <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Submit</button>
+                    <button type="submit" class="btn btn-full-rounded btn-white" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Booking Now</button>
                     <footer class="notification-box"></footer>
                   </div>
                   <!--/column --> 
                 </div>
                 <!--/.row -->
               </form>
-              <!--/.vanilla-form --> 
-            </div>
-            <!--/.form-container --> 
-          </div>
-          <!-- /column --> 
-        </div>
-        <!-- /.row --> 
-      </div>
-      <!-- /.container --> 
-    </div>
-    <!-- /.wrapper --> 
-  </section>
 </template>
 
 <script>
     export default {
         mounted() {
-            this.message += this.price + " IIR"
+            
         },
         data: function () {
             return {
-              message: 'Price: ',
-              selected: false
+              message: '',
             }
          },
-
-        props: [
-            'id', 'price'
-        ],
-
         methods: {
-            addToCard(){
-                if(this.selected == false){
-                    $('.has-tooltip').tooltip("hide")
-                    this.selected = true
-
-                    // add to backend
-                }
-            },
-            removeOfCard(){
-                if(this.selected == true){
-                    this.selected = false
-
-                    // remove form backend
-                }
-            },
-            getShopCard(){
-                return window.location = "https://dariushnaghashi.com/store/card/"
+            bookingNow(){
+                
             }
         }
     }
