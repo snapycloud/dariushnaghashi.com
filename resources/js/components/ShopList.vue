@@ -117,6 +117,7 @@
             getTotal() {
               var sum = 0;
               var products = this.products.list
+              console.log(products, this.products.list);
               for (var item in products) {
                 console.log(item, item.unitPrice, sum);
                  sum = sum + item.unitPrice;
