@@ -93,10 +93,12 @@
 				},
 				mounted() {
 					this.getList();
+					this.sum = this.getTotal()
 				},
 				data: function () {
 						return {
 							products: false,
+							sum: 0,
 							status: true,
 							count: 0,
 							key: false,

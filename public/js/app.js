@@ -2232,10 +2232,12 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.getList();
+    this.sum = this.getTotal();
   },
   data: function data() {
     return {
       products: false,
+      sum: 0,
       status: true,
       count: 0,
       key: false,
