@@ -2228,11 +2228,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.getList();
-    this.sum = this.getTotal();
   },
   mounted: function mounted() {
     this.getList();
-    this.sum = this.getTotal();
   },
   data: function data() {
     return {
@@ -2253,10 +2251,11 @@ __webpack_require__.r(__webpack_exports__);
       var shop = this.$session.get(this.key);
       axios.post('/shop/card/product', shop).then(function (res) {
         _this.products = res.data;
+
+        _this.getTotal();
       }).catch(function (err) {
         console.log(err);
-      });
-      this.sum = this.getTotal(); // var value = $('.badge').eq(1).text()
+      }); // var value = $('.badge').eq(1).text()
     },
     getTotal: function getTotal() {
       var sum = 0;

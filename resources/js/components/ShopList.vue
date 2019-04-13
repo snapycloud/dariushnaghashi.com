@@ -89,11 +89,9 @@
 		export default {
 				created: function() {
 						this.getList();
-						this.sum = this.getTotal()
 				},
 				mounted() {
 					this.getList();
-					this.sum = this.getTotal()
 				},
 				data: function () {
 						return {
@@ -112,11 +110,10 @@
 								var shop = this.$session.get(this.key)
 								axios.post('/shop/card/product', shop).then(res => {
 									this.products = res.data;
+									this.getTotal()
 								}).catch(err => {
 									console.log(err);
 								})
-
-							this.sum = this.getTotal()
 								// var value = $('.badge').eq(1).text()
 						},
 						getTotal() {
