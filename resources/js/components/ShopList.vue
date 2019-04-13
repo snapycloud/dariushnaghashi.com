@@ -137,10 +137,13 @@
 							})
 							self.$session.set(self.key, shop)
 
-							this.products = this.products.filter(function(e) { 
-															console.log(e);
-																return e.id !== id
-															})
+							var products = this.products.list
+							for (var item in products) {
+									if(id == products[item].id) {
+											delete products[item]
+									}
+							}
+							this.products = products;
 							
 						},
 						checkStatus(id) {
