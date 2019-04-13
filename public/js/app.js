@@ -2259,7 +2259,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log(products);
 
       if (products) {
-        for (item in products) {
+        for (var item in products) {
           sum += item.unitPrice;
         }
 
