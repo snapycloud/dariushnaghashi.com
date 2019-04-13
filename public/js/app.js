@@ -2102,7 +2102,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.getShopCount();
-    setInterval(this.getShopCount, 500);
+    setInterval(this.getShopCount, 1000);
   },
   mounted: function mounted() {},
   data: function data() {

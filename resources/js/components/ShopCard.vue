@@ -16,7 +16,7 @@
     export default {
         created: function() {
             this.getShopCount();
-            setInterval(this.getShopCount, 500)
+            setInterval(this.getShopCount, 1000)
         },
         mounted() {
 
