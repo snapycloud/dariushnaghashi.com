@@ -119,7 +119,6 @@
               var products = this.products.list
               for (var item in products) {
                   sum = sum + products[item].unitePrice;
-                }
               }
               return sum;
             }
