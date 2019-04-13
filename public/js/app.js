@@ -22334,9 +22334,9 @@ var render = function() {
                   _c("td", { staticClass: "cart-remove" }, [
                     _c("a", {
                       staticClass: "btn-close",
-                      attrs: { href: "#" },
                       on: {
                         click: function($event) {
+                          $event.preventDefault()
                           return _vm.removeFromList(product.id)
                         }
                       }
