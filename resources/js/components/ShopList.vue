@@ -20,7 +20,7 @@
 						</td>
 							<td class="cart-price"><span class="amount">{{ product.unitPrice }} IIR</span></td>             
 							<td class="cart-subtotal"><span class="amount">{{ product.unitPrice }} IIR</span></td>
-							<td class="cart-remove"><a @click.prevent="removeFromList(product.id)" class="btn-close"></a></td>
+							<td class="cart-remove"><a @click="removeFromList(product.id)" class="btn-close"></a></td>
 						</tr>
 					</tbody>
 				</table>

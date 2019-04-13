@@ -22336,7 +22336,6 @@ var render = function() {
                       staticClass: "btn-close",
                       on: {
                         click: function($event) {
-                          $event.preventDefault()
                           return _vm.removeFromList(product.id)
                         }
                       }
