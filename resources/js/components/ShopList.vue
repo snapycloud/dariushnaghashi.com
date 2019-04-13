@@ -139,7 +139,8 @@
 
 							var products = this.products.list
 							for (var item in products) {
-									if(id == products[item].id) {
+								console.log(id , products[item].id, id === products[item].id);
+									if(id === products[item].id) {
 											delete products[item]
 									}
 							}
