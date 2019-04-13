@@ -130,14 +130,18 @@
 						removeFromList(id) {
 							console.log(id);
 							let self = this
-							if(self.selected == true){
-									self.selected = false
-									var shop = self.$session.get(self.key)
-									shop = shop.filter(function(e) { 
-											return e !== id
-									})
-									self.$session.set(self.key, shop)
-							}
+							self.selected = false
+							var shop = self.$session.get(self.key)
+							shop = shop.filter(function(e) { 
+									return e !== id
+							})
+							self.$session.set(self.key, shop)
+
+							this.products = this.products.filter(function(e) { 
+															console.log(e);
+																return e.id !== id
+															})
+							
 						},
 						checkStatus(id) {
 								let self = this

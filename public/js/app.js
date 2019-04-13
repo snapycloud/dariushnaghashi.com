@@ -2271,15 +2271,16 @@ __webpack_require__.r(__webpack_exports__);
     removeFromList: function removeFromList(id) {
       console.log(id);
       var self = this;
-
-      if (self.selected == true) {
-        self.selected = false;
-        var shop = self.$session.get(self.key);
-        shop = shop.filter(function (e) {
-          return e !== id;
-        });
-        self.$session.set(self.key, shop);
-      }
+      self.selected = false;
+      var shop = self.$session.get(self.key);
+      shop = shop.filter(function (e) {
+        return e !== id;
+      });
+      self.$session.set(self.key, shop);
+      this.products = this.products.filter(function (e) {
+        console.log(e);
+        return e.id !== id;
+      });
     },
     checkStatus: function checkStatus(id) {
       var self = this;
