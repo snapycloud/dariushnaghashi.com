@@ -80,7 +80,6 @@
                     shop = shop.filter(function(e) { 
                         return e !== self.id
                     })
-                    console.log(shop);
                     self.$session.set(self.key, shop)
 
                     // remove form backend

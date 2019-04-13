@@ -1841,7 +1841,6 @@ __webpack_require__.r(__webpack_exports__);
         shop = shop.filter(function (e) {
           return e !== self.id;
         });
-        console.log(shop);
         self.$session.set(self.key, shop); // remove form backend
       }
     },
@@ -2229,6 +2228,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.getList();
+    this.sum = this.getTotal();
   },
   mounted: function mounted() {
     this.getList();
@@ -2264,6 +2264,30 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return sum;
+    },
+    removeFromList: function removeFromList(id) {
+      var self = this;
+
+      if (self.selected == true) {
+        self.selected = false;
+        var shop = self.$session.get(self.key);
+        shop = shop.filter(function (e) {
+          return e !== id;
+        });
+        self.$session.set(self.key, shop);
+      }
+    },
+    checkStatus: function checkStatus(id) {
+      var self = this;
+
+      if (self.selected == true) {
+        self.selected = false;
+        var shop = self.$session.get(self.key);
+        shop = shop.filter(function (e) {
+          return e == id;
+        });
+        return shop;
+      }
     }
   }
 });
@@ -22261,51 +22285,63 @@ var render = function() {
         _c(
           "tbody",
           _vm._l(_vm.products.list, function(product) {
-            return _c("tr", [
-              _c(
-                "td",
-                {
-                  staticClass: "cart-thumbnail",
-                  staticStyle: { width: "100px", "padding-right": "20px" }
-                },
-                [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src:
-                          "https://dariushnaghashi.com/image/" +
-                          product.coverId,
-                        alt: ""
+            return _vm.checkStatus(product.id)
+              ? _c("tr", [
+                  _c(
+                    "td",
+                    {
+                      staticClass: "cart-thumbnail",
+                      staticStyle: { width: "100px", "padding-right": "20px" }
+                    },
+                    [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src:
+                              "https://dariushnaghashi.com/image/" +
+                              product.coverId,
+                            alt: ""
+                          }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "cart-description" }, [
+                    _c("h5", { staticClass: "mb-0" }, [
+                      _vm._v(_vm._s(product.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mb-0" }, [
+                      _vm._v("Ref/ " + _vm._s(product.coverId))
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "cart-price" }, [
+                    _c("span", { staticClass: "amount" }, [
+                      _vm._v(_vm._s(product.unitPrice) + " IIR")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "cart-subtotal" }, [
+                    _c("span", { staticClass: "amount" }, [
+                      _vm._v(_vm._s(product.unitPrice) + " IIR")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "cart-remove" }, [
+                    _c("a", {
+                      staticClass: "btn-close",
+                      attrs: { href: "#" },
+                      on: {
+                        click: function($event) {
+                          return _vm.removeFromList(product.id)
+                        }
                       }
                     })
                   ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("td", { staticClass: "cart-description" }, [
-                _c("h5", { staticClass: "mb-0" }, [
-                  _vm._v(_vm._s(product.name))
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-0" }, [
-                  _vm._v("Ref/ " + _vm._s(product.coverId))
                 ])
-              ]),
-              _vm._v(" "),
-              _c("td", { staticClass: "cart-price" }, [
-                _c("span", { staticClass: "amount" }, [
-                  _vm._v(_vm._s(product.unitPrice) + " IIR")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("td", { staticClass: "cart-subtotal" }, [
-                _c("span", { staticClass: "amount" }, [
-                  _vm._v(_vm._s(product.unitPrice) + " IIR")
-                ])
-              ]),
-              _vm._v(" "),
-              _vm._m(1, true)
-            ])
+              : _vm._e()
           }),
           0
         )
@@ -22315,7 +22351,7 @@ var render = function() {
     _c("div", { staticClass: "space30" }),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _vm._m(2),
+      _vm._m(1),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-6" }, [
         _c("h3", [_vm._v("Order Total")]),
@@ -22324,25 +22360,25 @@ var render = function() {
           _c("table", { staticClass: "table table-order" }, [
             _c("tbody", [
               _c("tr", [
-                _vm._m(3),
+                _vm._m(2),
                 _vm._v(" "),
                 _c("td", { staticClass: "text-right" }, [
-                  _vm._v(_vm._s(_vm.getTotal()) + " IIR")
+                  _vm._v(_vm._s(_vm.sum) + " IIR")
                 ])
               ]),
               _vm._v(" "),
               _c("tr", [
-                _vm._m(4),
+                _vm._m(3),
                 _vm._v(" "),
                 _c("td", { staticClass: "text-right" }, [
-                  _vm._v(_vm._s(_vm.getTotal()) + " IIR")
+                  _vm._v(_vm._s(_vm.sum) + " IIR")
                 ])
               ])
             ])
           ])
         ]),
         _vm._v(" "),
-        _vm._m(5)
+        _vm._m(4)
       ])
     ])
   ])
@@ -22372,14 +22408,6 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", { staticClass: "cart-remove color-dark" })
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { staticClass: "cart-remove" }, [
-      _c("a", { staticClass: "btn-close", attrs: { href: "#" } })
     ])
   },
   function() {
