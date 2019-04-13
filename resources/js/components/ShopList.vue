@@ -118,9 +118,7 @@
               var sum = 0;
               var products = this.products.list
               for (var item in products) {
-                if(products.hasOwnProperty(item)) {
-                  console.log(products[item]);
-                  sum = sum + products.values(item).unitePrice;
+                  sum = sum + products[item].unitePrice;
                 }
               }
               return sum;
