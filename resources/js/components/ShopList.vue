@@ -118,7 +118,7 @@
               var sum = 0;
               var products = this.products.list
               for (var item in products) {
-                 sum += item.unitPrice;
+                 sum = sum + item.unitPrice;
               }
               return sum;
             }
