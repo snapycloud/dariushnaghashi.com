@@ -2279,7 +2279,7 @@ __webpack_require__.r(__webpack_exports__);
       self.$session.set(self.key, shop);
       var products = this.products.list;
       products = products.filter(function (e) {
-        console.log(e);
+        console.log(e, e.id);
         return e.id !== id;
       }); // for (var item in products) {
       // 	console.log(id , products[item].id,products[item], id === products[item].id);

@@ -139,7 +139,7 @@
 
 							var products = this.products.list
 							products = products.filter(function(e) { 
-								console.log(e);
+								console.log(e, e.id);
 									return e.id !== id
 							})
 							// for (var item in products) {
