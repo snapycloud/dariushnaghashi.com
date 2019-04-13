@@ -2266,6 +2266,7 @@ __webpack_require__.r(__webpack_exports__);
         sum = sum + products[item].unitPrice;
       }
 
+      this.sum = sum;
       return sum;
     },
     removeFromList: function removeFromList(id) {
@@ -2282,6 +2283,7 @@ __webpack_require__.r(__webpack_exports__);
         return e.id !== id;
       });
       this.products.list = products;
+      this.getTotal();
     },
     checkStatus: function checkStatus(id) {
       var self = this;

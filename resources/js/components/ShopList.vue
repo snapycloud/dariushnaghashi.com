@@ -125,6 +125,7 @@
 							for (var item in products) {
 									sum = sum + products[item].unitPrice;
 							}
+							this.sum = sum
 							return sum;
 						},
 						removeFromList(id) {
@@ -142,6 +143,7 @@
 									return e.id !== id
 							})
 							this.products.list = products;
+							this.getTotal()
 						},
 						checkStatus(id) {
 								let self = this
