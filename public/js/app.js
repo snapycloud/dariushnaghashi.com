@@ -2255,7 +2255,8 @@ __webpack_require__.r(__webpack_exports__);
         _this.products = res.data;
       }).catch(function (err) {
         console.log(err);
-      }); // var value = $('.badge').eq(1).text()
+      });
+      this.sum = this.getTotal(); // var value = $('.badge').eq(1).text()
     },
     getTotal: function getTotal() {
       var sum = 0;
@@ -2268,6 +2269,7 @@ __webpack_require__.r(__webpack_exports__);
       return sum;
     },
     removeFromList: function removeFromList(id) {
+      console.log(id);
       var self = this;
 
       if (self.selected == true) {
@@ -22287,62 +22289,60 @@ var render = function() {
         _c(
           "tbody",
           _vm._l(_vm.products.list, function(product) {
-            return !_vm.checkStatus(product.id)
-              ? _c("tr", [
-                  _c(
-                    "td",
-                    {
-                      staticClass: "cart-thumbnail",
-                      staticStyle: { width: "100px", "padding-right": "20px" }
-                    },
-                    [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _c("img", {
-                          attrs: {
-                            src:
-                              "https://dariushnaghashi.com/image/" +
-                              product.coverId,
-                            alt: ""
-                          }
-                        })
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("td", { staticClass: "cart-description" }, [
-                    _c("h5", { staticClass: "mb-0" }, [
-                      _vm._v(_vm._s(product.name))
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "mb-0" }, [
-                      _vm._v("Ref/ " + _vm._s(product.coverId))
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("td", { staticClass: "cart-price" }, [
-                    _c("span", { staticClass: "amount" }, [
-                      _vm._v(_vm._s(product.unitPrice) + " IIR")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("td", { staticClass: "cart-subtotal" }, [
-                    _c("span", { staticClass: "amount" }, [
-                      _vm._v(_vm._s(product.unitPrice) + " IIR")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("td", { staticClass: "cart-remove" }, [
-                    _c("a", {
-                      staticClass: "btn-close",
-                      on: {
-                        click: function($event) {
-                          return _vm.removeFromList(product.id)
-                        }
+            return _c("tr", [
+              _c(
+                "td",
+                {
+                  staticClass: "cart-thumbnail",
+                  staticStyle: { width: "100px", "padding-right": "20px" }
+                },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      attrs: {
+                        src:
+                          "https://dariushnaghashi.com/image/" +
+                          product.coverId,
+                        alt: ""
                       }
                     })
                   ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-description" }, [
+                _c("h5", { staticClass: "mb-0" }, [
+                  _vm._v(_vm._s(product.name))
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-0" }, [
+                  _vm._v("Ref/ " + _vm._s(product.coverId))
                 ])
-              : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-price" }, [
+                _c("span", { staticClass: "amount" }, [
+                  _vm._v(_vm._s(product.unitPrice) + " IIR")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-subtotal" }, [
+                _c("span", { staticClass: "amount" }, [
+                  _vm._v(_vm._s(product.unitPrice) + " IIR")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("td", { staticClass: "cart-remove" }, [
+                _c("a", {
+                  staticClass: "btn-close",
+                  on: {
+                    click: function($event) {
+                      return _vm.removeFromList(product.id)
+                    }
+                  }
+                })
+              ])
+            ])
           }),
           0
         )
