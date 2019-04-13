@@ -18,8 +18,8 @@
                 <h5 class="mb-0">{{ product.name }}</h5>
                 <p class="mb-0">Ref/ {{ product.coverId }}</p>
             </td>
-              <td class="cart-price"><span class="amount">{{ product.unitPrice }}</span></td>             
-              <td class="cart-subtotal"><span class="amount">{{ product.unitPrice }}</span></td>
+              <td class="cart-price"><span class="amount">{{ product.unitPrice }} IIR</span></td>             
+              <td class="cart-subtotal"><span class="amount">{{ product.unitPrice }} IIR</span></td>
               <td class="cart-remove"><a href="#" class="btn-close"></a></td>
             </tr>
           </tbody>
@@ -119,9 +119,10 @@
             },
             getTotal() {
               var sum = 0;
-              // for (product in this.products.list) {
-              //    sum += product.unitPrice;
-              // }
+              var products = this.products.list
+              for (product in products) {
+                 sum += product.unitPrice;
+              }
               return 12000;
             }
         }

@@ -2257,9 +2257,12 @@ __webpack_require__.r(__webpack_exports__);
       return "https://dariushnaghashi.com/image/" + id;
     },
     getTotal: function getTotal() {
-      var sum = 0; // for (product in this.products.list) {
-      //    sum += product.unitPrice;
-      // }
+      var sum = 0;
+      var products = this.products.list;
+
+      for (product in products) {
+        sum += product.unitPrice;
+      }
 
       return 12000;
     }
@@ -22292,13 +22295,13 @@ var render = function() {
               _vm._v(" "),
               _c("td", { staticClass: "cart-price" }, [
                 _c("span", { staticClass: "amount" }, [
-                  _vm._v(_vm._s(product.unitPrice))
+                  _vm._v(_vm._s(product.unitPrice) + " IIR")
                 ])
               ]),
               _vm._v(" "),
               _c("td", { staticClass: "cart-subtotal" }, [
                 _c("span", { staticClass: "amount" }, [
-                  _vm._v(_vm._s(product.unitPrice))
+                  _vm._v(_vm._s(product.unitPrice) + " IIR")
                 ])
               ]),
               _vm._v(" "),
