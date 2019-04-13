@@ -2230,7 +2230,9 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     this.getList();
   },
-  mounted: function mounted() {},
+  mounted: function mounted() {
+    this.getList();
+  },
   data: function data() {
     return {
       products: false,

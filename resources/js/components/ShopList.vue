@@ -91,7 +91,7 @@
             this.getList();
         },
         mounted() {
-
+          this.getList();
         },
         data: function () {
             return {
