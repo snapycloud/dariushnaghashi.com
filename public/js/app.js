@@ -2259,7 +2259,8 @@ __webpack_require__.r(__webpack_exports__);
 
       for (var item in products) {
         if (products.hasOwnProperty(item)) {
-          sum = sum + products.values(item);
+          console.log(products.values(item));
+          sum = sum + products.values(item).unitePrice;
         }
       }
 
