@@ -114,16 +114,18 @@
                 })
                 // var value = $('.badge').eq(1).text()
             },
-            getImage(id) {
-              return "https://dariushnaghashi.com/image/" + id;
-            },
             getTotal() {
               var sum = 0;
               var products = this.products.list
-              for (product in products) {
-                 sum += product.unitPrice;
+              console.log(products);
+              if(products) {
+              for (item in products) {
+                 sum += item.unitPrice;
               }
-              return 12000;
+              return sum;
+              }
+
+              return 'nil';
             }
         }
     }
