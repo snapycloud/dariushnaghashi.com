@@ -2256,17 +2256,12 @@ __webpack_require__.r(__webpack_exports__);
     getTotal: function getTotal() {
       var sum = 0;
       var products = this.products.list;
-      console.log(products);
 
-      if (products) {
-        for (var item in products) {
-          sum += item.unitPrice;
-        }
-
-        return sum;
+      for (var item in products) {
+        sum += item.unitPrice;
       }
 
-      return 'nil';
+      return sum;
     }
   }
 });

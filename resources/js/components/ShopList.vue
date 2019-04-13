@@ -117,15 +117,10 @@
             getTotal() {
               var sum = 0;
               var products = this.products.list
-              console.log(products);
-              if(products) {
               for (var item in products) {
                  sum += item.unitPrice;
               }
               return sum;
-              }
-
-              return 'nil';
             }
         }
     }
