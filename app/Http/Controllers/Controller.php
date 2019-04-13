@@ -33,7 +33,7 @@ class Controller extends BaseController
     public function getIndex()
     {
     	$galleries = ProductsCategory::where('deleted', 0)->orderBy('Order', 'DESC')->whereHas(
-                        'product', function($q){ 
+                        'product', function($q){
                             $q->where('deleted', 0);
                         }
                     )->get();
@@ -60,7 +60,7 @@ class Controller extends BaseController
     public function getVideos()
     {
         $videos = KnowledgeBaseArticle::where('deleted', 0)->whereHas(
-                        'category', function($q){ 
+                        'category', function($q){
                             $q->where('knowledge_base_category_id', '5ca3ec4ce3f1ef8c0')->limit(10);
                         }
                     )->where('status', 'Published')->orderBy('publish_date', 'ASC')->get();
@@ -110,13 +110,9 @@ class Controller extends BaseController
             'select' => 'name,coverId,categoryId,categoryName,status,unitPriceCurrency,unitPrice',
             'where[0][type]' => 'in',
             'where[0][attribute]' => 'id',
-            'where[0][value]' => [
-                "5ca3ffc6d577a1b0e",
-                "5ca3ffecc360c60bc",
-                "5c96b5c3a4fd61150"
-            ]
+            'where[0][value]' => $request->all()
         ]);
-    
+
         return $product;
     }
 
