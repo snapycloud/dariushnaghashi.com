@@ -22285,7 +22285,7 @@ var render = function() {
         _c(
           "tbody",
           _vm._l(_vm.products.list, function(product) {
-            return _vm.checkStatus(product.id)
+            return !_vm.checkStatus(product.id)
               ? _c("tr", [
                   _c(
                     "td",

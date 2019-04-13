@@ -12,7 +12,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr v-if="checkStatus(product.id)" v-for="product in products.list">
+						<tr v-if="!checkStatus(product.id)" v-for="product in products.list">
 							<td class="cart-thumbnail" style="width: 100px; padding-right: 20px"><a href="#"> <img v-bind:src="'https://dariushnaghashi.com/image/' + product.coverId" alt=""> </a></td>
 							<td class="cart-description">
 								<h5 class="mb-0">{{ product.name }}</h5>
