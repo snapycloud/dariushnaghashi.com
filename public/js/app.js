@@ -2258,7 +2258,7 @@ __webpack_require__.r(__webpack_exports__);
       var products = this.products.list;
 
       for (var item in products) {
-        sum = sum + products[item].unitePrice;
+        sum = sum + products[item].unitPrice;
       }
 
       return sum;
